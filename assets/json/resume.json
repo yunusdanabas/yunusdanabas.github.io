@@ -1,200 +1,222 @@
 {
   "basics": {
-    "name": "Albert Einstein",
-    "label": "Scientist",
+    "name": "Yunus Emre Danabaş",
+    "label": "Undergraduate Student in Mechatronics & Electronics Engineering",
     "image": "",
-    "email": "albert@einstein.de",
-    "phone": "(912) 123-4567",
-    "url": "https://alshedivat.github.io/al-folio/",
-    "summary": "A German-born theoretical physicist, widely ranked among the greatest and most influential scientists of all time",
+    "email": "yunusdanabas@sabanciuniv.edu",
+    "phone": "+90 5059546704",
+    "url": "https://yunusdanabas.github.io",
+    "summary": "I am a fourth-year undergraduate at Sabancı University pursuing a double major in Mechatronics and Electronics Engineering. With a strong academic record (CGPA 3.77, ranked 3rd in my cohort) and extensive hands-on experience in robotics, control systems, and embedded technologies, I am passionate about applying my skills to innovative research and practical solutions in robotics.",
     "location": {
-      "address": "2712 Broadway St",
-      "postalCode": "CA 94115",
-      "city": "San Francisco",
-      "countryCode": "US",
-      "region": "California"
+      "address": "Istanbul, Turkey",
+      "postalCode": "",
+      "city": "Istanbul",
+      "countryCode": "TR",
+      "region": ""
     },
     "profiles": [
       {
-        "network": "Twitter",
-        "username": "AlbertEinstein",
-        "url": "https://twitter.com/AlbertEinstein"
+        "network": "LinkedIn",
+        "username": "yunusdanabas",
+        "url": "https://www.linkedin.com/in/yunus-emre-danabas/"
+      },
+      {
+        "network": "GitHub",
+        "username": "yunusdanabas",
+        "url": "https://github.com/yunusdanabas"
       }
     ]
   },
+  "education": [
+    {
+      "institution": "Sabancı University",
+      "location": "Istanbul, Turkey",
+      "url": "https://sabanciuniv.edu/",
+      "area": "Mechatronics and Electronics Engineering (Double Major)",
+      "studyType": "Bachelor",
+      "startDate": "2020",
+      "endDate": "2025",
+      "score": "3.77/4",
+      "courses": [
+        "Kinematics and Dynamics of Machines",
+        "Autonomous Mobile Robotics",
+        "Introduction to Robotics",
+        "Deep Learning for Robot Control"
+      ],
+      "description": "Ranked 3rd among 33 seniors. Awarded Full Scholarship and Extracurricular Student Activities Leadership Awards in 2023 and 2024."
+    }
+  ],
   "work": [
     {
-      "name": "Institute for Advanced Study, Princeton University",
-      "position": "Professor of Theoretical Physics",
-      "url": "https://example.com",
-      "startDate": "1933-01-01",
-      "endDate": "1955-01-01",
-      "summary": "Teaching at Palmer Physical Laboratory (now 302 Frist Campus Center). While not a professor at Princeton, I associated with the physics professors and continued to give lectures on campus.",
-      "highlights": ["Relativity"]
+      "name": "Sabancı University",
+      "position": "Teaching Assistant for Prof. Volkan Patoğlu",
+      "url": "https://sabanciuniv.edu/",
+      "startDate": "2024-09",
+      "endDate": "present",
+      "summary": "Assisting in 'ME312 Analysis and Synthesis of Mechanisms' and 'ME403 Introduction to Robotics', including instruction of 20+ students per semester, weekly office hours, and project supervision."
+    },
+    {
+      "name": "Munich Institute of Robotics and Machine Intelligence (TUM MIRMI)",
+      "position": "Research Intern",
+      "url": "https://www.mirmi.tum.de/",
+      "startDate": "2024-06",
+      "endDate": "2024-08",
+      "summary": "Investigated force and moment scaling in robotic force-torque sensors; designed and fabricated flexure hinge prototypes using MATLAB and SolidWorks; conducted experimental tests and developed digital twins in Gazebo for assessing system stability and dynamic response."
+    },
+    {
+      "name": "TÜBİTAK BİLGEM",
+      "position": "Robotics Engineering Intern",
+      "url": "https://www.tubitak.gov.tr/",
+      "startDate": "2023-09",
+      "endDate": "2023-10",
+      "summary": "Enhanced ROS skills through formal training and performed comparative analyses of single and multi-robot simulations using Gazebo and RViz."
+    },
+    {
+      "name": "Pubinno Inc.",
+      "position": "Mechanical Engineering Intern",
+      "url": "",
+      "startDate": "2023-06",
+      "endDate": "2023-09",
+      "summary": "Designed 3D-printed prototypes using OnShape, led the development of an automated maintenance prototype, and coordinated quality control activities."
     }
   ],
   "volunteer": [
     {
-      "organization": "People's Climate March",
-      "location": "Zurich, Switzerland",
-      "position": "Lead Organizer",
-      "url": "https://example.com",
-      "startDate": "2014-04-01",
-      "endDate": "2015-07-01",
-      "summary": "Lead organizer for the New York City branch of the People's Climate March, the largest climate march in history.",
-      "highlights": ["Awarded 'Climate Hero' award by Greenpeace for my efforts organizing the march.", "Men of the year 2014 by Time magazine"]
-    }
-  ],
-  "education": [
+      "organization": "Sabancı University SIAM Student Chapter",
+      "location": "Istanbul, Turkey",
+      "position": "Financial Affairs Coordinator",
+      "url": "https://sabanciuniv.edu/",
+      "startDate": "2022-09",
+      "endDate": "2024-06",
+      "summary": "Managed financial matters, budgets, and coordinated seminars, reading groups, and mathematics competitions."
+    },
     {
-      "institution": "University of Zurich, Zurich, Switzerland",
-      "location": "Zurich, Switzerland",
-      "url": "https://www.uzh.ch/",
-      "area": "Software Development",
-      "studyType": "PhD",
-      "startDate": "1905-01-01",
-      "endDate": "1905-01-01",
-      "score": "10",
-      "courses": ["Theory of Relativity"]
+      "organization": "Civic Involvement Projects",
+      "location": "Istanbul, Turkey",
+      "position": "Volunteer",
+      "url": "https://sabanciuniv.edu/",
+      "startDate": "2021-04",
+      "endDate": "2021-06",
+      "summary": "Narrated audiobooks for visually impaired individuals to enhance accessibility."
     }
   ],
   "awards": [
     {
-      "title": "Nobel Prize in Physics",
-      "date": "1921-11-01",
-      "awarder": "Royal Swedish Academy of Sciences",
-      "url": "https://www.nobelprize.org/prizes/physics/1921/einstein/biographical/",
-      "summary": "The Nobel Prizes are five separate prizes that, according to Alfred Nobel's will of 1895, are awarded to 'those who, during the preceding year, have conferred the greatest benefit to humankind.'"
+      "title": "Extracurricular Student Activities Leadership Award",
+      "date": "2023",
+      "awarder": "Sabancı University",
+      "url": "",
+      "summary": "Awarded for leadership and contribution to extracurricular activities."
+    },
+    {
+      "title": "Extracurricular Student Activities Leadership Award",
+      "date": "2024",
+      "awarder": "Sabancı University",
+      "url": "",
+      "summary": "Awarded for leadership and contribution to extracurricular activities."
+    },
+    {
+      "title": "Full Scholarship",
+      "date": "2020",
+      "awarder": "Sabancı University",
+      "url": "",
+      "summary": "Awarded based on academic excellence."
     }
   ],
   "certificates": [
     {
-      "name": "Machine Learning",
-      "date": "2018-01-01",
-      "issuer": "Stanford University",
-      "url": "https://example.com",
-      "icon": "fa-solid fa-location-dot"
-    },
-    {
-      "name": "Quantum Computing",
-      "date": "2018-01-01",
-      "issuer": "Stanford University",
-      "url": "https://example.com",
-      "icon": "fa-solid fa-tag"
-    },
-    {
-      "name": "Quantum Information",
-      "date": "2018-01-01",
-      "issuer": "Stanford University",
-      "url": "https://example.com",
-      "icon": "fa-solid fa-envelope"
-    },
-    {
-      "name": "Quantum Cryptography",
-      "date": "2018-01-01",
-      "issuer": "Stanford University",
-      "url": "https://example.com",
-      "icon": "fa-solid fa-hashtag"
-    },
-    {
-      "name": "Quantum Communication",
-      "date": "2018-01-01",
-      "issuer": "Stanford University",
-      "url": "https://example.com",
-      "icon": "fa-solid fa-calendar"
-    },
-    {
-      "name": "Quantum Teleportation",
-      "date": "2018-01-01",
-      "issuer": "Stanford University",
-      "url": "https://example.com",
-      "icon": "fa-solid fa-clipboard-check"
+      "name": "SolidWorks (CSWA Certified)",
+      "date": "2020",
+      "issuer": "SolidWorks",
+      "url": "",
+      "icon": ""
     }
   ],
-  "publications": [
-    {
-      "name": "Zur Elektrody/namik bewegter Körper",
-      "publisher": "Annalen der Physik",
-      "releaseDate": "1905-06-30",
-      "url": "https://en.wikisource.org/wiki/Translation:On_the_Electrodynamics_of_Moving_Bodies",
-      "summary": "It concerned an interpretation of the Michelson–Morley experiment and the properties of light and time. Special relativity incorporates the principle that the speed of light is the same for all inertial observers regardless of the state of motion of the source."
-    },
-    {
-      "name": "Über einen die Erzeugung und Verwandlung des Lichtes betreffenden heuristischen Gesichtspunkt",
-      "publisher": "Annalen der Physik",
-      "releaseDate": "1905-03-18",
-      "url": "https://de.wikisource.org/wiki/Über_einen_die_Erzeugung_und_Verwandlung_des_Lichtes_betreffenden_heuristischen_Gesichtspunkt",
-      "summary": "In the second paper, he applied the quantum theory to light to explain the photoelectric effect. In particular, he used the idea of light quanta (photons) to explain experimental results, but stressed the importance of the experimental results. The importance of his work on the photoelectric effect earned him the Nobel Prize in Physics in 1921."
-    },
-    {
-      "name": "Die Grundlage der allgemeinen Relativitätstheorie",
-      "publisher": "Annalen der Physik",
-      "releaseDate": "1916-03-20",
-      "url": "https://de.wikisource.org/wiki/Die_Grundlage_der_allgemeinen_Relativitätstheorie",
-      "summary": "The publication of the theory of general relativity made him internationally famous. He was professor of physics at the universities of Zurich (1909–1911) and Prague (1911–1912), before he returned to ETH Zurich (1912–1914)."
-    }
-  ],
+  "publications": [],
   "skills": [
     {
-      "name": "Physics",
-      "level": "Master",
-      "icon": "fa-solid fa-hashtag",
-      "keywords": [
-        "Quantum Mechanics",
-        "Quantum Computing",
-        "Quantum Information",
-        "Quantum Cryptography",
-        "Quantum Communication",
-        "Quantum Teleportation"
-      ]
+      "name": "CAD & 3D Printing",
+      "level": "Advanced",
+      "icon": "",
+      "keywords": ["OnShape", "SolidWorks (CSWA Certified)", "3D printing"]
+    },
+    {
+      "name": "Robotics & Electronics",
+      "level": "Advanced",
+      "icon": "",
+      "keywords": ["ROS", "Gazebo", "MuJoCo", "Arduino", "ESP32", "LTSpice"]
+    },
+    {
+      "name": "Programming & Software",
+      "level": "Advanced",
+      "icon": "",
+      "keywords": ["Python (JAX, Equinox)", "C++", "MATLAB", "Simulink", "Linux", "LaTeX", "Autolev", "Verilog"]
     }
   ],
   "languages": [
     {
-      "language": "German",
-      "fluency": "Native speaker",
+      "language": "English",
+      "fluency": "Advanced",
       "icon": ""
     },
     {
-      "language": "English",
-      "fluency": "Fluent",
+      "language": "Turkish",
+      "fluency": "Native",
       "icon": ""
     }
   ],
   "interests": [
     {
-      "name": "Physics",
-      "icon": "fa-solid fa-tag",
-      "keywords": [
-        "Quantum Mechanics",
-        "Quantum Computing",
-        "Quantum Information",
-        "Quantum Cryptography",
-        "Quantum Communication",
-        "Quantum Teleportation"
-      ]
+      "name": "Robotics",
+      "icon": "",
+      "keywords": ["Control Systems", "Embedded Systems", "Simulation", "Automation"]
+    },
+    {
+      "name": "Machine Learning",
+      "icon": "",
+      "keywords": ["Reinforcement Learning", "Optimization", "Data-Driven Control"]
     }
   ],
   "references": [
     {
-      "name": "Professor John Doe",
-      "icon": "fa-solid fa-laptop",
-      "reference": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam condimentum, diam quis convallis euismod, arcu mi ullamcorper lorem, a vestibulum nunc magna at sem. Sed in risus ac felis varius blandit. D"
-    },
-    {
-      "name": "Professor John Doe",
-      "icon": "fa-solid fa-thumbtack",
-      "reference": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam condimentum, diam quis convallis euismod, arcu mi ullamcorper lorem, a vestibulum nunc magna at sem. Sed in risus ac felis varius blandit. D"
+      "name": "Prof. Volkan Patoğlu",
+      "icon": "",
+      "reference": "Professor at Sabancı University. Contact details available upon request."
     }
   ],
-  "projects": [
-    {
-      "name": "Quantum Computing",
-      "summary": "Quantum computing is the use of quantum-mechanical phenomena such as superposition and entanglement to perform computation. Computers that perform quantum computations are known as quantum computers.",
-      "highlights": ["Quantum Teleportation", "Quantum Cryptography"],
-      "startDate": "2018-01-01",
-      "endDate": "2018-01-01",
-      "url": "https://example.com"
-    }
-  ]
+"projects": [
+  {
+    "name": "Data-Driven Control of Exoskeletons",
+    "summary": "Developing a control system for exoskeletons using data-driven optimization and human-in-the-loop learning to adapt dynamically to individual users and varying environments. Utilizes simulations in MuJoCo and Bayesian optimization techniques.",
+    "highlights": [],
+    "startDate": "2024-10",
+    "endDate": "present",
+    "url": ""
+  },
+  {
+    "name": "How can a robot place an item on a cluttered desk?",
+    "summary": "Designed and implemented an intelligent approach for robotic item placement using Gazebo simulations and the Baxter robot. Optimized ROS Noetic compatibility and resolved integration challenges.",
+    "highlights": [],
+    "startDate": "2023-01",
+    "endDate": "2025-01",
+    "url": ""
+  },
+  {
+    "name": "Cart-Pole Swing-Up Control with JAX and MuJoCo",
+    "summary": "Developed controllers for the cart-pole swing-up task using classical methods and a neural network controller. Leveraged JAX, Equinox, and Diffrax for training and conducted real-time simulations with MuJoCo.",
+    "highlights": [],
+    "startDate": "2023-01",
+    "endDate": "2023-12",
+    "url": ""
+  },
+  {
+    "name": "SURover (Sabancı University Rover Team)",
+    "summary": "Led ROS-based simulations for robot arm control with MOVEIT, tested joystick and sensor functions on TurtleBots in Gazebo, and performed ArUco tag detection and fiducial SLAM using a Zed2 stereo camera. Contributed to mechanical design with SolidWorks and implemented motor control using Arduino for robust mobile robotics.",
+    "highlights": [],
+    "startDate": "2022-06",
+    "endDate": "2025-01",
+    "url": ""
+  }
+]
+
 }
