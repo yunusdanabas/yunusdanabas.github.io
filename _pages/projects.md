@@ -1,13 +1,16 @@
 ---
 layout: page
-title: projects
+title: Projects
 permalink: /projects/
-description: A growing collection of my cool projects, including summaries and key details. Click on a project for full information.
+description: >
+  A curated collection of my projects—from extracurricular endeavors to course-based work.
+  Each project includes a concise overview and key details. Click on a project for full information.
 nav: true
 nav_order: 3
-display_categories: [work, fun]
+display_categories: ["Extracircular Projects", "Course Projects"]
 horizontal: false
 ---
+
 
 <div class="projects">
   {% if site.enable_project_categories and page.display_categories %}
