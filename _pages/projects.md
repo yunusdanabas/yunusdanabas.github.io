@@ -23,7 +23,7 @@ horizontal: false
           {% for project in sorted_projects %}
             <div class="col">
               <div class="project-card">
-                <h3><a href="{{ project.url }}">{{ project.name }}</a></h3>
+                <h3><a href="{{ project.url }}">{{ project.title }}</a></h3>
                 <p>{{ project.summary }}</p>
                 {% if project.startDate or project.endDate %}
                   <p><em>{{ project.startDate }}{% if project.endDate %} - {{ project.endDate }}{% endif %}</em></p>
@@ -38,7 +38,7 @@ horizontal: false
         {% for project in sorted_projects %}
           <div class="col">
             <div class="project-card">
-              <h3><a href="{{ project.url }}">{{ project.name }}</a></h3>
+              <h3><a href="{{ project.url }}">{{ project.title }}</a></h3>
               <p>{{ project.summary }}</p>
               {% if project.startDate or project.endDate %}
                 <p><em>{{ project.startDate }}{% if project.endDate %} - {{ project.endDate }}{% endif %}</em></p>
@@ -57,7 +57,7 @@ horizontal: false
         {% for project in sorted_projects %}
           <div class="col">
             <div class="project-card">
-              <h3><a href="{{ project.url }}">{{ project.name }}</a></h3>
+              <h3><a href="{{ project.url }}">{{ project.title }}</a></h3>
               <p>{{ project.summary }}</p>
               {% if project.startDate or project.endDate %}
                 <p><em>{{ project.startDate }}{% if project.endDate %} - {{ project.endDate }}{% endif %}</em></p>
@@ -72,7 +72,7 @@ horizontal: false
       {% for project in sorted_projects %}
         <div class="col">
           <div class="project-card">
-            <h3><a href="{{ project.url }}">{{ project.name }}</a></h3>
+            <h3><a href="{{ project.url }}">{{ project.title }}</a></h3>
             <p>{{ project.summary }}</p>
             {% if project.startDate or project.endDate %}
               <p><em>{{ project.startDate }}{% if project.endDate %} - {{ project.endDate }}{% endif %}</em></p>
