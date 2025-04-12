@@ -1,6 +1,6 @@
 ---
 layout: page
-title: Projects
+title: projects
 permalink: /projects/
 description: >
   A curated collection of my projects—from extracurricular endeavors to course-based work.

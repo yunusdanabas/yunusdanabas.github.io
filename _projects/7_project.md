@@ -1,81 +1,34 @@
 ---
 layout: page
-title: project 7
-description: with background image
-img: assets/img/4.jpg
-importance: 1
-category: work
-related_publications: true
+title: "Modeling and Real-Time Control of a 2-DOF, 5-Link Manipulator"
+description: "Developed and implemented a model-based, real-time control system for a 2-DOF, 5-link robotic manipulator integrating task-space and joint-space controllers for precise trajectory tracking."
+importance: 4
+category: "Course Projects"
+startDate: "Mar 2024"
+endDate: "May 2024"
 ---
 
-Every project has a beautiful feature showcase page.
-It's easy to include images in a flexible 3-column grid format.
-Make your photos 1/3, 2/3, or full width.
+## Project Overview
 
-To give your project a background in the portfolio page, just add the img tag to the front matter like so:
+This project, completed as part of the ME403 Introduction to Robotics course at Sabancı University, focused on developing a real-time control system for a 2-DOF, 5-link robotic manipulator. The system integrates both task-space and joint-space controllers to achieve precise trajectory tracking.
 
-    ---
-    layout: page
-    title: project
-    description: a project with a background image
-    img: /assets/img/12.jpg
-    ---
+### Key Features and Contributions
 
-<div class="row">
-    <div class="col-sm mt-3 mt-md-0">
-        {% include figure.liquid loading="eager" path="assets/img/1.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
-    </div>
-    <div class="col-sm mt-3 mt-md-0">
-        {% include figure.liquid loading="eager" path="assets/img/3.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
-    </div>
-    <div class="col-sm mt-3 mt-md-0">
-        {% include figure.liquid loading="eager" path="assets/img/5.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
-    </div>
-</div>
-<div class="caption">
-    Caption photos easily. On the left, a road goes through a tunnel. Middle, leaves artistically fall in a hipster photoshoot. Right, in another hipster photoshoot, a lumberjack grasps a handful of pine needles.
-</div>
-<div class="row">
-    <div class="col-sm mt-3 mt-md-0">
-        {% include figure.liquid loading="eager" path="assets/img/5.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
-    </div>
-</div>
-<div class="caption">
-    This image can also have a caption. It's like magic.
-</div>
+- **Computed Torque Control:**  
+  Designed and implemented computed torque controllers in MATLAB/Simulink that enable accurate motion control in both task-space and joint-space.
 
-You can also put regular text between your rows of images, even citations {% cite einstein1950meaning %}.
-Say you wanted to write a bit about your project before you posted the rest of the images.
-You describe how you toiled, sweated, _bled_ for your project, and then... you reveal its glory in the next row of images.
+- **PD + Gravity Compensation:**  
+  Developed and fine-tuned a PD + Gravity compensator to ensure stable trajectory tracking along horizontal, vertical, and elliptical paths.
 
-<div class="row justify-content-sm-center">
-    <div class="col-sm-8 mt-3 mt-md-0">
-        {% include figure.liquid path="assets/img/6.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
-    </div>
-    <div class="col-sm-4 mt-3 mt-md-0">
-        {% include figure.liquid path="assets/img/11.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
-    </div>
-</div>
-<div class="caption">
-    You can also have artistically styled 2/3 + 1/3 images, like these.
-</div>
+- **Simulation and Testing:**  
+  Conducted Software-in-the-Loop (SIL) simulations using forward/inverse kinematics and dynamic models, followed by Hardware-in-the-Loop (HIL) testing with a TI C2000 microcontroller to validate controller performance.
 
-The code is simple.
-Just wrap your images with `<div class="col-sm">` and place them inside `<div class="row">` (read more about the <a href="https://getbootstrap.com/docs/4.4/layout/grid/">Bootstrap Grid</a> system).
-To make images responsive, add `img-fluid` class to each; for rounded corners and shadows use `rounded` and `z-depth-1` classes.
-Here's the code for the last row of images above:
+- **Integrated Hardware Control:**  
+  Implemented PWM-based motor control along with encoder-based feedback to provide precise position and velocity estimation.
 
-{% raw %}
+- **Kinematics and Transformations:**  
+  Applied joint-space and task-space transformations, allowing both independent and cooperative control of the manipulator's joints.
 
-```html
-<div class="row justify-content-sm-center">
-  <div class="col-sm-8 mt-3 mt-md-0">
-    {% include figure.liquid path="assets/img/6.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
-  </div>
-  <div class="col-sm-4 mt-3 mt-md-0">
-    {% include figure.liquid path="assets/img/11.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
-  </div>
-</div>
-```
+## Additional Details
 
-{% endraw %}
+This project brought together simulation and real-world testing to ensure robust controller performance. By combining advanced computed torque control with PD + Gravity compensation, the system effectively handled complex motion trajectories while ensuring real-time responsiveness and precision.

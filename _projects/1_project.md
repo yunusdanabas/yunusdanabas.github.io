@@ -4,7 +4,7 @@ title: "Project 1: Advanced Cart-Pole Swing-Up Control"
 description: "A project that combines classical control with deep learning using JAX, MuJoCo and more."
 img: assets/img/MuJoCo_CartPole.png
 importance: 1
-category: work
+category: Extracircular Projects
 related_publications: true
 ---
 

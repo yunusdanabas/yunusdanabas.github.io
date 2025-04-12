@@ -1,80 +1,65 @@
 ---
 layout: page
-title: project 6
-description: a project with no image
-img:
+title: "Design and Control of a Planar Elbow Manipulator"
+description: >
+  Developed a 2-DoF planar elbow manipulator integrating mechanical design, power electronics,
+  and control systems. Completed as part of the ME408 Mechatronic System Design course at Sabancı University.
+img: assets/img/me408_design_front.jpeg
 importance: 4
-category: fun
+category: Course Projects
+startDate: Mar 2024
+endDate: May 2024
 ---
 
-Every project has a beautiful feature showcase page.
-It's easy to include images in a flexible 3-column grid format.
-Make your photos 1/3, 2/3, or full width.
+<p>
+The <strong>Design and Control of a Planar Elbow Manipulator</strong> project was a rigorous effort undertaken during the ME408 Mechatronic System Design course at Sabancı University. Out of more than 20 designs, it uniquely met all mechanical requirements while optimizing structural integrity, weight, and precise motion control.
+</p>
 
-To give your project a background in the portfolio page, just add the img tag to the front matter like so:
+<h3>Mechanical Design</h3>
+<ul>
+  <li>Designed and assembled the manipulator in SOLIDWORKS, optimizing link geometry through stress analysis and weight reduction techniques to meet the required factor of safety.</li>
+  <li>Performed static and dynamic analyses to assess stress distribution, displacement limits, and structural deformations under load.</li>
+</ul>
 
-    ---
-    layout: page
-    title: project
-    description: a project with a background image
-    img: /assets/img/12.jpg
-    ---
+<h3>Power Electronics</h3>
+<ul>
+  <li>Engineered a buck-boost converter in LTSpice to regulate motor input voltage, ensuring stable power delivery with minimal voltage ripple and reduced inductor current fluctuations.</li>
+</ul>
+
+<h3>Control Systems</h3>
+<ul>
+  <li>Developed PI and PID controllers in MATLAB/Simulink, incorporating gravity compensation to enhance trajectory tracking accuracy.</li>
+  <li>Implemented a dual-loop control system with an inner loop managing motor current and an outer loop achieving precise joint positioning using inverse kinematics.</li>
+</ul>
+
+<h3>System Integration & Validation</h3>
+<ul>
+  <li>Integrated and simulated the mechanical, electrical, and control subsystems using SOLIDWORKS, LTSpice, and MATLAB/Simulink, ensuring full system performance verification.</li>
+</ul>
 
 <div class="row">
-    <div class="col-sm mt-3 mt-md-0">
-        {% include figure.liquid loading="eager" path="assets/img/1.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
-    </div>
-    <div class="col-sm mt-3 mt-md-0">
-        {% include figure.liquid loading="eager" path="assets/img/3.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
-    </div>
-    <div class="col-sm mt-3 mt-md-0">
-        {% include figure.liquid loading="eager" path="assets/img/5.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
-    </div>
+  <div class="col-sm mt-3 mt-md-0">
+    {% include figure.liquid loading="eager" path="assets/img/me408_design_front.jpeg" title="Front View of the Manipulator" class="img-fluid rounded z-depth-1" %}
+  </div>
+  <div class="col-sm mt-3 mt-md-0">
+    {% include figure.liquid loading="eager" path="assets/img/me408_design_iso.jpeg" title="Isometric View" class="img-fluid rounded z-depth-1" %}
+  </div>
+  <div class="col-sm mt-3 mt-md-0">
+    {% include figure.liquid loading="eager" path="assets/img/me408_design_closedForm.jpeg" title="Closed Form Analysis" class="img-fluid rounded z-depth-1" %}
+  </div>
 </div>
 <div class="caption">
-    Caption photos easily. On the left, a road goes through a tunnel. Middle, leaves artistically fall in a hipster photoshoot. Right, in another hipster photoshoot, a lumberjack grasps a handful of pine needles.
+  Various views of the design showcasing optimized geometry and robust mechanical integrity.
 </div>
+
 <div class="row">
-    <div class="col-sm mt-3 mt-md-0">
-        {% include figure.liquid loading="eager" path="assets/img/5.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
-    </div>
-</div>
-<div class="caption">
-    This image can also have a caption. It's like magic.
-</div>
-
-You can also put regular text between your rows of images.
-Say you wanted to write a little bit about your project before you posted the rest of the images.
-You describe how you toiled, sweated, _bled_ for your project, and then... you reveal its glory in the next row of images.
-
-<div class="row justify-content-sm-center">
-    <div class="col-sm-8 mt-3 mt-md-0">
-        {% include figure.liquid path="assets/img/6.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
-    </div>
-    <div class="col-sm-4 mt-3 mt-md-0">
-        {% include figure.liquid path="assets/img/11.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
-    </div>
-</div>
-<div class="caption">
-    You can also have artistically styled 2/3 + 1/3 images, like these.
-</div>
-
-The code is simple.
-Just wrap your images with `<div class="col-sm">` and place them inside `<div class="row">` (read more about the <a href="https://getbootstrap.com/docs/4.4/layout/grid/">Bootstrap Grid</a> system).
-To make images responsive, add `img-fluid` class to each; for rounded corners and shadows use `rounded` and `z-depth-1` classes.
-Here's the code for the last row of images above:
-
-{% raw %}
-
-```html
-<div class="row justify-content-sm-center">
-  <div class="col-sm-8 mt-3 mt-md-0">
-    {% include figure.liquid path="assets/img/6.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
+  <div class="col-sm mt-3 mt-md-0">
+    {% include figure.liquid loading="eager" path="assets/img/me408_displacement.jpeg" title="Displacement Analysis" class="img-fluid rounded z-depth-1" %}
   </div>
-  <div class="col-sm-4 mt-3 mt-md-0">
-    {% include figure.liquid path="assets/img/11.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
+  <div class="col-sm mt-3 mt-md-0">
+    {% include figure.liquid loading="eager" path="assets/img/me408_stress.jpeg" title="Stress Distribution" class="img-fluid rounded z-depth-1" %}
   </div>
 </div>
-```
-
-{% endraw %}
+<div class="caption">
+  Detailed displacement and stress distribution analyses under operational loads.
+</div>
