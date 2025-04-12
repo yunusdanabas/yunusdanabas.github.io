@@ -17,7 +17,7 @@ ninja.data = [{
             window.location.href = "/cv/";
           },
         },{id: "nav-projects",
-          title: "Projects",
+          title: "projects",
           description: "A curated collection of my projects—from extracurricular endeavors to course-based work. Each project includes a concise overview and key details. Click on a project for full information.",
           section: "Navigation",
           handler: () => {
@@ -400,24 +400,24 @@ ninja.data = [{
           description: "a project with a background image",
           section: "Projects",handler: () => {
               window.location.href = "/projects/5_project/";
-            },},{id: "projects-project-6",
-          title: 'project 6',
-          description: "a project with no image",
+            },},{id: "projects-design-and-control-of-a-planar-elbow-manipulator",
+          title: 'Design and Control of a Planar Elbow Manipulator',
+          description: "Developed a 2-DoF planar elbow manipulator integrating mechanical design, power electronics, and control systems. Completed as part of the ME408 Mechatronic System Design course at Sabancı University.",
           section: "Projects",handler: () => {
               window.location.href = "/projects/6_project/";
-            },},{id: "projects-project-7",
-          title: 'project 7',
-          description: "with background image",
+            },},{id: "projects-modeling-and-real-time-control-of-a-2-dof-5-link-manipulator",
+          title: 'Modeling and Real-Time Control of a 2-DOF, 5-Link Manipulator',
+          description: "Developed and implemented a model-based, real-time control system for a 2-DOF, 5-link robotic manipulator integrating task-space and joint-space controllers for precise trajectory tracking.",
           section: "Projects",handler: () => {
               window.location.href = "/projects/7_project/";
-            },},{id: "projects-project-8",
-          title: 'project 8',
-          description: "an other project with a background image and giscus comments",
+            },},{id: "projects-fpga-airhockey",
+          title: 'FPGA-AirHockey',
+          description: "A two-player digital air-hockey game implemented on the Nexys A7 FPGA board using Verilog.",
           section: "Projects",handler: () => {
               window.location.href = "/projects/8_project/";
-            },},{id: "projects-project-9",
-          title: 'project 9',
-          description: "another project with an image 🎉",
+            },},{id: "projects-kinematic-and-dynamic-analysis-of-the-3rrp-mechanism",
+          title: 'Kinematic and Dynamic Analysis of the 3RRP Mechanism',
+          description: "Comprehensive analysis of a 3RRP planar parallel manipulator using symbolic derivations and numerical simulations.",
           section: "Projects",handler: () => {
               window.location.href = "/projects/9_project/";
             },},{
