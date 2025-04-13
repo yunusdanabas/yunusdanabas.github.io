@@ -4,7 +4,7 @@ title: projects
 permalink: /projects/
 description: >
   A curated collection of my projects—from extracurricular endeavors to course-based work.
-  Each project includes a concise overview and key details. Click on a project for full information.
+  Click on a project for full information.
 nav: true
 nav_order: 3
 display_categories: ["Extracircular Projects", "Course Projects"]

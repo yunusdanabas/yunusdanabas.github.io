@@ -62,21 +62,24 @@ category: Course Projects
 - **Programming:**  
   Program the FPGA and witness the interactive game using the onboard LEDs, switches, and seven-segment displays.
 
+## GitHub Repository
+
+<p>
+  Explore more details, source code, and supporting documentation (including *Phase1.pdf*) in the
+  <a href="https://github.com/yunusdanabas/FPGA-AirHockey" target="_blank">GitHub repository</a>.
+</p>
+
 ### Demo & Additional Resources
 
 <div class="row">
-  <div class="col-sm mt-3 mt-md-0" style="max-width:200px;">
-    {% include figure.liquid loading="eager" path="assets/img/fpga_board.jpeg" title="Nexys A7 Board with FPGA-AirHockey loaded" class="img-fluid rounded z-depth-1" %}
+  <div class="col-sm mt-3 mt-md-0" style="max-width:500px;">
+    {% include figure.liquid loading="eager" path="assets/img/fpga_board.jpeg" title="Nexys A7 Board with FPGA-AirHockey loaded" class="img-fluid rounded z-depth-1" style="height:500px; object-fit:cover;" %}
   </div>
   <div class="col-sm mt-3 mt-md-0">
-    {% include video.liquid path="assets/video/Gameplay.mp4" class="img-fluid rounded z-depth-1" controls=true autoplay=true %}
+    {% include video.liquid path="assets/video/Gameplay.mp4" class="img-fluid rounded z-depth-1" controls=true autoplay=true style="height:500px;" %}
   </div>
 </div>
 <div class="caption">
   FPGA-AirHockey demonstration: FPGA board and gameplay video displayed side by side.
 </div>
 
-<p>
-  Explore more details, source code, and supporting documentation (including *Phase1.pdf*) in the
-  <a href="https://github.com/username/FPGA-AirHockey" target="_blank">GitHub repository</a>.
-</p>
