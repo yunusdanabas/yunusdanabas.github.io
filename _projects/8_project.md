@@ -65,7 +65,7 @@ category: Course Projects
 ## GitHub Repository
 
 <p>
-  Explore more details, source code, and supporting documentation (including *Phase1.pdf*) in the
+  Explore more details, source code, and supporting documentation in the
   <a href="https://github.com/yunusdanabas/FPGA-AirHockey" target="_blank">GitHub repository</a>.
 </p>
 

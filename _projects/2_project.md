@@ -3,7 +3,7 @@ layout: page
 title: "Multi-Robot Frontier Exploration using ROS"
 description: "An advanced ROS project demonstrating autonomous frontier exploration, SLAM, and multi-robot map merging with TurtleBot3 in a simulated Gazebo environment."
 img: /assets/img/multiexplore_map.png
-importance: 4
+importance: 3
 category: Extracircular Projects
 ---
 
