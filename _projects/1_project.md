@@ -1,6 +1,6 @@
 ---
 layout: page
-title: "Project 1: Advanced Cart-Pole Swing-Up Control"
+title: "Advanced Cart-Pole Swing-Up Control"
 description: "Combining classical and deep learning control techniques using JAX, MuJoCo, and more."
 img: assets/img/MuJoCo_CartPole.png
 importance: 1
@@ -52,7 +52,11 @@ Extensive comparative analyses were conducted, assessing controller robustness, 
 <h2>Resources</h2>
 <ul>
   <li><a href="https://github.com/yunusdanabas/MuJoCo_CartPole" target="_blank">GitHub Repository</a></li>
-  <li><a href="assets/pdf/ME58006_Project2.pdf" target="_blank">Download Project Report (PDF)</a></li>
+  <li>
+    <a href="{{ '/assets/pdf/ME58006_Project2.pdf' | relative_url }}" target="_blank">
+      <strong>Download the Full Project Report (PDF)</strong>
+    </a>
+  </li>
 </ul>
 
 <div class="row">
