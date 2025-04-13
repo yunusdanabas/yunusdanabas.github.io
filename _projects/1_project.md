@@ -1,31 +1,58 @@
 ---
 layout: page
 title: "Project 1: Advanced Cart-Pole Swing-Up Control"
-description: "A project that combines classical control with deep learning using JAX, MuJoCo and more."
+description: "Combining classical and deep learning control techniques using JAX, MuJoCo, and more."
 img: assets/img/MuJoCo_CartPole.png
 importance: 1
-category: work
-related_publications: true
+category: Extracircular Projects
 ---
 
 <h1>Advanced Cart-Pole Swing-Up Control with JAX and MuJoCo</h1>
 
 <p>
-In this project, I developed a sophisticated control system for the classic cart-pole swing-up task by integrating classical control methods with modern deep learning techniques. The system employs a blend of linear, LQR, and neural network controllers to manage the challenging dynamics inherent in swinging up a pendulum from a downward position. The neural network controller (MLP) is trained end-to-end using differentiable simulation based on an energy-shaping and cart-deviation cost function.
+This project implements sophisticated controllers for the classic cart-pole swing-up task, blending traditional control methods (Linear and LQR) with modern neural network approaches. The goal is to drive the pole from a downward or arbitrary position to an upright equilibrium, injecting precisely calculated energy while keeping the cart near the track's center.
 </p>
 
-<p>
-Key to this project is the use of JAX for fast automatic differentiation and JIT compilation, along with Equinox for constructing the NN architecture, and Diffrax for efficient ODE integration. These tools together enable robust gradient-based optimization, allowing the NN to learn complex nonlinear behaviors necessary for both swing-up and stabilization phases. Real-time simulations and interactive visualizations were carried out using MuJoCo and mujoco_viewer, providing clear insights into controller performance and system dynamics.
-</p>
+<h2>Controllers Developed</h2>
+<ul>
+  <li><strong>Linear Controller:</strong> A state-feedback controller trained using differentiable simulations in JAX, optimized to minimize state deviations and control effort.</li>
+  <li><strong>LQR Controller:</strong> A classic optimal controller derived through linearization of the system dynamics and solution of the algebraic Riccati equation.</li>
+  <li><strong>Neural Network Controller (MLP):</strong> Trained via differentiable simulation with an energy-shaping and cart-deviation cost, mapping a 5D state vector <code>[x, cos(θ), sin(θ), ẋ, θ̇]</code> to the necessary control force for the swing-up task.</li>
+</ul>
 
+<h2>Technologies & Libraries</h2>
+<ul>
+  <li><strong>JAX:</strong> Automatic differentiation and efficient computation.</li>
+  <li><strong>Equinox:</strong> Lightweight, functional neural network modeling.</li>
+  <li><strong>Optax:</strong> Gradient-based optimization algorithms.</li>
+  <li><strong>Diffrax:</strong> Differentiable ODE solvers for training and simulation.</li>
+  <li><strong>MuJoCo and mujoco_viewer:</strong> High-fidelity physics simulations and interactive real-time visualization.</li>
+</ul>
+
+<h2>Project Structure</h2>
+<ul>
+  <li><strong><code>controller/</code></strong> Controllers implementations (Linear, LQR, Neural Network).</li>
+  <li><strong><code>env/</code></strong> Dynamics and simulation wrappers for the cart-pole system.</li>
+  <li><strong><code>lib/</code></strong> Training utilities, loss computation, and helper functions for visualization and initial state sampling.</li>
+  <li><strong>Main Scripts:</strong> Simulation scripts to deploy trained controllers and perform comparative analyses between methods.</li>
+</ul>
+
+<h2>Workflow & Usage</h2>
+<ul>
+  <li>Train controllers using differentiable simulations and cost functions optimized by gradient descent.</li>
+  <li>Deploy and evaluate controller performance through detailed real-time simulations in MuJoCo.</li>
+  <li>Interactive simulations allow disturbance testing, state observation, and control force visualization.</li>
+</ul>
+
+<h2>Results & Analysis</h2>
 <p>
-Extensive experiments compared the performance of the NN, linear, and LQR controllers through trajectory plots, cost analyses, and control force evaluations. The results demonstrate the strengths and limitations of each approach, offering valuable lessons for future improvements in hybrid control strategies.
+Extensive comparative analyses were conducted, assessing controller robustness, swing-up efficiency, stabilization performance, and energy management across various initial conditions and disturbances. Results demonstrated each controller's unique strengths, guiding future hybrid controller design and improved transition mechanisms.
 </p>
 
 <h2>Resources</h2>
 <ul>
-  <li><a href="https://github.com/yunusdanabas/MuJoCo_CartPole" target="_blank">View the project on GitHub</a></li>
-  <li><a href="assets/pdf/ME58006_Project2.pdf" target="_blank">Download the Project Report (PDF)</a></li>
+  <li><a href="https://github.com/yunusdanabas/MuJoCo_CartPole" target="_blank">GitHub Repository</a></li>
+  <li><a href="assets/pdf/ME58006_Project2.pdf" target="_blank">Download Project Report (PDF)</a></li>
 </ul>
 
 <div class="row">
@@ -34,12 +61,12 @@ Extensive experiments compared the performance of the NN, linear, and LQR contro
   </div>
 </div>
 <div class="caption">
-  A representative snapshot from the MuJoCo simulation, showcasing real-time visualization of the cart-pole dynamics.
+  Simulation snapshot from MuJoCo showing real-time visualization of the cart-pole system.
 </div>
 
-<!-- Additional photo suggestions:
-     - Simulation snapshots highlighting the transition phases between swing-up and stabilization.
-     - Trajectory plots comparing the performance of the NN, linear, and LQR controllers.
-     - Graphs of training loss progression and cost analysis across different control strategies.
-     - Screenshots of interactive simulation interfaces with control overlays.
+<!-- Additional Suggested Visuals:
+  - Trajectory plots for controller performance comparisons.
+  - Interactive simulation screenshots.
+  - Cost function and training loss graphs.
+  - Neural network architecture diagrams.
 -->
