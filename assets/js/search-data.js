@@ -377,7 +377,7 @@ ninja.data = [{
       },
     },{id: "projects-project-1-advanced-cart-pole-swing-up-control",
           title: 'Project 1: Advanced Cart-Pole Swing-Up Control',
-          description: "A project that combines classical control with deep learning using JAX, MuJoCo and more.",
+          description: "Combining classical and deep learning control techniques using JAX, MuJoCo, and more.",
           section: "Projects",handler: () => {
               window.location.href = "/projects/1_project/";
             },},{id: "projects-project-2",
@@ -395,9 +395,9 @@ ninja.data = [{
           description: "another without an image",
           section: "Projects",handler: () => {
               window.location.href = "/projects/4_project/";
-            },},{id: "projects-project-5",
-          title: 'project 5',
-          description: "a project with a background image",
+            },},{id: "projects-multi-robot-frontier-exploration-using-ros",
+          title: 'Multi-Robot Frontier Exploration using ROS',
+          description: "An advanced ROS project demonstrating autonomous frontier exploration, SLAM, and multi-robot map merging with TurtleBot3 in a simulated Gazebo environment.",
           section: "Projects",handler: () => {
               window.location.href = "/projects/5_project/";
             },},{id: "projects-design-and-control-of-a-planar-elbow-manipulator",
