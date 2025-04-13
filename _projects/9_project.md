@@ -1,18 +1,20 @@
 ---
 layout: page
-title: Kinematic and Dynamic Analysis of the 3RRP Mechanism
-description: Comprehensive analysis of a 3RRP planar parallel manipulator using symbolic derivations and numerical simulations.
+title: "Kinematic and Dynamic Analysis of the 3RRP Mechanism"
+description: "Comprehensive analysis of a 3RRP planar parallel manipulator using symbolic derivations and numerical simulations."
 img: assets/img/rrp_systemImage.png
 importance: 4
-category: Course Projects
+category: "Course Projects"
 ---
 
-Between Oct 2024 and Jan 2025, as part of the EE521 Kinematics and Dynamics of Machines graduate course, I performed an extensive analysis of the 3RRP planar parallel manipulator. Key contributions include:
-- Developing a full dynamic model using Autolev for symbolic derivations and MATLAB/Simulink for numerical simulations.
-- Deriving closed-form forward and inverse kinematics and validating them through Simulink.
-- Computing the largest symmetric workspace and evaluating performance metrics such as the kinematic Jacobian and Global Isotropy Index (GII).
-- Formulating equations of motion via both Kane’s method and the Lagrangian approach, and comparing their computational efficiency and stability.
-- Validating the dynamic model under small force and torque disturbances.
+
+Between October 2024 and January 2025, as part of the EE521 "Kinematics and Dynamics of Machines" graduate course, I conducted an extensive analysis of the 3RRP planar parallel manipulator. The key contributions include:
+
+- **Dynamic Modeling:** Developed a full dynamic model using Autolev for symbolic derivations and MATLAB/Simulink for numerical simulations.
+- **Kinematics:** Derived closed-form forward and inverse kinematics and validated them using Simulink.
+- **Workspace Analysis:** Computed the largest symmetric workspace and evaluated performance metrics such as the kinematic Jacobian and Global Isotropy Index (GII).
+- **Equations of Motion:** Formulated the equations of motion using both Kane’s method and the Lagrangian approach, comparing their computational efficiency and stability.
+- **Validation:** Validated the dynamic model under small force and torque disturbances.
 
 Below are some illustrative images from the project:
 
@@ -28,7 +30,7 @@ Below are some illustrative images from the project:
   </div>
 </div>
 <div class="caption">
-  From left to right: The numerical workspace simulation, the end-effector’s response under force disturbances, and an overview schematic of the 3RRP mechanism.
+  From left to right: numerical workspace simulation, end-effector’s force response, and an overview schematic of the 3RRP mechanism.
 </div>
 
 ---
@@ -37,4 +39,7 @@ Below are some illustrative images from the project:
 
 For a detailed exposition of the methodology, derivations, simulation results, and analyses, please refer to the full project report:
 
-<a href="assets/pdf/YunusEmreDanabas_RRP_ProjectReport.pdf" target="_blank">Download the Full Project Report (PDF)</a>
+<a href="{{ '/assets/pdf/YunusEmreDanabas_RRP_ProjectReport.pdf' | relative_url }}" target="_blank">
+  <strong>Download the Full Project Report (PDF)</strong>
+</a>
+

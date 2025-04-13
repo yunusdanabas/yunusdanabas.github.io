@@ -7,8 +7,6 @@ description: >
 img: assets/img/me408_design_front.jpeg
 importance: 4
 category: Course Projects
-startDate: Mar 2024
-endDate: May 2024
 ---
 
 <p>

@@ -4,8 +4,6 @@ title: "Modeling and Real-Time Control of a 2-DOF, 5-Link Manipulator"
 description: "Developed and implemented a model-based, real-time control system for a 2-DOF, 5-link robotic manipulator integrating task-space and joint-space controllers for precise trajectory tracking."
 importance: 4
 category: "Course Projects"
-startDate: "Mar 2024"
-endDate: "May 2024"
 ---
 
 ## Project Overview
