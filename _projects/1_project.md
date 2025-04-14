@@ -1,13 +1,12 @@
 ---
 layout: page
-title: "Advanced Cart-Pole Swing-Up Control"
+title: "Advanced Cart-Pole Swing-Up Control with JAX and MuJoCo"
 description: "Combining classical and deep learning control techniques using JAX, MuJoCo, and more."
 img: assets/img/MuJoCo_CartPole.png
 importance: 2
 category: Extracircular Projects
 ---
 
-<h1>Advanced Cart-Pole Swing-Up Control with JAX and MuJoCo</h1>
 
 <p>
 This project implements sophisticated controllers for the classic cart-pole swing-up task, blending traditional control methods (Linear and LQR) with modern neural network approaches. The goal is to drive the pole from a downward or arbitrary position to an upright equilibrium, injecting precisely calculated energy while keeping the cart near the track's center.
