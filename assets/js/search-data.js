@@ -375,8 +375,8 @@ ninja.data = [{
           window.location.href = "/blog/2015/formatting-and-links/";
         
       },
-    },{id: "projects-advanced-cart-pole-swing-up-control",
-          title: 'Advanced Cart-Pole Swing-Up Control',
+    },{id: "projects-advanced-cart-pole-swing-up-control-with-jax-and-mujoco",
+          title: 'Advanced Cart-Pole Swing-Up Control with JAX and MuJoCo',
           description: "Combining classical and deep learning control techniques using JAX, MuJoCo, and more.",
           section: "Projects",handler: () => {
               window.location.href = "/projects/1_project/";
