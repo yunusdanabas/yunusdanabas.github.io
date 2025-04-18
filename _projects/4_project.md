@@ -63,7 +63,10 @@ The digital twin enabled offline evaluation of sensor mounting strategies under 
   <div class="col-sm mt-3 mt-md-0">
     {% include figure.liquid loading="eager" path="assets/img/pandaBaseSim_side.png" title="Side View" class="img-fluid rounded z-depth-1" %}
   </div>
+  <div class="col-sm mt-3 mt-md-0">
+    {% include figure.liquid loading="eager" path="assets/img/pandaBaseSim_simulation.png" title="Gazebo + RViz Snapshot" class="img-fluid rounded z-depth-1" %}
+  </div>
 </div>
 <div class="caption">
-  Top: front, isometric and side CAD renders — Bottom: live Gazebo+RViz simulation snapshot
+  CAD renders (front, iso, side) and live Gazebo+RViz simulation snapshot
 </div>
