@@ -391,7 +391,7 @@ ninja.data = [{
           section: "Projects",handler: () => {
               window.location.href = "/projects/3_project/";
             },},{id: "projects-panda-base-simulator",
-          title: 'Panda Base Simulator',
+          title: 'Panda Base Simulator',
           description: "Digital‑twin of a custom aluminum‑profile base carrying a Franka Emika Panda arm, used to study force/torque‑sensor placement and high‑moment loading.",
           section: "Projects",handler: () => {
               window.location.href = "/projects/4_project/";
