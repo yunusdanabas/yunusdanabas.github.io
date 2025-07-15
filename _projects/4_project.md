@@ -4,7 +4,7 @@ title: "Panda Base Simulator"
 description: "Digital‑twin of a custom aluminum‑profile base carrying a Franka Emika Panda arm, used to study force/torque‑sensor placement and high‑moment loading."
 img: assets/img/pandaBaseSim_front.png
 importance: 3
-category: Extracircular Projects
+category: Extracurricular Projects
 ---
 
 <p>
