@@ -1,9 +1,9 @@
-````markdown
 ---
 layout: page
 title: "Hand-Steer Sim — Real-Time Gesture Teleoperation for Mobile Robots"
 collection: projects
 importance: 1
+description: Hand-Steer Sim is a webcam-driven teleoperation stack that translates hand gestures into ROS /cmd_vel commands in real time. MediaPipe landmarks feed a 1 k-param MLP for four static actions and a 6 k-param LSTM for steering trajectories, achieving 99 % accuracy with 13 ms end-to-end latency. One launch or Docker run controls a Gazebo (or real) differential-drive robot—no joystick required.
 permalink: /projects/hand_steer_sim/
 date: 2025-05-31
 category: Course Projects
