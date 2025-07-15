@@ -18,7 +18,7 @@ ninja.data = [{
           },
         },{id: "nav-projects",
           title: "projects",
-          description: "A curated collection of my work—from extracurricular initiatives to course-based assignments. Click on a project for full details.",
+          description: "A curated collection of my work—from extracurricular initiatives to course-based assignments. Click on any card for full details.",
           section: "Navigation",
           handler: () => {
             window.location.href = "/projects/";
