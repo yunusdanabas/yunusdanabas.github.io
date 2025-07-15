@@ -415,11 +415,6 @@ ninja.data = [{
           description: "Comprehensive analysis of a 3RRP planar parallel manipulator using symbolic derivations and numerical simulations.",
           section: "Projects",handler: () => {
               window.location.href = "/projects/9_project/";
-            },},{id: "projects-hand-steer-sim-real-time-gesture-teleoperation-for-mobile-robots",
-          title: 'Hand-Steer Sim: Real-Time Gesture Teleoperation for Mobile Robots',
-          description: "",
-          section: "Projects",handler: () => {
-              window.location.href = "/projects/hand_steer_sim/";
             },},{
         id: 'social-email',
         title: 'email',
