@@ -415,6 +415,11 @@ ninja.data = [{
           description: "Comprehensive analysis of a 3RRP planar parallel manipulator using symbolic derivations and numerical simulations.",
           section: "Projects",handler: () => {
               window.location.href = "/projects/9_project/";
+            },},{id: "projects-hand-steer-sim-real-time-gesture-teleoperation-for-mobile-robots",
+          title: 'Hand-Steer Sim — Real-Time Gesture Teleoperation for Mobile Robots',
+          description: "Hand-Steer Sim is a webcam-driven teleoperation stack that translates hand gestures into ROS /cmd_vel commands in real time. MediaPipe landmarks feed a 1 k-param MLP for four static actions and a 6 k-param LSTM for steering trajectories, achieving 99 % accuracy with 13 ms end-to-end latency. One launch or Docker run controls a Gazebo (or real) differential-drive robot—no joystick required.",
+          section: "Projects",handler: () => {
+              window.location.href = "/projects/hand_steer_sim/";
             },},{
         id: 'social-email',
         title: 'email',
