@@ -395,11 +395,6 @@ ninja.data = [{
           description: "Digital‑twin of a custom aluminum‑profile base carrying a Franka Emika Panda arm, used to study force/torque‑sensor placement and high‑moment loading.",
           section: "Projects",handler: () => {
               window.location.href = "/projects/4_project/";
-            },},{id: "projects-project-2",
-          title: 'project 2',
-          description: "a project with a background image and giscus comments",
-          section: "Projects",handler: () => {
-              window.location.href = "/projects/5_project/";
             },},{id: "projects-design-and-control-of-a-planar-elbow-manipulator",
           title: 'Design and Control of a Planar Elbow Manipulator',
           description: "Developed a 2-DoF planar elbow manipulator integrating mechanical design, power electronics, and control systems. Completed as part of the ME408 Mechatronic System Design course at Sabancı University.",
@@ -420,6 +415,11 @@ ninja.data = [{
           description: "Comprehensive analysis of a 3RRP planar parallel manipulator using symbolic derivations and numerical simulations.",
           section: "Projects",handler: () => {
               window.location.href = "/projects/9_project/";
+            },},{id: "projects-hand-steer-sim-real-time-gesture-teleoperation-for-mobile-robots",
+          title: 'Hand-Steer Sim: Real-Time Gesture Teleoperation for Mobile Robots',
+          description: "",
+          section: "Projects",handler: () => {
+              window.location.href = "/project/hand_steer_sim/";
             },},{
         id: 'social-email',
         title: 'email',
