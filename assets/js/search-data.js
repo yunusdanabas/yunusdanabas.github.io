@@ -419,7 +419,7 @@ ninja.data = [{
           title: 'Hand-Steer Sim: Real-Time Gesture Teleoperation for Mobile Robots',
           description: "",
           section: "Projects",handler: () => {
-              window.location.href = "/project/hand_steer_sim/";
+              window.location.href = "/projects/hand_steer_sim/";
             },},{
         id: 'social-email',
         title: 'email',
