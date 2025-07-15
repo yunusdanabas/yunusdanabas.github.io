@@ -1,7 +1,9 @@
 ---
+layout: page
 title: "Hand-Steer Sim: Real-Time Gesture Teleoperation for Mobile Robots"
 collection: projects
-permalink: /project/hand_steer_sim/
+importance: 1
+permalink: /projects/hand_steer_sim/
 date: 2025-05-31
 tags: [robotics, computer-vision, HRI]
 category: Course Projects
