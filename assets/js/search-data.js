@@ -18,7 +18,7 @@ ninja.data = [{
           },
         },{id: "nav-projects",
           title: "projects",
-          description: "A curated collection of my work—from extracurricular initiatives to course-based assignments. Click on any card for full details.",
+          description: "A curated collection of my work—from Research initiatives to course-based assignments. Click on any card for full details.",
           section: "Navigation",
           handler: () => {
             window.location.href = "/projects/";
@@ -390,11 +390,6 @@ ninja.data = [{
           description: "PAGE WİLL BE UPDATED",
           section: "Projects",handler: () => {
               window.location.href = "/projects/3_project/";
-            },},{id: "projects-panda-base-simulator",
-          title: 'Panda Base Simulator',
-          description: "Digital‑twin of a custom aluminum‑profile base carrying a Franka Emika Panda arm, used to study force/torque‑sensor placement and high‑moment loading.",
-          section: "Projects",handler: () => {
-              window.location.href = "/projects/4_project/";
             },},{id: "projects-design-and-control-of-a-planar-elbow-manipulator",
           title: 'Design and Control of a Planar Elbow Manipulator',
           description: "Developed a 2-DoF planar elbow manipulator integrating mechanical design, power electronics, and control systems. Completed as part of the ME408 Mechatronic System Design course at Sabancı University.",
@@ -415,6 +410,11 @@ ninja.data = [{
           description: "Comprehensive analysis of a 3RRP planar parallel manipulator using symbolic derivations and numerical simulations.",
           section: "Projects",handler: () => {
               window.location.href = "/projects/9_project/";
+            },},{id: "projects-panda-base-digital-twin-modular-simulation-of-a-high-moment-manipulation-setup",
+          title: 'Panda-Base Digital Twin — Modular Simulation of a High-Moment Manipulation Setup',
+          description: "Modular Gazebo-based digital twin of a Franka Emika Panda arm mounted on a custom aluminium-profile base. Developed during a TUM-MIRMI research internship, it enables controller tuning and moment-load evaluation entirely in simulation.",
+          section: "Projects",handler: () => {
+              window.location.href = "/projects/panda_base_sim/";
             },},{id: "projects-hand-steer-sim-real-time-gesture-teleoperation-for-mobile-robots",
           title: 'Hand-Steer Sim — Real-Time Gesture Teleoperation for Mobile Robots',
           description: "Hand-Steer Sim is a webcam-driven teleoperation stack that translates hand gestures into ROS /cmd_vel commands in real time. MediaPipe landmarks feed a 1 k-param MLP for four static actions and a 6 k-param LSTM for steering trajectories, achieving 99 % accuracy with 13 ms end-to-end latency. One launch or Docker run controls a Gazebo (or real) differential-drive robot—no joystick required.",
