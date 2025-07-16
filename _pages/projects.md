@@ -3,11 +3,11 @@ layout: page
 title: projects
 permalink: /projects/
 description: >
-  A curated collection of my work—from extracurricular initiatives to course-based assignments.
+  A curated collection of my work—from Research initiatives to course-based assignments.
   Click on any card for full details.
 nav: true
 nav_order: 3
-display_categories: ["Extracurricular Projects", "Course Projects"]
+display_categories: ["Research Projects", "Course Projects"]
 ---
 
 <div class="projects">

@@ -4,7 +4,7 @@ title: How can a robot place an item on a cluttered desk?
 description: PAGE WİLL BE UPDATED
 img: assets/img/7.jpg
 importance: 5
-category: Extracurricular Projects
+category: Research Projects
 ---
 
 # PAGE WİLL BE UPDATED

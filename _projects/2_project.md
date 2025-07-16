@@ -4,7 +4,7 @@ title: "Multi-Robot Frontier Exploration using ROS"
 description: "An advanced ROS project demonstrating autonomous frontier exploration, SLAM, and multi-robot map merging with TurtleBot3 in a simulated Gazebo environment."
 img: /assets/img/multiexplore_map.png
 importance: 3
-category: Extracurricular Projects
+category: Research Projects
 ---
 
 This project is the culmination of a 2-week ROS training and an additional 2-week dedicated project phase where I focused on autonomous exploration, SLAM, and map merging using multiple TurtleBot3 robots within a simulated Gazebo environment. The goal was to compare exploration performance when employing single-, double-, and triple-robot configurations.  
