@@ -380,41 +380,41 @@ ninja.data = [{
           description: "Combining classical and deep learning control techniques using JAX, MuJoCo, and more.",
           section: "Projects",handler: () => {
               window.location.href = "/projects/1_project/";
-            },},{id: "projects-multi-robot-frontier-exploration-using-ros",
-          title: 'Multi-Robot Frontier Exploration using ROS',
-          description: "An advanced ROS project demonstrating autonomous frontier exploration, SLAM, and multi-robot map merging with TurtleBot3 in a simulated Gazebo environment.",
-          section: "Projects",handler: () => {
-              window.location.href = "/projects/2_project/";
             },},{id: "projects-how-can-a-robot-place-an-item-on-a-cluttered-desk",
           title: 'How can a robot place an item on a cluttered desk?',
           description: "PAGE WİLL BE UPDATED",
           section: "Projects",handler: () => {
               window.location.href = "/projects/3_project/";
-            },},{id: "projects-design-and-control-of-a-planar-elbow-manipulator",
-          title: 'Design and Control of a Planar Elbow Manipulator',
-          description: "Developed a 2-DoF planar elbow manipulator integrating mechanical design, power electronics, and control systems. Completed as part of the ME408 Mechatronic System Design course at Sabancı University.",
+            },},{id: "projects-planar-elbow-manipulator-design-amp-control",
+          title: 'Planar Elbow Manipulator — Design &amp;amp; Control',
+          description: "A 2-DoF planar elbow manipulator that uniquely met every mechanical requirement in ME408, integrating robust CAD, power-electronics, and dual-loop control for precise trajectory tracking.",
           section: "Projects",handler: () => {
-              window.location.href = "/projects/6_project/";
-            },},{id: "projects-modeling-and-real-time-control-of-a-2-dof-5-link-manipulator",
-          title: 'Modeling and Real-Time Control of a 2-DOF, 5-Link Manipulator',
-          description: "Developed and implemented a model-based, real-time control system for a 2-DOF, 5-link robotic manipulator integrating task-space and joint-space controllers for precise trajectory tracking.",
+              window.location.href = "/projects/elbow_manipulator/";
+            },},{id: "projects-multiexplorer-multi-robot-frontier-exploration-with-turtlebot3",
+          title: 'Multiexplorer — Multi-Robot Frontier Exploration with TurtleBot3',
+          description: "My first ROS project: a Gazebo-based study comparing single-, double-, and triple-robot frontier exploration, SLAM, and map-merging with TurtleBot3.",
           section: "Projects",handler: () => {
-              window.location.href = "/projects/7_project/";
-            },},{id: "projects-fpga-airhockey",
-          title: 'FPGA-AirHockey',
-          description: "A two-player digital air-hockey game implemented on the Nexys A7 FPGA board using Verilog.",
+              window.location.href = "/projects/multiexplorer/";
+            },},{id: "projects-fpga-airhockey-digital-showdown-on-nexys-a7",
+          title: 'FPGA-AirHockey — Digital Showdown on Nexys A7',
+          description: "Two-player air-hockey game on a Nexys A7 FPGA; a Verilog state-machine drives a 5×5 LED rink and real-time score displays.",
           section: "Projects",handler: () => {
-              window.location.href = "/projects/8_project/";
-            },},{id: "projects-kinematic-and-dynamic-analysis-of-the-3rrp-mechanism",
-          title: 'Kinematic and Dynamic Analysis of the 3RRP Mechanism',
-          description: "Comprehensive analysis of a 3RRP planar parallel manipulator using symbolic derivations and numerical simulations.",
+              window.location.href = "/projects/fpga_airhockey/";
+            },},{id: "projects-2-dof-manipulator-model-based-real-time-control",
+          title: '2-DOF Manipulator — Model-Based Real-Time Control',
+          description: "A MATLAB/Simulink + TI C2000 control stack that combines computed-torque, PD + gravity compensation, and joint/task-space transformations to track millimetre-level trajectories on a 5-link planar robot in real time.",
           section: "Projects",handler: () => {
-              window.location.href = "/projects/9_project/";
+              window.location.href = "/projects/2dof_manipulator/";
             },},{id: "projects-panda-base-digital-twin-modular-simulation-of-a-high-moment-manipulation-setup",
           title: 'Panda-Base Digital Twin — Modular Simulation of a High-Moment Manipulation Setup',
           description: "Modular Gazebo-based digital twin of a Franka Emika Panda arm mounted on a custom aluminium-profile base. Developed during a TUM-MIRMI research internship, it enables controller tuning and moment-load evaluation entirely in simulation.",
           section: "Projects",handler: () => {
               window.location.href = "/projects/panda_base_sim/";
+            },},{id: "projects-3rrp-mechanism-kinematic-amp-dynamic-analysis",
+          title: '3RRP Mechanism — Kinematic &amp;amp; Dynamic Analysis',
+          description: "A full symbolic + numerical study of a 3-RRP planar parallel manipulator: closed-form kinematics, workspace / isotropy metrics, and Kane- vs-Lagrange dynamics validated in Simulink.",
+          section: "Projects",handler: () => {
+              window.location.href = "/projects/3rrp_analysis/";
             },},{id: "projects-hand-steer-sim-real-time-gesture-teleoperation-for-mobile-robots",
           title: 'Hand-Steer Sim — Real-Time Gesture Teleoperation for Mobile Robots',
           description: "Hand-Steer Sim is a webcam-driven teleoperation stack that translates hand gestures into ROS /cmd_vel commands in real time. MediaPipe landmarks feed a 1 k-param MLP for four static actions and a 6 k-param LSTM for steering trajectories, achieving 99 % accuracy with 13 ms end-to-end latency. One launch or Docker run controls a Gazebo (or real) differential-drive robot—no joystick required.",
