@@ -415,6 +415,11 @@ ninja.data = [{
           description: "A full symbolic + numerical study of a 3-RRP planar parallel manipulator: closed-form kinematics, workspace / isotropy metrics, and Kane- vs-Lagrange dynamics validated in Simulink.",
           section: "Projects",handler: () => {
               window.location.href = "/projects/3rrp_analysis/";
+            },},{id: "projects-passive-walker-rl-curriculum-driven-biped-locomotion-in-jax-amp-brax",
+          title: 'Passive Walker RL — Curriculum-Driven Biped Locomotion in JAX &amp;amp; Brax',
+          description: "A three-stage pipeline (≤ 300 LoC per stage) that bootstraps a passive-dynamic bipedfrom a finite-state expert to a GPU-scale PPO policy in minutes.  MuJoCo suppliesfidelity; Brax pushes &gt; 1 M env-steps s⁻¹ for massive sweeps, yielding smooth,sample-efficient walking with a single 1 M-param network.",
+          section: "Projects",handler: () => {
+              window.location.href = "/projects/passive_walker_rl/";
             },},{id: "projects-hand-steer-sim-real-time-gesture-teleoperation-for-mobile-robots",
           title: 'Hand-Steer Sim — Real-Time Gesture Teleoperation for Mobile Robots',
           description: "Hand-Steer Sim is a webcam-driven teleoperation stack that translates hand gestures into ROS /cmd_vel commands in real time. MediaPipe landmarks feed a 1 k-param MLP for four static actions and a 6 k-param LSTM for steering trajectories, achieving 99 % accuracy with 13 ms end-to-end latency. One launch or Docker run controls a Gazebo (or real) differential-drive robot—no joystick required.",
