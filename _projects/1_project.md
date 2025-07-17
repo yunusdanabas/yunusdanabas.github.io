@@ -3,7 +3,7 @@ layout: page
 title: "Advanced Cart-Pole Swing-Up Control with JAX and MuJoCo"
 description: "Combining classical and deep learning control techniques using JAX, MuJoCo, and more."
 img: assets/img/MuJoCo_CartPole.png
-importance: 2
+importance: 3
 category: Research Projects
 ---
 
