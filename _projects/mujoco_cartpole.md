@@ -2,7 +2,7 @@
 layout: page
 title: "Advanced Cart-Pole Swing-Up Control with JAX and MuJoCo"
 description: "Combining classical and deep learning control techniques using JAX, MuJoCo, and more."
-img: assets/img/MuJoCo_CartPole.png
+img: /assets/img/MuJoCo_CartPole.png
 importance: 3
 category: Research Projects
 ---
@@ -66,10 +66,3 @@ Extensive comparative analyses were conducted, assessing controller robustness, 
 <div class="caption">
   Simulation snapshot from MuJoCo showing real-time visualization of the cart-pole system.
 </div>
-
-<!-- Additional Suggested Visuals:
-  - Trajectory plots for controller performance comparisons.
-  - Interactive simulation screenshots.
-  - Cost function and training loss graphs.
-  - Neural network architecture diagrams.
--->
