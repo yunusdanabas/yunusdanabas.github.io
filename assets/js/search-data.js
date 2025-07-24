@@ -400,11 +400,26 @@ ninja.data = [{
           description: "A MATLAB/Simulink + TI C2000 control stack that combines computed-torque, PD + gravity compensation, and joint/task-space transformations to track millimetre-level trajectories on a 5-link planar robot in real time.",
           section: "Projects",handler: () => {
               window.location.href = "/projects/2dof_manipulator/";
+            },},{id: "projects-panda-base-digital-twin-modular-simulation-of-a-high-moment-manipulation-setup",
+          title: 'Panda-Base Digital Twin — Modular Simulation of a High-Moment Manipulation Setup',
+          description: "Modular Gazebo-based digital twin of a Franka Emika Panda arm mounted on a custom aluminium-profile base. Developed during a TUM-MIRMI research internship, it enables controller tuning and moment-load evaluation entirely in simulation.",
+          section: "Projects",handler: () => {
+              window.location.href = "/projects/panda_base_sim/";
+            },},{id: "projects-flexure-hinge-torque-sensor-study-increasing-moment-capacity-of-6-dof-ft-sensors",
+          title: 'Flexure-Hinge Torque-Sensor Study — Increasing Moment Capacity of 6-DoF FT Sensors',
+          description: "Lightweight flexure stage increases 6-DoF sensor moment capacity to ≥280 Nm while preserving 1 N force resolution.Analytical, numerical and experimental investigation of crossed-strip flexure pivotsto decouple force and moment limits in 6-DoF force-torque sensors.Conducted at TUM-MIRMI under supervision of Mehmet Can Yıldırım and Prof. Sami Haddadin.",
+          section: "Projects",handler: () => {
+              window.location.href = "/projects/flexure_hinge_torque_sensor/";
             },},{id: "projects-3rrp-mechanism-kinematic-amp-dynamic-analysis",
           title: '3RRP Mechanism — Kinematic &amp;amp; Dynamic Analysis',
           description: "A full symbolic + numerical study of a 3-RRP planar parallel manipulator: closed-form kinematics, workspace / isotropy metrics, and Kane- vs-Lagrange dynamics validated in Simulink.",
           section: "Projects",handler: () => {
               window.location.href = "/projects/3rrp_analysis/";
+            },},{id: "projects-passive-walker-rl-curriculum-driven-biped-locomotion-in-jax-amp-brax",
+          title: 'Passive Walker RL — Curriculum-Driven Biped Locomotion in JAX &amp;amp; Brax',
+          description: "A three-stage pipeline (≤ 300 LoC per stage) that bootstraps a passive-dynamic bipedfrom a finite-state expert to a GPU-scale PPO policy in minutes.  MuJoCo suppliesfidelity; Brax pushes &gt; 1 M env-steps s⁻¹ for massive sweeps, yielding smooth,sample-efficient walking with a single 1 M-param network.",
+          section: "Projects",handler: () => {
+              window.location.href = "/projects/passive_walker_rl/";
             },},{id: "projects-hand-steer-sim-real-time-gesture-teleoperation-for-mobile-robots",
           title: 'Hand-Steer Sim — Real-Time Gesture Teleoperation for Mobile Robots',
           description: "Hand-Steer Sim is a webcam-driven teleoperation stack that translates hand gestures into ROS /cmd_vel commands in real time. MediaPipe landmarks feed a 1 k-param MLP for four static actions and a 6 k-param LSTM for steering trajectories, achieving 99 % accuracy with 13 ms end-to-end latency. One launch or Docker run controls a Gazebo (or real) differential-drive robot—no joystick required.",
@@ -415,16 +430,6 @@ ninja.data = [{
           description: "Combining classical and deep learning control techniques using JAX, MuJoCo, and more.",
           section: "Projects",handler: () => {
               window.location.href = "/projects/mujoco_cartpole/";
-            },},{id: "projects-panda-base-digital-twin-modular-simulation-of-a-high-moment-manipulation-setup",
-          title: 'Panda-Base Digital Twin — Modular Simulation of a High-Moment Manipulation Setup',
-          description: "Modular Gazebo-based digital twin of a Franka Emika Panda arm mounted on a custom aluminium-profile base. Developed during a TUM-MIRMI research internship, it enables controller tuning and moment-load evaluation entirely in simulation.",
-          section: "Projects",handler: () => {
-              window.location.href = "/projects/panda_base_sim/";
-            },},{id: "projects-passive-walker-rl-curriculum-driven-biped-locomotion-in-jax-amp-brax",
-          title: 'Passive Walker RL — Curriculum-Driven Biped Locomotion in JAX &amp;amp; Brax',
-          description: "A three-stage pipeline (≤ 300 LoC per stage) that bootstraps a passive-dynamic bipedfrom a finite-state expert to a GPU-scale PPO policy in minutes.  MuJoCo suppliesfidelity; Brax pushes &gt; 1 M env-steps s⁻¹ for massive sweeps, yielding smooth,sample-efficient walking with a single 1 M-param network.",
-          section: "Projects",handler: () => {
-              window.location.href = "/projects/passive_walker_rl/";
             },},{
         id: 'social-email',
         title: 'email',
