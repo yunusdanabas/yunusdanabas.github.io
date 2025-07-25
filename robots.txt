@@ -1,1 +1,1 @@
-User-agent: * Disallow: Sitemap: https://yunusdanabas.github.io/sitemap.xml
+User-agent: * Disallow: Sitemap: https://yunusemredanabas.com/sitemap.xml
