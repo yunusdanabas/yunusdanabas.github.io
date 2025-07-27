@@ -2,36 +2,30 @@
 layout: about
 title: about
 permalink: /
-subtitle: <a href='https://me.sabanciuniv.edu/'> Mechatronics Engineering / Electronics Engineering Double Major - Sabanci University</a>
-
+subtitle: |
+  Mechatronics / Electronics Engineering Double Major · <a href="https://www.sabanciuniv.edu/">Sabancı University</a>
 profile:
   align: right
   image: prof_pic.jpg
-  image_circular: false # crops the image to make it circular
-  more_info: >
+  image_circular: false
+  more_info: |
     <p><a href="mailto:yunusdanabas@sabanciuniv.edu">yunusdanabas@sabanciuniv.edu</a></p>
-  
-selected_papers: false # includes a list of papers marked as "selected={true}"
-social: true # includes social icons at the bottom of the page
-
-announcements:
-  enabled: false # includes a list of news items
-  scrollable: true # adds a vertical scroll bar if there are more than 3 news items
-  limit: 5 # leave blank to include all the news in the `_news` folder
-
-latest_posts:
-  enabled: false
-  scrollable: true # adds a vertical scroll bar if there are more than 3 new posts items
-  limit: 3 # leave blank to include all the blog posts
+social: true
 ---
 
-I am a fourth-year undergraduate student at Sabancı University in Turkey, pursuing a double major in Mechatronics and Electronics Engineering. I have maintained a high academic standard while building a solid foundation in robotics, control systems, and embedded technologies. Beyond my coursework, I have actively participated in diverse research projects and internships, which have honed my skills in system modeling, sensor integration, and real-time simulation.
+I graduated **top of my Mechatronics Engineering class** at Sabancı University and am now completing a second degree in **Electronics Engineering**. My path combines rigorous theoretical training with hands-on work in robotics, control, and embedded systems.
 
-Currently, I work in [Prof. Volkan Patoğlu’s](https://scholar.google.com.tr/citations?user=McT4RRAAAAAJ&hl=tr) [Human Machine Interaction Laboratory](https://hmi.sabanciuniv.edu/), where I also serve as his teaching assistant. My internships at the Munich Institute of Robotics and Machine Intelligence (TUM MIRMI) and TÜBİTAK BİLGEM, along with my work with the Sabancı University Rover Team, have provided me with practical expertise. My research interests focus on advancing robotic systems through data-driven control strategies, wearable robotics, and sensor fusion to solve real-world challenges in automation and human-robot interaction.
+Research placements at the [**PRISMA Lab**](https://prisma.dieti.unina.it/) (University of Naples Federico II), the [**Munich Institute of Robotics and Machine Intelligence (TUM MIRMI)**](https://www.mirmi.tum.de/), and [**TÜBİTAK BİLGEM**](https://bilgem.tubitak.gov.tr/) have broadened my experience in planetary robotics, advanced sensing mechanisms, and multi-robot systems. Leading the [**SURover**](https://www.linkedin.com/company/sabancirover/) student team further refined my ability to turn simulations into reliable hardware.
+
+I serve as a teaching assistant to [**Prof. Volkan Patoğlu**](https://scholar.google.com.tr/citations?user=McT4RRAAAAAJ) for *ME312 Analysis & Synthesis of Mechanisms* and *ME403 Introduction to Robotics* in Sabancı University’s [**Human–Machine Interaction Laboratory**](https://hmi.sabanciuniv.edu/), guiding students from mechanism theory to functional prototypes. I enjoy bridging theory and practice writing clean code, machining test rigs, and open-sourcing reproducible projects.
+
+Feel free to reach out if you’d like to discuss robotics, control, or potential collaborations.
+
+---
 
 ## Research Interests
 
-- **Robotic Control & Simulation**: Refining data-driven and optimization-based control strategies, with a focus on real-time simulation of complex dynamics using tools like MuJoCo.  
-- **Wearable Robotics & Sensor Integration**: Investigating how sensor technologies and real-time feedback can enhance the performance of assistive and rehabilitation devices.  
-- **Embedded Systems & Hardware-Software Integration**: Utilizing my hands-on experience with microcontrollers, 3D printing, and CAD design to develop robust robotic systems that effectively bridge theory and practice.  
-- **Human-Robot Interaction**: Exploring how advanced control methods and sensor fusion can improve the interaction between humans and robots in dynamic environments.
+- **Robotic control and simulation:** Data-driven and optimization-based controllers validated in real-time physics engines  
+- **Sensing and mechanism design:** Flexure mechanisms, force-torque sensors, lightweight end-effectors  
+- **Embedded and mechatronic systems:** Microcontroller-centric designs, rapid prototyping, hardware-software co-design  
+- **Human–robot interaction:** Gesture tele-operation, wearable robotics, sensor fusion for intuitive collaboration

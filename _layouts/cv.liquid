@@ -20,6 +20,21 @@ layout: default
             <i class="fa-solid fa-file-pdf"></i>
           </a>
         {% endif %}
+        {% if page.transcript_pdf %}
+          <a
+            {% if page.transcript_pdf contains '://' %}
+              href="{{ page.transcript_pdf }}"
+            {% else %}
+              href="{{ page.transcript_pdf | prepend: 'assets/pdf/' | relative_url }}"
+            {% endif %}
+            target="_blank"
+            rel="noopener noreferrer"
+            class="float-right mr-2"
+            title="Academic Transcript"
+          >
+            <i class="fa-solid fa-graduation-cap"></i>
+          </a>
+        {% endif %}
       </h1>
       {% if page.description %}
         <p class="post-description">{{ page.description }}</p>
@@ -67,8 +82,24 @@ layout: default
             target="_blank"
             rel="noopener noreferrer"
             class="float-right"
+            title="Download CV"
           >
             <i class="fa-solid fa-file-pdf"></i>
+          </a>
+        {% endif %}
+        {% if page.transcript_pdf %}
+          <a
+            {% if page.transcript_pdf contains '://' %}
+              href="{{ page.transcript_pdf }}"
+            {% else %}
+              href="{{ page.transcript_pdf | prepend: 'assets/pdf/' | relative_url }}"
+            {% endif %}
+            target="_blank"
+            rel="noopener noreferrer"
+            class="float-right mr-2"
+            title="Academic Transcript"
+          >
+            <i class="fa-solid fa-graduation-cap"></i>
           </a>
         {% endif %}
       </h1>
@@ -88,7 +119,13 @@ layout: default
           {% if data[0] == 'meta' or data[1].size == 0 %} {% continue %} {% endif %}
           <a class="anchor" id="{{ data[0] }}"></a>
           <div class="card mt-3 p-3">
-            <h3 class="card-title font-weight-medium">{{ data[0] | capitalize }}</h3>
+            <h3 class="card-title font-weight-medium">
+              {% if data[0] == 'work' %}
+                Research & Engineering Experience
+              {% else %}
+                {{ data[0] | capitalize }}
+              {% endif %}
+            </h3>
             <div>
               {% case data[0] %}
                 {% when 'basics' %}

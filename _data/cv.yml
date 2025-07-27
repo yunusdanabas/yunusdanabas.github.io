@@ -11,52 +11,72 @@
 - title: Education
   type: time_table
   contents:
-    - title: Double Major in Mechatronic Engineering & Electronics Engineering
+    - title: B.Sc. in Mechatronics Engineering
       institution: Sabancı University, Istanbul, Turkey
       year: 2020 – 2025
       description:
-        - CGPA 3.77 (Dean's High Honor), Ranked 3rd among 33 seniors
-        - Full Scholarship
-        - 2023 and 2024 Extracurricular Student Activities Leadership Award
-        - Courses: Kinematics & Dynamics of Machines, Autonomous Mobile Robotics, Deep Learning for Robot Control
+        - Graduated 1st in class · Dean's High Honor
+        - Full Tuition Scholarship
+        - 2023 & 2024 Extracurricular Student Activities Leadership Award
+        - "Courses: Kinematics & Dynamics of Machines · Introduction to Robotics · Autonomous Mobile Robotics · Deep Learning for Robot Control"
+    - title: B.Sc. in Electronics Engineering (Double Major, expected)
+      institution: Sabancı University, Istanbul, Turkey
+      year: 2023 – 2026
+      description:
+        - Focus on embedded systems and electronics for robotics applications
 
 - title: Experience
   type: time_table
   contents:
-    - title: Teaching Assistant for Prof. Volkan Patoğlu
+    - title: Research Intern
+      institution: PRISMA Lab, University of Naples Federico II
+      year: Jun 2025 – Present
+      description:
+        - Mechanical & mechatronic design of a lunar micro-rover prototype
+        - Created detailed CAD models and early-stage prototypes in Fusion 360
+    - title: Teaching Assistant (Prof. Volkan Patoğlu)
       institution: Sabancı University
       year: Sep 2024 – Present
       description:
-        - Assisted in “ME312” and “ME403,” instructing 40+ students, managing weekly office hours, and supervising projects
+        - Assisted in ME312 and ME403, instructing 20+ students per semester
+        - Held weekly office hours and supervised course projects
     - title: Research Intern
-      institution: Munich Institute of Robotics and Machine Intelligence (TUM - MIRMI)
+      institution: Munich Institute of Robotics and Machine Intelligence (TUM MIRMI)
       year: Jun 2024 – Aug 2024
       description:
-        - Investigated force and moment scaling in robotic force-torque sensors
-        - Developed and tested flexure hinge prototypes, integrating strain gauges and computer vision
+        - Investigated crossed-flexure hinges for 6-DoF F/T sensors and built MATLAB design pipeline
+        - Fabricated instrumented prototypes and validated models via computer-vision tracking
+        - Developed Gazebo digital twins for controller tuning prior to hardware tests
     - title: Robotics Engineering Intern
       institution: TÜBİTAK BİLGEM, Kocaeli, Turkey
       year: Sep 2023 – Oct 2023
       description:
-        - Performed ROS-based robotic simulations
-        - Explored frontier-based exploration and multi-robot map merging
+        - Completed ROS training on SLAM, navigation, multi-robot systems
+        - Benchmarked single vs multi-robot frontier exploration and real-time map merging in Gazebo
     - title: Mechanical Engineering Intern
       institution: Pubinno Inc., Istanbul, Turkey
       year: Jun 2023 – Sep 2023
       description:
-        - Designed 3D-printed prototypes and led automated maintenance prototype development
-        - Coordinated QA/QC activities and documentation
-
+        - Designed 3-D-printed prototypes and led an automated maintenance prototype
+        - Coordinated QA/QC activities with suppliers and documented manufacturing processes
+    - title: Embedded Systems Intern
+      institution: TÜBİTAK BİLGEM, Kocaeli, Turkey
+      year: Jan 2023 – Feb 2023
+      description:
+        - Implemented Python-based wireless communication and signal-processing demos on an Adalm-Pluto SDR
 
 - title: Honors and Awards
   type: time_table
   contents:
-    - year: 2023
-      items:
-        - Extracurricular Student Activities Leadership Award
     - year: 2024
       items:
         - Extracurricular Student Activities Leadership Award
+    - year: 2023
+      items:
+        - Extracurricular Student Activities Leadership Award
+    - year: 2020
+      items:
+        - Full Tuition Scholarship
 
 - title: Academic Interests
   type: nested_list
@@ -73,6 +93,6 @@
 - title: Other Interests
   type: list
   contents:
-    - SURover (Sabancı University Rover Team): Mechanical design, electronics integration, and software development for autonomous rovers
-    - Volunteering: Narrating audiobooks for visually impaired individuals
-    - SIAM Student Chapter: Managed financial affairs, coordinated seminars and competitions
+    - "SURover (Sabancı University Rover Team): mechanical design, electronics integration, and software development for autonomous rovers"
+    - "Volunteering: narrating audiobooks for visually impaired individuals"
+    - "SIAM Student Chapter: managed financial affairs, coordinated seminars and competitions"
