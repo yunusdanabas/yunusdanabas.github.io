@@ -34,10 +34,25 @@
         </div>
         <div class="col-xs-10 cl-sm-10 col-md-10 mt-2 mt-md-0">
           <h6 class="title font-weight-bold ml-1 ml-md-4">
-            <a href="{{ content.url }}">{{ content.position }}</a>
+            <a href="{{ content.url }}">{{ content.name }}</a>
           </h6>
-          <h6 class="ml-1 ml-md-4" style="font-size: 0.95rem">{{ content.name }}</h6>
+          <h6 class="ml-1 ml-md-4" style="font-size: 0.95rem">{{ content.position }}</h6>
           <h6 class="ml-1 ml-md-4" style="font-size: 0.95rem; font-style: italic">{{ content.summary }}</h6>
+          {% if content.projectUrl %}
+            <div class="ml-1 ml-md-4 mb-2">
+              <a href="{{ content.projectUrl }}" class="btn btn-sm btn-outline-primary">
+                <i class="fa-solid fa-external-link"></i> Project Page
+              </a>
+            </div>
+          {% elsif content.projectUrls %}
+            <div class="ml-1 ml-md-4 mb-2">
+              {% for project in content.projectUrls %}
+                <a href="{{ project.url }}" class="btn btn-sm btn-outline-primary me-2">
+                  <i class="fa-solid fa-external-link"></i> {{ project.name }}
+                </a>
+              {% endfor %}
+            </div>
+          {% endif %}
           <ul class="items">
             {% for item in content.highlights %}
               <li>

@@ -1,12 +1,13 @@
 {
+  "transcript_pdf": "YunusEmreDanabas_Transcript.pdf",
   "basics": {
     "name": "Yunus Emre Danabaş",
-    "label": "Undergraduate Student in Mechatronics & Electronics Engineering",
+    "label": "B.Sc. Mechatronics & Electronics Engineering Student",
     "image": "",
     "email": "yunusdanabas@sabanciuniv.edu",
     "phone": "+90 5059546704",
     "url": "https://yunusemredanabas.com",
-    "summary": "I am a fourth-year undergraduate at Sabancı University pursuing a double major in Mechatronics and Electronics Engineering. With a strong academic record (CGPA 3.77, ranked 3rd in my cohort) and extensive hands-on experience in robotics, control systems, and embedded technologies, I am passionate about applying my skills to innovative research and practical solutions in robotics.",
+    "summary": "I am a final-year undergraduate at Sabancı University pursuing a double major in Mechatronics and Electronics Engineering. Graduating top of my Mechatronics class, I combine rigorous academic foundations with extensive hands-on experience in robotics, control systems, and embedded technologies to drive innovative research and practical robotic solutions.",
     "location": {
       "address": "Istanbul, Turkey",
       "postalCode": "",
@@ -32,28 +33,61 @@
       "institution": "Sabancı University",
       "location": "Istanbul, Turkey",
       "url": "https://sabanciuniv.edu/",
-      "area": "Mechatronics and Electronics Engineering (Double Major)",
+      "area": "Mechatronics Engineering",
       "studyType": "Bachelor",
       "startDate": "2020",
       "endDate": "2025",
-      "score": "3.77/4",
+      "score": "3.77/4.00",
+      "highlights": [
+        "Graduated 1st in class",
+        "Dean's High Honor",
+        "Full Tuition Scholarship",
+        "Extracurricular Student Activities Leadership Award (2023 & 2024)"
+      ],
       "courses": [
         "Kinematics and Dynamics of Machines",
-        "Autonomous Mobile Robotics",
         "Introduction to Robotics",
+        "Autonomous Mobile Robotics",
         "Deep Learning for Robot Control"
       ],
-      "description": "Ranked 3rd among 33 seniors. Awarded Full Scholarship and Extracurricular Student Activities Leadership Awards in 2023 and 2024."
+      "transcript": "/assets/pdf/YunusEmreDanabas_Transcript.pdf"
+    },
+    {
+      "institution": "Sabancı University",
+      "location": "Istanbul, Turkey",
+      "url": "https://sabanciuniv.edu/",
+      "area": "Electronics Engineering (Double Major)",
+      "studyType": "Bachelor",
+      "startDate": "2023",
+      "endDate": "2026",
+      "highlights": [
+        "Focus on embedded systems and electronics for robotics applications"
+      ],
+      "courses": []
     }
   ],
   "work": [
     {
+      "name": "PRISMA Lab, University of Naples Federico II",
+      "position": "Research Intern",
+      "url": "https://prisma.dieti.unina.it/",
+      "startDate": "2025-06",
+      "endDate": "present",
+      "highlights": [
+        "Contributing to the mechanical and mechatronic design of a lunar micro-rover prototype.",
+        "Creating detailed CAD models and early-stage prototypes in Fusion 360."
+      ]
+    },
+    {
       "name": "Sabancı University",
-      "position": "Teaching Assistant for Prof. Volkan Patoğlu",
+      "position": "Teaching Assistant",
       "url": "https://sabanciuniv.edu/",
       "startDate": "2024-09",
       "endDate": "present",
-      "summary": "Assisting in 'ME312 Analysis and Synthesis of Mechanisms' and 'ME403 Introduction to Robotics', including instruction of 20+ students per semester, weekly office hours, and project supervision."
+      "highlights": [
+        "Assisted in ME312 Analysis & Synthesis of Mechanisms and ME403 Introduction to Robotics, instructing 20+ students per semester.",
+        "Held weekly office hours and supervised course projects to reinforce theoretical concepts."
+      ]
     },
     {
       "name": "Munich Institute of Robotics and Machine Intelligence (TUM MIRMI)",
@@ -61,7 +95,23 @@
       "url": "https://www.mirmi.tum.de/",
       "startDate": "2024-06",
       "endDate": "2024-08",
-      "summary": "Investigated force and moment scaling in robotic force-torque sensors; designed and fabricated flexure hinge prototypes using MATLAB and SolidWorks; conducted experimental tests and developed digital twins in Gazebo for assessing system stability and dynamic response."
+      "projectUrls": [
+        {
+          "name": "Flexure Hinge Project",
+          "url": "/projects/flexure_hinge_torque_sensor/"
+        },
+        {
+          "name": "Panda Base Project",
+          "url": "/projects/panda_base_sim/"
+        } 
+      ],
+      "highlights": [
+        "Investigated crossed-flexure hinge architectures to decouple force and moment measurements in robotic 6-DoF force-torque sensors, enabling higher moment capacity without sacrificing force resolution.",
+        "Developed a parametric MATLAB simulation pipeline based on Wittrick's crossed-strip flexure theory to rapidly explore hinge geometries, loading scenarios, and deformation characteristics.",
+        "Fabricated physical prototypes using SolidWorks for CAD design and implemented precise instrumentation with strain gauges; created a detailed installation and testing manual.",
+        "Validated deformation models experimentally using a custom computer-vision pipeline (edge detection, RANSAC curve fitting), ensuring consistency between analytical predictions and real-world data.",
+        "Implemented Gazebo-based digital twins to simulate and analyze the dynamic response of the flexure-stage integration onto a robotic system, facilitating pre-hardware controller tuning and stability assessment."
+      ]
     },
     {
       "name": "TÜBİTAK BİLGEM",
@@ -69,7 +119,17 @@
       "url": "https://www.tubitak.gov.tr/",
       "startDate": "2023-09",
       "endDate": "2023-10",
-      "summary": "Enhanced ROS skills through formal training and performed comparative analyses of single and multi-robot simulations using Gazebo and RViz."
+      "projectUrls": [
+        {
+          "name": "TUBITAK MultiExplorer Project",
+          "url": "/projects/multiexplorer/"
+        }
+      ],
+      "highlights": [
+        "Completed formal ROS training focused on SLAM, navigation, and multi-robot systems.",
+        "Designed and benchmarked single- vs multi-robot frontier-exploration strategies in Gazebo (TurtleBot3).",
+        "Implemented real-time map-merging and RViz visualization for collaborative exploration."
+      ]
     },
     {
       "name": "Pubinno Inc.",
@@ -77,27 +137,73 @@
       "url": "https://pubinno.com/",
       "startDate": "2023-06",
       "endDate": "2023-09",
-      "summary": "Designed 3D-printed prototypes using OnShape, led the development of an automated maintenance prototype, and coordinated quality control activities."
-    }
-  ],
-  "volunteer": [
-    {
-      "organization": "Sabancı University SIAM Student Chapter",
-      "location": "Istanbul, Turkey",
-      "position": "Financial Affairs Coordinator",
-      "url": "https://sabanciuniv.edu/",
-      "startDate": "2022-09",
-      "endDate": "2024-06",
-      "summary": "Managed financial matters, budgets, and coordinated seminars, reading groups, and mathematics competitions."
+      "highlights": [
+        "Designed 3D-printed prototypes in Onshape to accelerate iteration cycles.",
+        "Led development of an automated maintenance prototype enabling field technicians to perform first-line servicing.",
+        "Coordinated QA/QC activities with suppliers and documented manufacturing processes."
+      ]
     },
     {
-      "organization": "Civic Involvement Projects",
-      "location": "Istanbul, Turkey",
-      "position": "Volunteer",
-      "url": "https://sabanciuniv.edu/",
-      "startDate": "2021-04",
-      "endDate": "2021-06",
-      "summary": "Narrated audiobooks for visually impaired individuals to enhance accessibility."
+      "name": "TÜBİTAK BİLGEM",
+      "position": "Embedded Systems Intern",
+      "url": "https://www.tubitak.gov.tr/",
+      "startDate": "2023-01",
+      "endDate": "2023-02",
+      "highlights": [
+        "Gained hands-on experience with Adalm-Pluto SDR, implementing Python-based wireless communication and signal-processing demos."
+      ]
+    }
+  ],
+  "skills": [
+  {
+    "name": "CAD & Fabrication",
+    "keywords": ["OnShape", "SolidWorks (CSWA)", "SolidWorks Simulation", "SolidWorks Motion", "Fusion 360", "FDM 3D printing"]
+  },
+  {
+    "name": "Robotics, Simulation & Electronics",
+    "keywords": ["ROS 1/2", "URDF/Xacro", "MoveIt", "Navigation2", "SLAM & exploration", "Gazebo", "MuJoCo", "Brax", "RealSense SDK", "Arduino", "ESP32", "LTSpice"]
+  },
+  {
+    "name": "Programming & Machine Learning",
+    "keywords": ["Python (JAX, Optax, Diffrax, TensorFlow, TensorFlow Lite GPU delegate, Keras, OpenCV, MediaPipe)", "C++", "MATLAB/Simulink", "Autolev", "OpenAI Gym/PPO", "Docker", "Git", "Verilog", "Linux"]
+  }
+],
+  "projects": [
+    {
+      "name": "Passive Walker RL Pipeline",
+      "summary": "Three-stage curriculum (FSM ➜ Behaviour Cloning ➜ PPO) that trains a passive-dynamic biped to walk using MuJoCo fidelity and Brax GPU speed.",
+      "highlights": [
+        "Bootstrapped expert demonstrations in 30 s, then reached stable gait in 10⁵ steps",
+        "Implemented JAX + Equinox + Optax stack; open-sourced code and reports",
+        "Performed large-scale hyper-parameter sweeps on GPU to optimise policy efficiency"
+      ],
+      "startDate": "2024-10",
+      "endDate": "2025-05",
+      "url": "/projects/passive_walker_rl/"
+    },
+    {
+      "name": "Hand-Steer Sim — Gesture Teleoperation",
+      "summary": "Webcam-only hand-gesture interface replacing physical joysticks for ROS mobile robots.",
+      "highlights": [
+        "MediaPipe landmarks drive 1 k-param MLP (static) and 6 k-param LSTM (steering)",
+        "Achieved 99 % macro-F1 and 13 ms end-to-end latency on GPU (25 ms CPU)",
+        "One-command ROS Noetic or Docker launch starts camera, inference, and Gazebo"
+      ],
+      "startDate": "2025-03",
+      "endDate": "2025-05",
+      "url": "/projects/hand_steer_sim/"
+    },
+    {
+      "name": "MultiExplorer — Multi-Robot Frontier Exploration",
+      "summary": "ROS + Gazebo comparison of single- vs multi-robot TurtleBot3 frontier exploration and SLAM.",
+      "highlights": [
+        "Implemented explore_lite, GMapping, and multirobot_map_merge in namespaced stacks",
+        "Merged maps in real time; triple-robot setup cut coverage time by ≈ 50 %",
+        "Provided headless CI launches and Canva presentation for dissemination"
+      ],
+      "startDate": "2023-09",
+      "endDate": "2023-09",
+      "url": "/projects/multiexplorer/"
     }
   ],
   "awards": [
@@ -105,123 +211,97 @@
       "title": "Extracurricular Student Activities Leadership Award",
       "date": "2023",
       "awarder": "Sabancı University",
-      "url": "",
-      "summary": "Awarded for leadership and contribution to extracurricular activities."
+      "url": ""
     },
     {
       "title": "Extracurricular Student Activities Leadership Award",
       "date": "2024",
       "awarder": "Sabancı University",
-      "url": "",
-      "summary": "Awarded for leadership and contribution to extracurricular activities."
+      "url": ""
     },
     {
-      "title": "Full Scholarship",
+      "title": "Full Tuition Scholarship",
       "date": "2020",
       "awarder": "Sabancı University",
-      "url": "",
-      "summary": "Awarded based on academic excellence."
+      "url": ""
     }
   ],
   "certificates": [
     {
-      "name": "SolidWorks (CSWA Certified)",
-      "date": "2020",
-      "issuer": "SolidWorks",
-      "url": "",
-      "icon": ""
-    }
-  ],
-  "publications": [],
-  "skills": [
-    {
-      "name": "CAD & 3D Printing",
-      "level": "Advanced",
-      "icon": "",
-      "keywords": ["OnShape", "SolidWorks (CSWA Certified)", "3D printing"]
+      "name": "Autonomous Driving Technologies Certificate",
+      "date": "2024-12",
+      "issuer": "T.C. Sanayi ve Teknoloji Bakanlığı",
+      "url": "https://drdogrulama.sanayi.gov.tr/tr/verify/04013957780354"
     },
     {
-      "name": "Robotics & Electronics",
-      "level": "Advanced",
-      "icon": "",
-      "keywords": ["ROS", "Gazebo", "MuJoCo", "Arduino", "ESP32", "LTSpice"]
+      "name": "Certified SOLIDWORKS Associate (CSWA)",
+      "date": "2024-08",
+      "issuer": "Dassault Systèmes",
+      "url": "https://cv.virtualtester.com/qr/?b=SLDWRKS&i=C-7DUC5FGE42"
     },
     {
-      "name": "Programming & Software",
-      "level": "Advanced",
-      "icon": "",
-      "keywords": ["Python (JAX, Equinox)", "C++", "MATLAB", "Simulink", "Linux", "LaTeX", "Autolev", "Verilog"]
+      "name": "Yapay Zeka Uzmanlık Programı",
+      "date": "2024-03",
+      "issuer": "T.C. Sanayi ve Teknoloji Bakanlığı",
+      "url": "https://drdogrulama.sanayi.gov.tr/tr/verify/96153422170553"
+    },
+    {
+      "name": "Rapid Prototyping Using 3D Printing Specialization",
+      "date": "2023-09",
+      "issuer": "Coursera",
+      "url": "https://www.coursera.org/account/accomplishments/specialization/certificate/PK4FK5RX576C"
+    },
+    {
+      "name": "Yetkin Gençler - Eng-2023",
+      "date": "2023-02",
+      "issuer": "Yetkin Gençler",
+      "url": "https://verified.sertifier.com/en/verify/28430954981765/"
     }
   ],
   "languages": [
     {
       "language": "English",
-      "fluency": "Advanced",
-      "icon": ""
+      "fluency": "Advanced"
     },
     {
       "language": "Turkish",
-      "fluency": "Native",
-      "icon": ""
+      "fluency": "Native"
+    }
+  ],
+  "volunteer": [
+    {
+      "organization": "Sabancı University SIAM Student Chapter",
+      "position": "Financial Affairs Coordinator",
+      "location": "Istanbul, Turkey",
+      "startDate": "2022-09",
+      "endDate": "2024-06",
+      "summary": "Managed chapter budgets, sponsorship funds, and financial reports in coordination with global SIAM headquarters. Organized seminars, reading groups, and on-campus mathematics competitions to boost student engagement."
+    },
+    {
+      "organization": "Sabancı IEEE Student Chapter",
+      "position": "Board Member",
+      "location": "Istanbul, Turkey",
+      "startDate": "2022-09",
+      "endDate": "2024-09",
+      "summary": "Responsible board member overseeing SURover team operations, maintaining the leadership structure, and ensuring project continuity within the chapter."
+    },
+    {
+      "organization": "Civic Involvement Projects",
+      "position": "Volunteer Narrator",
+      "location": "Istanbul, Turkey",
+      "startDate": "2021-04",
+      "endDate": "2021-06",
+      "summary": "Recorded and edited audiobooks for visually impaired individuals, expanding the accessibility of educational and literary resources."
     }
   ],
   "interests": [
     {
       "name": "Robotics",
-      "icon": "",
       "keywords": ["Control Systems", "Embedded Systems", "Simulation", "Automation"]
     },
     {
       "name": "Machine Learning",
-      "icon": "",
       "keywords": ["Reinforcement Learning", "Optimization", "Data-Driven Control"]
     }
-  ],
-  "references": [
-    {
-      "name": "Prof. Volkan Patoğlu",
-      "icon": "",
-      "reference": "Professor at Sabancı University. Contact details available upon request."
-    },
-    {
-      "name": "Mehmet Can Yıldırım",
-      "icon": "",
-      "reference": "Research Associate at the Chair of Robotics and System Intelligence at the Technical University of Munich and Manager of the Mechatronics Assembly, Integration, and Testing Laboratory of the Munich Institute of Robotics and Machine Intelligence. Contact details available upon request."
-    }
-  ],
-"projects": [
-  {
-    "name": "Data-Driven Control of Exoskeletons",
-    "summary": "Developing a control system for exoskeletons using data-driven optimization and human-in-the-loop learning to adapt dynamically to individual users and varying environments. Utilizes simulations in MuJoCo and Bayesian optimization techniques.",
-    "highlights": [],
-    "startDate": "2024-10",
-    "endDate": "present",
-    "url": ""
-  },
-  {
-    "name": "How can a robot place an item on a cluttered desk?",
-    "summary": "Designed and implemented an intelligent approach for robotic item placement using Gazebo simulations and the Baxter robot. Optimized ROS Noetic compatibility and resolved integration challenges.",
-    "highlights": [],
-    "startDate": "2023-01",
-    "endDate": "2025-01",
-    "url": ""
-  },
-  {
-    "name": "Cart-Pole Swing-Up Control with JAX and MuJoCo",
-    "summary": "Developed controllers for the cart-pole swing-up task using classical methods and a neural network controller. Leveraged JAX, Equinox, and Diffrax for training and conducted real-time simulations with MuJoCo.",
-    "highlights": [],
-    "startDate": "2023-01",
-    "endDate": "2023-12",
-    "url": ""
-  },
-  {
-    "name": "SURover (Sabancı University Rover Team)",
-    "summary": "Led ROS-based simulations for robot arm control with MOVEIT, tested joystick and sensor functions on TurtleBots in Gazebo, and performed ArUco tag detection and fiducial SLAM using a Zed2 stereo camera. Contributed to mechanical design with SolidWorks and implemented motor control using Arduino for robust mobile robotics.",
-    "highlights": [],
-    "startDate": "2022-06",
-    "endDate": "2025-01",
-    "url": ""
-  }
-]
-
+  ]
 }
