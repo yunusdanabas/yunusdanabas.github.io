@@ -410,6 +410,11 @@ ninja.data = [{
           description: "Lightweight flexure stage increases 6-DoF sensor moment capacity to ≥280 Nm while preserving 1 N force resolution.Analytical, numerical and experimental investigation of crossed-strip flexure pivotsto decouple force and moment limits in 6-DoF force-torque sensors.Conducted at TUM-MIRMI under supervision of Mehmet Can Yıldırım and Prof. Sami Haddadin.",
           section: "Projects",handler: () => {
               window.location.href = "/projects/flexure_hinge_torque_sensor/";
+            },},{id: "projects-diffswing-neural-cart-pole-control-with-jax-amp-mujoco",
+          title: 'DiffSwing: Neural Cart-Pole Control with JAX &amp;amp; MuJoCo',
+          description: "A hybrid control system that combines neural network energy shaping with classical LQR stabilization for cart-pole swing-up. Trained end-to-end in differentiable JAX simulation with real-time MuJoCo deployment achieving 98% success rate and 1.9s swing-up time.",
+          section: "Projects",handler: () => {
+              window.location.href = "/projects/mujoco_cartpole/";
             },},{id: "projects-3rrp-mechanism-kinematic-amp-dynamic-analysis",
           title: '3RRP Mechanism — Kinematic &amp;amp; Dynamic Analysis',
           description: "A full symbolic + numerical study of a 3-RRP planar parallel manipulator: closed-form kinematics, workspace / isotropy metrics, and Kane- vs-Lagrange dynamics validated in Simulink.",
@@ -425,11 +430,6 @@ ninja.data = [{
           description: "Hand-Steer Sim is a webcam-driven teleoperation stack that translates hand gestures into ROS /cmd_vel commands in real time. MediaPipe landmarks feed a 1 k-param MLP for four static actions and a 6 k-param LSTM for steering trajectories, achieving 99 % accuracy with 13 ms end-to-end latency. One launch or Docker run controls a Gazebo (or real) differential-drive robot—no joystick required.",
           section: "Projects",handler: () => {
               window.location.href = "/projects/hand_steer_sim/";
-            },},{id: "projects-advanced-cart-pole-swing-up-control-with-jax-and-mujoco",
-          title: 'Advanced Cart-Pole Swing-Up Control with JAX and MuJoCo',
-          description: "Combining classical and deep learning control techniques using JAX, MuJoCo, and more.",
-          section: "Projects",handler: () => {
-              window.location.href = "/projects/mujoco_cartpole/";
             },},{
         id: 'social-email',
         title: 'email',
