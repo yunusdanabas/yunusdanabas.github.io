@@ -51,11 +51,6 @@ Extensive comparative analyses were conducted, assessing controller robustness, 
 <h2>Resources</h2>
 <ul>
   <li><a href="https://github.com/yunusdanabas/MuJoCo_CartPole" target="_blank">GitHub Repository</a></li>
-  <li>
-    <a href="{{ '/assets/pdf/ME58006_Project2.pdf' | relative_url }}" target="_blank">
-      <strong>Download the Full Project Report (PDF)</strong>
-    </a>
-  </li>
 </ul>
 
 <div class="row">
