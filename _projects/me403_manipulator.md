@@ -8,7 +8,7 @@ permalink: /projects/2dof_manipulator/
 date: 2024-05-31
 category: Course Projects
 tags: [robotics, control, real-time]
-img: /assets/img/yunusicon.jpg
+img: /assets/img/403project/403_project.jpeg
 ---
 
 
@@ -24,7 +24,7 @@ Key goals:
 <br>
 
 <div align="center">
-  <img src="/assets/img/yunusicon.jpg"
+  <img src="/assets/img/403project/403_project.jpeg"
        width="88%" alt="CAD and joint assignment">
   <p><em>Figure – CAD view and joint layout of the 5-link manipulator.</em></p>
 </div>

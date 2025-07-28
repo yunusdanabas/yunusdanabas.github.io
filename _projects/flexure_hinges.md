@@ -202,8 +202,8 @@ Prototypes were manufactured to validate theoretical predictions and to facilita
 
 <div class="text-center">
   <img src="/assets/img/flexure_hinge/FinalPrototypeOfTheFlexuralPivotWithSensorsOnIt.png"
-       alt="Final prototype with Omega-160 sensor" class="img-fluid" style="max-height: 420px;">
-  <p><em>Final prototype with Omega-160 sensor</em></p>
+       alt="Final prototype with Strain Gauges" class="img-fluid" style="max-height: 420px;">
+  <p><em>Final prototype with Strain Gauges</em></p>
 </div>
 
 The steel adapter plate securely mates the flexure stage to the commercial **FTE-Omega-160-IP60 SI-1000-120** sensor, providing a robust, modular solution readily integrated into the Panda-Base Digital Twin for comprehensive evaluation.
@@ -444,8 +444,8 @@ For practical evaluation and validation of the flexure hinge stage, we designed 
 
 <div class="text-center">
   <img src="/assets/img/flexure_hinge/FinalPrototypeOfTheFlexuralPivotWithSensorsOnIt.png"
-       alt="Stage mated to Omega-160 sensor" class="img-fluid" style="max-height: 420px;">
-  <p><em>Stage mated to Omega-160 sensor</em></p>
+       alt="Final Flexure Hinge" class="img-fluid" style="max-height: 420px;">
+  <p><em>Final Flexure Hinge</em></p>
 </div>
 
 By diverting large tilting moments away from the sensor body, the flexure hinge effectively maintains the sensor's sub-newton force resolution, even under significant moment loads representative of realistic robotic manipulation tasks.
