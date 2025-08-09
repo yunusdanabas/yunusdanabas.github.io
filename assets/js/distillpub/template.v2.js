@@ -2695,7 +2695,9 @@ d-citation-list .references .title {
           var rest = grammar.rest;
           if (rest) {
             for (var token in rest) {
-              grammar[token] = rest[token];
+              if (Object.prototype.hasOwnProperty.call(rest, token) && token !== '__proto__' && token !== 'constructor' && token !== 'prototype') {
+                grammar[token] = rest[token];
+              }
             }
 
             delete grammar.rest;
@@ -4226,7 +4228,7 @@ ${css}
       }
       const language = prism.languages[this.languageName];
       if (language == undefined) {
-        console.warn(`Distill does not yet support highlighting your code block in "${this.languageName}'.`);
+        console.warn('Distill does not yet support highlighting your code block in "' + this.languageName + "'.");
         return;
       }
 
@@ -4236,8 +4238,11 @@ ${css}
       if (this.hasAttribute("block")) {
         // normalize the tab indents
         content = content.replace(/\n/, "");
-        const tabs = content.match(/\s*/);
-        content = content.replace(new RegExp("\n" + tabs, "g"), "\n");
+        const tabs = content.match(/^\s*/);
+        if (tabs) {
+          const safeTabs = tabs[0].replace(/[.*+?^${}()|[\]\\]/g, "\\$&");
+          content = content.replace(new RegExp("\\n" + safeTabs, "g"), "\n");
+        }
         content = content.trim();
         // wrap code block in pre tag if needed
         if (codeTag.parentNode instanceof ShadowRoot) {
@@ -4679,7 +4684,11 @@ d-references {
     }
 
     ToC += "</ul></nav>";
-    element.innerHTML = ToC;
+    // Safer insertion: use DOM APIs instead of assigning HTML
+    const temp = document.createElement('div');
+    temp.innerHTML = ToC;
+    while (element.firstChild) { element.removeChild(element.firstChild); }
+    while (temp.firstChild) { element.appendChild(temp.firstChild); }
   }
 
   // Copyright 2018 The Distill Template Authors
