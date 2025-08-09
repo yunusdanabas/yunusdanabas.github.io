@@ -15,3 +15,11 @@ const openSearchModal = () => {
   }
   ninjaKeys.open();
 };
+
+// Bind click handler (avoid inline onclick for CSP readiness)
+document.addEventListener("DOMContentLoaded", () => {
+  const searchToggle = document.getElementById("search-toggle");
+  if (searchToggle) {
+    searchToggle.addEventListener("click", openSearchModal);
+  }
+});
