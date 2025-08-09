@@ -20,21 +20,6 @@ layout: default
             <i class="fa-solid fa-file-pdf"></i>
           </a>
         {% endif %}
-        {% if page.transcript_pdf %}
-          <a
-            {% if page.transcript_pdf contains '://' %}
-              href="{{ page.transcript_pdf }}"
-            {% else %}
-              href="{{ page.transcript_pdf | prepend: 'assets/pdf/' | relative_url }}"
-            {% endif %}
-            target="_blank"
-            rel="noopener noreferrer"
-            class="float-right mr-2"
-            title="Academic Transcript"
-          >
-            <i class="fa-solid fa-graduation-cap"></i>
-          </a>
-        {% endif %}
       </h1>
       {% if page.description %}
         <p class="post-description">{{ page.description }}</p>
@@ -85,21 +70,6 @@ layout: default
             title="Download CV"
           >
             <i class="fa-solid fa-file-pdf"></i>
-          </a>
-        {% endif %}
-        {% if page.transcript_pdf %}
-          <a
-            {% if page.transcript_pdf contains '://' %}
-              href="{{ page.transcript_pdf }}"
-            {% else %}
-              href="{{ page.transcript_pdf | prepend: 'assets/pdf/' | relative_url }}"
-            {% endif %}
-            target="_blank"
-            rel="noopener noreferrer"
-            class="float-right mr-2"
-            title="Academic Transcript"
-          >
-            <i class="fa-solid fa-graduation-cap"></i>
           </a>
         {% endif %}
       </h1>
