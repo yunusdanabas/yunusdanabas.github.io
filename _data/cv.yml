@@ -3,6 +3,18 @@
   contents:
     - name: Full Name
       value: Yunus Emre Danabaş
+    - name: Location
+      value: Istanbul, Turkey
+    - name: Email
+      value: yunusdanabas@sabanciuniv.edu
+    - name: Phone
+      value: "+90 505 954 6704"
+    - name: Website
+      value: https://yunusemredanabas.com
+    - name: LinkedIn
+      value: https://www.linkedin.com/in/yunus-emre-danabas/
+    - name: GitHub
+      value: https://github.com/yunusdanabas
     - name: Date of Birth
       value: 17 April 2002
     - name: Languages
@@ -15,84 +27,172 @@
       institution: Sabancı University, Istanbul, Turkey
       year: 2020 – 2025
       description:
-        - Graduated 1st in class · Dean's High Honor
-        - Full Tuition Scholarship
-        - 2023 & 2024 Extracurricular Student Activities Leadership Award
-        - "Courses: Kinematics & Dynamics of Machines · Introduction to Robotics · Autonomous Mobile Robotics · Deep Learning for Robot Control"
-    - title: B.Sc. in Electronics Engineering (Double Major, expected)
+        - Graduated June 2025; CGPA: 3.77/4.00; Graduated 1st in department
+        - Merit-based full tuition scholarship; Dean's High Honor (2020–Present)
+        - Selected coursework: Kinematics and Dynamics of Machines; Introduction to Robotics; Autonomous Mobile Robotics; Deep Learning for Robot Control
+    - title: B.Sc. in Electronics Engineering (Double Major)
       institution: Sabancı University, Istanbul, Turkey
-      year: 2023 – 2026
+      year: 2023 – 2026 (expected)
       description:
-        - Focus on embedded systems and electronics for robotics applications
+        - Expected graduation June 2026; CGPA: 3.77/4.00
+        - Focus on embedded systems, electronics, and control for robotics applications
 
-- title: Experience
+- title: Research & Engineering Experience
   type: time_table
   contents:
+    - title: Part-time Robotics Engineer
+      institution: As Robotics (COMAU Turkey)
+      location: Istanbul, Turkey
+      year: Oct 2025 – Present
+      description:
+        - Designing a touch-based grip sensor to enable zero-gravity manual guidance for COMAU manipulators
+        - Developing a handheld motion-teaching device that records end-effector poses for autonomous replay
+        - Supporting mechanical integration and control logic across both projects (C++/Python, industrial robot APIs); completed PDL2 training
     - title: Research Intern
       institution: PRISMA Lab, University of Naples Federico II
+      location: Napoli, Italy
       year: Jun 2025 – Present
       description:
-        - Mechanical & mechatronic design of a lunar micro-rover prototype
-        - Created detailed CAD models and early-stage prototypes in Fusion 360
-    - title: Teaching Assistant (Prof. Volkan Patoğlu)
-      institution: Sabancı University
-      year: Sep 2024 – Present
-      description:
-        - Assisted in ME312 and ME403, instructing 20+ students per semester
-        - Held weekly office hours and supervised course projects
+        - Designing a per-side actuated, passive-pitch suspension for a compact lunar rover platform
+        - Building CAD and ROS 2/Gazebo models with URDF/Xacro, posture presets, and a hybrid suspension plugin for roll-leveling tests on 5–10 deg ramps
+        - Integrating self-locking linear actuators and synthesizing design guidelines from lunar rover and mobile robotics literature
     - title: Research Intern
-      institution: Munich Institute of Robotics and Machine Intelligence (TUM MIRMI)
+      institution: MIRMI, Technical University of Munich
+      location: Munich, Germany
       year: Jun 2024 – Aug 2024
       description:
-        - Investigated crossed-flexure hinges for 6-DoF F/T sensors and built MATLAB design pipeline
-        - Fabricated instrumented prototypes and validated models via computer-vision tracking
-        - Developed Gazebo digital twins for controller tuning prior to hardware tests
+        - Investigated crossed-flexure hinge architectures to raise moment capacity in 6-DoF force–torque sensing
+        - Built a MATLAB pipeline from Wittrick's crossed-strip theory to explore geometries, loads, and deformation regimes
+        - Fabricated strain-gauged prototypes and validated models with a computer-vision pipeline and Gazebo digital twins
     - title: Robotics Engineering Intern
-      institution: TÜBİTAK BİLGEM, Kocaeli, Turkey
+      institution: TÜBİTAK BİLGEM
+      location: Gebze, Turkey
       year: Sep 2023 – Oct 2023
       description:
-        - Completed ROS training on SLAM, navigation, multi-robot systems
-        - Benchmarked single vs multi-robot frontier exploration and real-time map merging in Gazebo
+        - Completed focused ROS training on navigation, SLAM, and multi-robot systems
+        - Benchmarked single versus multi-robot frontier exploration and real-time map merging in Gazebo (TurtleBot3, ROS 1, RViz)
     - title: Mechanical Engineering Intern
-      institution: Pubinno Inc., Istanbul, Turkey
+      institution: Pubinno Inc.
+      location: Istanbul, Turkey
       year: Jun 2023 – Sep 2023
       description:
-        - Designed 3-D-printed prototypes and led an automated maintenance prototype
-        - Coordinated QA/QC activities with suppliers and documented manufacturing processes
-    - title: Embedded Systems Intern
-      institution: TÜBİTAK BİLGEM, Kocaeli, Turkey
+        - Designed and 3D-printed rapid prototypes in Onshape to accelerate hardware iteration
+        - Built an automated maintenance prototype and supported QA/QC with suppliers and documentation
+    - title: Intern — Embedded Systems and Digital Design
+      institution: TÜBİTAK BİLGEM
+      location: Gebze, Turkey
       year: Jan 2023 – Feb 2023
       description:
-        - Implemented Python-based wireless communication and signal-processing demos on an Adalm-Pluto SDR
+        - Developed Python SDR demos on the ADALM-PLUTO platform for wireless communication and signal processing
 
-- title: Honors and Awards
+- title: Projects
   type: time_table
   contents:
+    - title: Hand-Steer Sim — Gesture Teleoperation for Mobile Robots
+      institution: Sabancı University
+      year: Mar 2025 – May 2025
+      description:
+        - Built a webcam-only teleoperation pipeline with MediaPipe landmarks driving MLP and LSTM models in ROS Noetic/Docker
+        - Achieved 99% macro-F1 with 13 ms GPU latency (25 ms CPU) while streaming 30 FPS gesture control
+        - Released fused `/cmd_vel` launcher, dataset, notebooks, and CPU/GPU Docker images for reproducible deployment
+    - title: Passive Walker RL Pipeline (Graduation Project)
+      institution: Sabancı University
+      year: Oct 2024 – May 2025
+      description:
+        - Trained a passive-dynamic biped via FSM seeding, behavior cloning, and PPO using JAX/Equinox/Optax on Brax/MuJoCo
+        - Authored expert controllers, GPU-parallel PPO infrastructure, and hyperparameter sweeps for robust policies
+        - Published reproducible code, configs, and logs for continued research
+    - title: SURover Technical Team Captain
+      institution: Sabancı University Rover Team
+      year: Jun 2022 – Jan 2025
+      description:
+        - Authored URDF/Xacro and MoveIt pipelines, enabling ROS+Gazebo digital twins for drivetrain and manipulator
+        - Implemented multi-sensor fusion and ArUco-based fiducial SLAM with ZED2, RealSense D435i, and RPLIDAR-A3
+        - Led mechanical fabrication, cabling, and Arduino-based motor control for a field-ready rover platform
+    - title: Cart-Pole Swing-Up Control (JAX & MuJoCo)
+      institution: Sabancı University
+      year: Oct 2024 – Jan 2025
+      description:
+        - Developed classical LQR and neural controllers with differentiable simulation (JAX/Equinox/Diffrax) for robust swing-up under disturbances
+    - title: Robotic Item Placement on Cluttered Desks (Baxter)
+      institution: Sabancı University
+      year: Jan 2023 – Jan 2024
+      description:
+        - Built a Gazebo + ROS Noetic pipeline, resolving MoveIt integration to demonstrate clutter-aware placement policies
+
+- title: Teaching Experience
+  type: time_table
+  contents:
+    - title: Teaching Assistant (Prof. Volkan Patoğlu)
+      institution: Sabancı University
+      location: Istanbul, Turkey
+      year: Sep 2024 – Present
+      description:
+        - Supported ME312 Analysis and Synthesis of Mechanisms and ME403 Introduction to Robotics
+        - Led labs and recitations, held weekly office hours, and supervised course projects for 20+ students per semester
+
+- title: Honors & Awards
+  type: time_table
+  contents:
+    - year: 2025
+      items:
+        - Graduated 1st in Mechatronics Engineering Department — Sabancı University
     - year: 2024
       items:
-        - Extracurricular Student Activities Leadership Award
+        - Extracurricular Student Activities Leadership Award — Sabancı University
+        - Dean's High Honor — Sabancı University
     - year: 2023
       items:
-        - Extracurricular Student Activities Leadership Award
-    - year: 2020
+        - Extracurricular Student Activities Leadership Award — Sabancı University
+        - Dean's High Honor — Sabancı University
+    - year: 2020 – Present
       items:
-        - Full Tuition Scholarship
+        - Merit-Based Full Tuition Scholarship — Sabancı University
 
-- title: Academic Interests
+- title: Technical Skills & Languages
   type: nested_list
   contents:
-    - title: Control & Simulation
+    - title: Robotics Stack
       items:
-        - Reinforcement learning for robotics
-        - Data-driven optimization of exoskeletons
-    - title: Mechatronic Systems
+        - ROS 1/2 (Noetic, Humble); URDF/Xacro; ros2_control; MoveIt/MoveIt2; Navigation2; Gazebo
+    - title: Modeling & Control
       items:
-        - Sensor integration and hardware-software co-design
-        - Wearable robotic devices
+        - State estimation (EKF); LQR; MATLAB/Simulink; Autolev
+    - title: Learning & Simulation
+      items:
+        - Reinforcement learning (BC, PPO); JAX (Equinox, Optax, Diffrax); MuJoCo; Brax
+    - title: Perception
+      items:
+        - OpenCV; MediaPipe; ArUco; RealSense SDK
+    - title: Programming & Dev
+      items:
+        - Python; C++; Docker; Git
+    - title: Embedded & Electronics
+      items:
+        - Arduino; ESP32; LTSpice
+    - title: Languages
+      items:
+        - English (Advanced)
+        - Turkish (Native)
 
-- title: Other Interests
-  type: list
+- title: Activities & Volunteering
+  type: time_table
   contents:
-    - "SURover (Sabancı University Rover Team): mechanical design, electronics integration, and software development for autonomous rovers"
-    - "Volunteering: narrating audiobooks for visually impaired individuals"
-    - "SIAM Student Chapter: managed financial affairs, coordinated seminars and competitions"
+    - title: Board Member
+      institution: Sabancı IEEE Student Chapter
+      location: Istanbul, Turkey
+      year: Sep 2022 – Sep 2024
+      description:
+        - Oversaw SURover team operations, leadership coordination, and project continuity within the chapter
+    - title: Financial Affairs Coordinator
+      institution: Sabancı University SIAM Student Chapter
+      location: Istanbul, Turkey
+      year: Sep 2022 – Jun 2024
+      description:
+        - Managed budgets and sponsorships; organized seminars, reading groups, and on-campus math competitions
+    - title: Volunteer
+      institution: Civic Involvement Projects (CIP)
+      location: Istanbul, Turkey
+      year: Apr 2021 – Jun 2021
+      description:
+        - Narrated and edited audiobooks for visually impaired listeners to improve accessibility

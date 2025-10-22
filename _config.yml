@@ -206,13 +206,17 @@ plugins:
   - jekyll-minifier
   - jekyll-paginate-v2
   - jekyll-regex-replace
-  - jekyll/scholar
-  - jekyll-sitemap
+  - jekyll-scholar
   - jekyll-tabs
   - jekyll-terser
   - jekyll-toc
   - jekyll-twitter-plugin
   - jemoji
+
+# Sass compiler options (Dart Sass)
+sass:
+  quiet_deps: true
+  style: compressed
 
 # Sitemap settings
 defaults:
@@ -220,9 +224,6 @@ defaults:
       path: "assets"
     values:
       sitemap: false
-
-sass:
-  style: compressed
 
 # -----------------------------------------------------------------------------
 # Jekyll Minifier
@@ -625,6 +626,7 @@ jekyll_get_json:
 jsonresume:
   - basics
   - work
+  - teaching
   - education
   - publications
   - projects

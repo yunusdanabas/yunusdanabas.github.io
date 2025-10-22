@@ -13,13 +13,13 @@ profile:
 social: true
 ---
 
-I graduated **first in my Mechatronics Engineering class** at Sabancı University, where I am now completing a second degree in **Electronics Engineering**. Throughout my academic journey, I have paired rigorous theoretical training with extensive practical experience in robotics, control systems, and embedded technologies.
+At Sabancı University, I graduated **1st in Mechatronics (2025)** and am completing a second degree in **Electronics**, where I’m currently **ranked 7th**. My work spans robotics, control, and embedded systems, combining rigorous theory with practical development.
 
-Research experiences at [**PRISMA Lab**](https://prisma.dieti.unina.it/) (University of Naples Federico II), [**Munich Institute of Robotics and Machine Intelligence (TUM MIRMI)**](https://www.mirmi.tum.de/), [**TÜBİTAK BİLGEM**](https://bilgem.tubitak.gov.tr/), and [**Pubinno Inc.**](https://pubinno.com/) have expanded my expertise in planetary robotics, advanced sensing mechanisms, multi-robot coordination, and automated mechatronic systems. Additionally, serving in a leadership role with the [**SURover student robotics team**](https://www.linkedin.com/company/sabancirover/) sharpened my skills in translating simulations into reliable, functional hardware.
+On the research side, I have worked with [**PRISMA Lab**](https://prisma.dieti.unina.it/) (University of Naples Federico II), the [**Munich Institute of Robotics and Machine Intelligence (TUM MIRMI)**](https://www.mirmi.tum.de/), and Sabancı University’s [**Human–Machine Interaction Laboratory**](https://hmi.sabanciuniv.edu/) with **Prof. Volkan Patoğlu** on projects spanning planetary robotics, advanced sensing, and simulation-driven control. On the industry side, my roles at [**TÜBİTAK BİLGEM**](https://bilgem.tubitak.gov.tr/), [**Pubinno Inc.**](https://pubinno.com/), and **AS Robotics (COMAU Turkey)** focused on multi-robot coordination, automated mechatronic systems, and industrial robotics. Leading the [**SURover student robotics team**](https://www.linkedin.com/company/sabancirover/) sharpened my ability to turn simulations into reliable, functional hardware.
 
 Currently, I serve as a teaching assistant to [**Prof. Volkan Patoğlu**](https://scholar.google.com/citations?user=McT4RRAAAAAJ) in Sabancı University’s [**Human–Machine Interaction Laboratory**](https://hmi.sabanciuniv.edu/), assisting students in *ME312 Analysis & Synthesis of Mechanisms* and *ME403 Introduction to Robotics*. In this role, I help bridge theoretical concepts and practical applications, guiding students from foundational mechanism design through to functional prototype realization.
 
-I enjoy connecting theory with practice writing clear, efficient code, fabricating test rigs, and contributing to open-source projects for reproducible research.  
+I like building things that work, trying them in real settings, and improving them step by step.
 
 If you have shared interests in robotics, control systems, or potential collaborations, please feel free to reach out.
 
@@ -41,4 +41,3 @@ If you have shared interests in robotics, control systems, or potential collabor
 
 - **Human–Robot Interaction**  
   Designing intuitive gesture-based interfaces, haptic feedback systems, and multi-modal sensor fusion frameworks to enable safe, natural, and efficient collaboration between humans and robots.
-
