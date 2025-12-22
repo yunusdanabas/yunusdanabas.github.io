@@ -6,18 +6,20 @@ importance: 2
 description: "A full symbolic + numerical study of a 3-RRP planar parallel manipulator: closed-form kinematics, workspace / isotropy metrics, and Kane- vs-Lagrange dynamics validated in Simulink."
 permalink: /projects/3rrp_analysis/
 date: 2025-01-15
-category: Course Projects
+category: Archive
 tags: [robotics, kinematics, dynamics, simulation]
 img: /assets/img/3rrp/rrp_systemImage2.png
 ---
 
-
+<!-- Course Projects  -->
+<!--  
 <p>
   <a href="/assets/pdf/3rrp/YunusEmreDanabas_RRP_ProjectReport.pdf"
      class="btn btn-outline-secondary" role="button" target="_blank">
     <i class="fas fa-file-pdf"></i> Full Report&nbsp;(PDF)
   </a>
 </p>
+-->
 
 ## 1&nbsp;·&nbsp;Overview & Motivation
 
