@@ -430,6 +430,11 @@ ninja.data = [{
           description: "Hand-Steer Sim is a vision-only teleoperation stack that converts webcam/RealSense video into ROS geometry_msgs/Twist commands for differential-drive robots. It supports two modes—(1) discrete hand-sign driving and (2) a steering-wheel metaphor that gates turn commands behind a Holding Wheel pose—using MediaPipe landmarks and compact TFLite models. Includes data recording GUI, training notebooks, Docker (CPU/GPU), and Gazebo integration.",
           section: "Projects",handler: () => {
               window.location.href = "/projects/hand_steer_sim/";
+            },},{id: "projects-prisma-lab-internship-posture-capable-suspension-concept-for-a-lunar-micro-rover",
+          title: 'PRISMA Lab Internship — Posture-Capable Suspension Concept for a Lunar Micro-Rover',
+          description: "Summer 2025 research internship at PRISMA Lab (Univ. of Naples Federico II): I developed and justified a per-side actuated suspension concept for a compact lunar rover (heave + roll, passive pitch averaging) and delivered a simulation-first implementation roadmap (ROS 2 + Gazebo) for posture-aware autonomy.",
+          section: "Projects",handler: () => {
+              window.location.href = "/projects/prisma_lunar_rover_internship/";
             },},{
         id: 'social-email',
         title: 'email',
