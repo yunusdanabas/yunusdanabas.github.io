@@ -3,7 +3,7 @@ layout: page
 title: "FPGA-AirHockey — Digital Showdown on Nexys A7"
 collection: projects
 importance: 5
-description: Two-player air-hockey game on a Nexys A7 FPGA; a Verilog state-machine drives a 5×5 LED rink and real-time score displays.
+description: "Two-player air-hockey game on a Nexys A7 FPGA: Verilog state machine drives a 5×5 LED rink and real-time score displays."
 permalink: /projects/fpga_airhockey/
 date: 2024-01-15
 category: Course Projects
@@ -21,7 +21,7 @@ img: /assets/img/fpga_airhockey/fpga_board.jpeg
   </a>
 </p>
 
-## 1. Overview & Motivation
+## 1&nbsp;·&nbsp;Overview & Motivation
 
 **FPGA-AirHockey** brings the classic arcade game to digital hardware: a 5 × 5 LED “rink,” dual seven-segment scoreboards, and responsive two-button controls—all **written in pure Verilog** and deployed on a **Digilent Nexys A7**.  
 Originally built for **CS303 – Logic & Digital System Design** (Sabancı University, *Fall 2023-24*), the goal was to master:
@@ -32,11 +32,13 @@ Originally built for **CS303 – Logic & Digital System Design** (Sabancı Unive
 
 <br>
 
-## 2. System Architecture
+## 2&nbsp;·&nbsp;System Architecture
 
 <div align="center">
-  {% include figure.liquid path="/assets/img/fpga_airhockey/system_block_diagram.png"
-     title="Top-level architecture: clock, input, game FSM, and display drivers" width="85%" %}
+  {% include figure.liquid loading="eager"
+     path="assets/img/fpga_airhockey/system_block_diagram.png"
+     title="Top-level architecture: clock, input, game FSM, and display drivers"
+     class="img-fluid rounded z-depth-1" %}
 </div>
 
 The design is modular:
@@ -53,7 +55,7 @@ The design is modular:
 
 <br>
 
-## 3. Gameplay Logic
+## 3&nbsp;·&nbsp;Gameplay Logic
 
 1. **Serve** – Player A hits **BTNL**; puck traverses the LED grid toward Player B.  
 2. **Return** – Player B presses **BTNR** when the puck reaches their chosen coordinate (set by slide switches).  
@@ -64,7 +66,7 @@ Timing is governed by a selectable puck speed (0.5 s or 1 s per cell) via `PUCK_
 
 <br>
 
-## 4. Key Features
+## 4&nbsp;·&nbsp;Key Features
 
 * **Interactive Two-Player Mode** — Simple BTNL/BTNR buttons act as paddles  
 * **Dynamic Visuals** — 25 LEDs animate puck motion; seven-segment HUD shows `[X,Y]` and running scores  
@@ -74,7 +76,7 @@ Timing is governed by a selectable puck speed (0.5 s or 1 s per cell) via `PUCK_
 
 <br>
 
-## 5. Build & Deployment
+## 5&nbsp;·&nbsp;Build & Deployment
 
 | Step          | Action                                                         |
 |---------------|----------------------------------------------------------------|
@@ -88,16 +90,18 @@ A ready-made Vivado project (`FPGA-AirHockey.xpr`) is included for 2023.1+.
 
 <br>
 
-## 6. Demo
+## 6&nbsp;·&nbsp;Demo
 
 <div class="row">
   <div class="col-sm mt-3 mt-md-0" style="max-width:500px;">
-    {% include figure.liquid loading="eager" path="/assets/img/fpga_airhockey/fpga_board.jpeg"
-       title="Nexys A7 with FPGA-AirHockey loaded" class="img-fluid rounded z-depth-1"
+    {% include figure.liquid loading="eager"
+       path="assets/img/fpga_airhockey/fpga_board.jpeg"
+       title="Nexys A7 with FPGA-AirHockey loaded"
+       class="img-fluid rounded z-depth-1"
        style="height:500px; object-fit:cover;" %}
   </div>
   <div class="col-sm mt-3 mt-md-0">
-    {% include video.liquid path="/assets/video/fpga_airhockey/Gameplay.mp4"
+    {% include video.liquid path="assets/video/fpga_airhockey/Gameplay.mp4"
        class="img-fluid rounded z-depth-1" controls=true autoplay=true
        style="height:500px;" %}
   </div>
@@ -108,7 +112,4 @@ A ready-made Vivado project (`FPGA-AirHockey.xpr`) is included for 2023.1+.
 
 <br>
 
----
-
-Built as a **solo course project** for *CS303 — Logic & Digital System Design*.  
-Feel free to fork, tweak, and challenge a friend to the fastest digital puck in town!
+> *Completed for **CS303 — Logic & Digital System Design (Fall 2023–24)**.*

@@ -22,77 +22,106 @@ img: /assets/img/multiexplorer/multiexplore_map.png
   </a>
 </p>
 
-## 1. Overview&nbsp;&amp;&nbsp;Motivation
+## 1. Overview and Motivation
 
-**Multiexplorer** is my **first ROS project**, built directly after a 2-week ROS boot-camp and two additional weeks of self-directed development at **TÜBİTAK BİLGEM**.  
-The goal was simple yet instructive: **compare the exploration efficiency of one, two, and three TurtleBot3 robots** in a 2-D indoor environment while learning core ROS concepts:
+**Multiexplorer** is my **first ROS project**, built after a 2-week ROS boot camp and ~2 additional weeks of focused project work at **TÜBİTAK BİLGEM**. The goal was intentionally practical and learning-driven:
 
-* **Frontier-based exploration** (`explore_lite`)  
-* **2-D SLAM** with Gmapping  
-* **Multi-robot map fusion** via `multirobot_map_merge`  
-* **Launch-file structuring**, namespacing, and TF management
+- build an end-to-end **autonomous exploration** pipeline in ROS,
+- scale it from **one** TurtleBot3 to **two** and **three** robots,
+- learn the "glue" that makes multi-robot systems work in ROS: **namespaces, TF, launch design, and topic remapping**.
 
-Because it targets complete beginners, the implementation is intentionally basic and fully simulation-only—ideal for first experiments in multi-robot systems.
+The entire project is **simulation-only** (Gazebo + RViz), so it is easy to reproduce and extend.
 
 ---
 
-## 2. Features&nbsp;&amp;&nbsp;Techniques
+## 2. What the System Does
 
-* **Autonomous frontier exploration** that pushes each robot to the nearest unexplored frontiers.
-* **Independent SLAM per robot** generating `/tb3_X/map` occupancy grids.
-* **Real-time map stitching** into a global `/tb3/map` frame.
-* **Gazebo + RViz visualisation** with one-command launch files.
-* **Scalable launch design**—swap `house.world` for any custom world; raise robot count by cloning a namespace block.
-* **Optional fiducial SLAM** demo with ArUco markers for marker-based localisation.
+At a high level, each robot repeatedly:
 
----
+1) builds a local map,  
+2) finds "frontiers" (boundaries between known and unknown space),  
+3) sends navigation goals toward those frontiers,  
+4) and contributes its local map to a global merged map.
 
-## 3. Experiment Matrix & Benchmarks
+### Core building blocks
 
-| Scenario | Robots | Avg. time to 95 % coverage* | Global map size |
-|----------|:------:|:---------------------------:|:---------------:|
-| Single   |   1    |  ~550 s                    | 384 × 384 cells |
-| Double   |   2    |  ~330 s (▲ 40 %)           | 512 × 512 cells |
-| Triple   |   3    |  ~260 s (▲ 53 %)           | 640 × 640 cells |
-
-<small>*Measured in `turtlebot3_house.world`, 5 runs per scenario.</small>
-
-Even a naïve division of labour yields significant time savings, highlighting frontier exploration’s embarrassingly parallel nature.
+- **Frontier exploration:** `explore_lite` (frontier detection + goal selection)
+- **Navigation:** `move_base` with **DWA** local planner (path planning + obstacle avoidance)
+- **2D SLAM:** `gmapping` (per robot)
+- **Map merging:** `multirobot_map_merge` (fuses `/tb3_i/map` into a merged `/tb3/map`)
 
 ---
 
-## 4. Architecture&nbsp;&amp;&nbsp;Launch Flow
+## 3. Multi-Robot ROS Design
 
-```
+Scaling from one to multiple robots in ROS required consistent separation and a clean "shared world" interface.
 
-multiexplorer\_yunusdanabas/
-├─ launch/
-│  ├─ single\_robot\_exp.launch     # SLAM + explore\_lite + nav
-│  ├─ double\_robotexp.launch      # adds second namespace & map\_merge
-│  ├─ multi\_robotexp.launch       # scales to three robots
-│  └─ fiducial\_slam\_turtlebot3.launch
-├─ worlds/        # Gazebo house & test worlds
-├─ rviz/          # Display configs
-├─ models/        # Extra STL/DAE assets
-└─ ...
+### Namespaces + TF prefixes
 
-````
+Each robot runs in its own namespace (e.g., `tb3_0`, `tb3_1`, `tb3_2`) so that SLAM, navigation, and TF do not conflict.
 
-1. **`multi_robotexp.launch`**  
-   * Spawns 3 × TurtleBot3 in `turtlebot3_house.world`.  
-   * Starts Gmapping + `explore_lite` in each `/tb3_i` namespace.  
-   * Runs `multirobot_map_merge` → `/tb3/map`.  
-   * Optionally brings up RViz with a merged-map view.
+Typical patterns used throughout the package:
 
-2. **Fiducial mode**  
-   Replace Gmapping with `fiducial_slam` + ArUco markers; useful for low-texture environments.
+- **Per-robot topics:**  
+  - `/tb3_0/scan`, `/tb3_0/odom`, `/tb3_0/map` (and similarly for `tb3_1`, `tb3_2`)
+- **Per-robot frames:**  
+  - `tb3_0/base_footprint`, `tb3_0/odom` (etc.)
+- **Merged map topic:**  
+  - `/tb3/map` (used as the shared "global" map for exploration/navigation)
+
+### Map merging strategy
+
+`multirobot_map_merge` is configured to subscribe to each robot's map topic and publish a merged occupancy grid. For the multi-robot experiment launch, the merge node is set up with:
+
+- `known_init_poses: true` (uses the Gazebo spawn poses as initial alignment priors)
+- a merged map published on `tb3/map`
+- static transforms connecting the world `map` frame to each robot's map frame
+
+This structure makes the "multi-robot" part largely a launch/config problem: once topics and frames are isolated, the same SLAM+exploration pipeline can be replicated per robot.
 
 ---
 
-## 5. Setup&nbsp;&amp;&nbsp;Usage
+## 4. Launch Scenarios Included
+
+The package provides one-command launches to reproduce the main scenarios:
+
+- **Single robot exploration:** SLAM + `explore_lite` + navigation
+- **Two robots:** same pipeline for two namespaces + map merge
+- **Three robots:** same pipeline for three namespaces + map merge
+- **Map-merge only:** run `multirobot_map_merge` over any set of `/map` topics
+- **Experimental fiducial SLAM mode:** ArUco detection + `fiducial_slam` in an ArUco-enabled world (for exploration/localization experiments)
+
+> Tip: pass `gui:=false` (when supported) for headless Gazebo runs.
+
+---
+
+## 5. Key Parameters I Tuned (Process Focus)
+
+A large part of this project was learning how to make a full pipeline behave *reasonably* in simulation by iterating on parameters.
+
+Examples of parameters used in the multi-robot launch:
+
+### `explore_lite`
+- `planner_frequency`, `progress_timeout` (how often to replan / when to give up on a frontier)
+- `min_frontier_size` (filters tiny frontiers)
+- `potential_scale`, `gain_scale`, `orientation_scale` (frontier scoring)
+
+### `move_base` (DWA)
+- per-robot costmap and DWA configs (kept separate to avoid cross-talk)
+- local planner behavior tuned through YAML parameter sets
+
+### `gmapping`
+- namespaced frames (`base_frame`, `odom_frame`, `map_frame`)
+- SLAM sensitivity and update thresholds (especially relevant once robots start moving faster)
+
+---
+
+## 6. Setup and Usage
+
+Tested in simulation with common ROS1 TurtleBot3 stacks (Ubuntu 20.04 / 22.04, ROS Melodic / Noetic).
 
 ```bash
-# ❶ Clone & build
+# ❶ Clone & build (catkin)
 cd ~/catkin_ws/src
 git clone https://github.com/yunusdanabas/multiexplorer_yunusdanabas.git
 cd ~/catkin_ws
@@ -104,21 +133,19 @@ source devel/setup.bash
 roslaunch multiexplorer_yunusdanabas single_robot_exp.launch   # 1 robot
 roslaunch multiexplorer_yunusdanabas double_robotexp.launch    # 2 robots
 roslaunch multiexplorer_yunusdanabas multi_robotexp.launch     # 3 robots
-````
-
-Add `gui:=false` to any launch file for headless runs on CI or servers.
+```
 
 ---
 
-## 6. Lessons Learned
+## 7. Lessons Learned
 
-* **Namespacing is everything**—isolating TF, map, costmaps, and topics prevented cross-talk.
-* **Map alignment cost grows** with robot count; naïve brute-force merge struggles beyond three robots.
-* **SLAM parameter tuning** (laser down-sampling, linear/angular update thresholds) was crucial for quality maps at higher speeds.
+* **Namespacing and TF discipline** matter more than anything else for multi-robot ROS1 setups.
+* **Map merging is a real system component**, not just a visualization step: topic choices, frame conventions, and update rates affect exploration stability.
+* **Parameter iteration is unavoidable**: exploration behavior is highly sensitive to frontier thresholds, replanning logic, and navigation costmaps.
 
 ---
 
-## 7. Visual Gallery
+## 8. Visual Gallery
 
 <div class="row">
   <div class="col mt-3 mt-md-0">
@@ -144,10 +171,7 @@ Add `gui:=false` to any launch file for headless runs on CI or servers.
 
 ---
 
-
-## 8. Resources
+## 9. Resources
 
 * <a href="https://github.com/yunusdanabas/multiexplorer_yunusdanabas" target="_blank"><strong>GitHub Repository</strong></a>
 * <a href="https://www.canva.com/design/DAGe6rFLM7U/w38mwYjYpvIZk73nA4x4lg/view" target="_blank"><strong>Canva Presentation Slides</strong></a>
-
----
