@@ -2,7 +2,7 @@
 layout: page
 title: "Passive Walker RL — Curriculum-Driven Biped Locomotion in JAX & Brax"
 collection: projects
-importance: 1
+importance: 2
 description: |
   A three-stage pipeline (≤ 300 LoC per stage) that bootstraps a passive-dynamic biped
   from a finite-state expert to a GPU-scale PPO policy in minutes.  MuJoCo supplies

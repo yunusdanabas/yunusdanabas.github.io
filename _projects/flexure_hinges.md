@@ -17,12 +17,15 @@ author: Yunus Emre Danabaş
 mathjax: true
 ---
 
-<p>
+<div class="mb-3">
+  <a class="btn btn-outline-primary" href="https://www.mirmi.tum.de/" target="_blank" rel="noopener noreferrer">
+    <i class="fas fa-university"></i> TUM MIRMI
+  </a>
   <a class="btn btn-outline-secondary" target="_blank"
      href="/assets/pdf/flexure_hinge/YunusEmreDanabas_report.pdf">
     <i class="fas fa-file-pdf"></i> Full&nbsp;Report
   </a>
-</p>
+</div>
 
 <div class="row justify-content-center my-4">
   <div class="col-md-10 text-center">
