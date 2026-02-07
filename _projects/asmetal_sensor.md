@@ -102,15 +102,18 @@ The **AT42QT1011** drives a charge-transfer capacitive measurement between **SNS
 
 ### Videos
 
-<div class="row">
-  <div class="col-sm-6 mt-3 mt-md-0">
-    <video controls style="width: 100%; max-width: 320px; max-height: 500px; border-radius: 8px;">
+<style>
+  .asmetal-videos-row video { height: 480px; width: auto; max-width: 100%; object-fit: contain; }
+</style>
+<div class="row mt-3 asmetal-videos-row">
+  <div class="col-sm-6 text-center">
+    <video controls style="border-radius: 8px;">
       <source src="/assets/video/asmetal_sensor/lpkf_prod_h264.mp4" type="video/mp4">
     </video>
     <p class="text-muted small mt-1">LPKF S63 PCB fabrication.</p>
   </div>
-  <div class="col-sm-6 mt-3 mt-md-0">
-    <video controls style="width: 100%; max-width: 320px; max-height: 500px; border-radius: 8px;">
+  <div class="col-sm-6 text-center">
+    <video controls style="border-radius: 8px;">
       <source src="/assets/video/asmetal_sensor/testing_h264.mp4" type="video/mp4">
     </video>
     <p class="text-muted small mt-1">Touch sensor testing.</p>
