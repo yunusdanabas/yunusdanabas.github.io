@@ -17,6 +17,7 @@ Iterate over the requested categories in order
 {% endcomment %}
 {% for category in page.display_categories %}
 <a id="{{ category | slugify }}" href=".#{{ category | slugify }}">
+
 <h2 class="category mt-5 mb-4">{{ category }}</h2>
 </a>
 

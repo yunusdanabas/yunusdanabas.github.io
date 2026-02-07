@@ -125,8 +125,8 @@ All features are extracted from MuJoCo in physical units and z-score normalised 
 
 ### 3.3 PPO Fine-Tuning
 
-_Reward function_ \(r*t = x*{t+1} - x_t\) (forward progress).  
-_Termination_ — episode ends if
+_Reward function_ \(r*t = x*{t+1} - x*t\) (forward progress).  
+\_Termination* — episode ends if
 
 - torso z < 0.5 m _(height drop)_, or
 - \|pitch\| > 0.8 rad _(excessive tilt)_.

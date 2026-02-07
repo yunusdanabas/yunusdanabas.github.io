@@ -1,6 +1,6 @@
 ---
 layout: page
-title: "Crossed-Flexure Pivot Study — Process-Driven Modeling & Prototyping"
+title: "TUM MIRMI — Crossed-Flexure Pivot Study — Process-Driven Modeling & Prototyping"
 collection: projects
 importance: 2
 description: >

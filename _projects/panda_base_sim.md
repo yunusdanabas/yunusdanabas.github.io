@@ -1,11 +1,11 @@
 ---
 layout: page
-title: "Panda-Base Digital Twin — ROS Noetic / Gazebo Package"
+title: "TUM MIRMI — Panda-Base Digital Twin — ROS Noetic / Gazebo Package"
 collection: projects
 importance: 3
 description: >
   ROS Noetic package that provides a Gazebo 11 + RViz digital twin of a Franka Emika Panda mounted on a custom aluminium-profile base.
-  Built as a reusable simulation workspace for URDF/Xacro iteration, controller bring-up, and safe pre-hardware validation.
+  Built as a reusable simulation workspace for URDF/Xacro iteration, controller bring-up, and safe pre-hardware validation. Developed at TUM MIRMI.
 permalink: /projects/panda_base_sim/
 date: 2024-08-31
 category: Research Projects
@@ -13,15 +13,17 @@ tags: [robotics, ROS, Gazebo, RViz, franka_ros, ros_control, URDF, xacro]
 img: /assets/img/panda_base_sim/pandaBaseSim_simulation.png
 ---
 
-<p>
+<div class="mb-3">
+  <a class="btn btn-outline-primary" href="https://www.mirmi.tum.de/" target="_blank" rel="noopener noreferrer">
+    <i class="fas fa-university"></i> TUM MIRMI
+  </a>
   <a href="https://github.com/yunusdanabas/panda_base_sim" class="btn btn-outline-primary" role="button" target="_blank">
     <i class="fab fa-github"></i> GitHub Repo
   </a>
-  &nbsp;
   <a href="/assets/pdf/panda_base_sim/YunusEmreDanabas_report.pdf" class="btn btn-outline-secondary" role="button" target="_blank">
     <i class="fas fa-file-pdf"></i> Forschungspraxis Report (PDF)
   </a>
-</p>
+</div>
 
 ## 1. Overview
 
