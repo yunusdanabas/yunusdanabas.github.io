@@ -38,16 +38,8 @@
       "startDate": "2020",
       "endDate": "2025",
       "score": "3.77/4.00",
-      "highlights": [
-        "Graduated June 2025",
-        "Combined specialization in robotics, control, and embedded systems across both majors"
-      ],
-      "courses": [
-        "Kinematics and Dynamics of Machines",
-        "Introduction to Robotics",
-        "Autonomous Mobile Robotics",
-        "Deep Learning for Robot Control"
-      ],
+      "highlights": ["Graduated June 2025", "Combined specialization in robotics, control, and embedded systems across both majors"],
+      "courses": ["Kinematics and Dynamics of Machines", "Introduction to Robotics", "Autonomous Mobile Robotics", "Deep Learning for Robot Control"],
       "transcript": "/assets/pdf/YunusEmreDanabas_Transcript.pdf"
     },
     {
@@ -58,10 +50,7 @@
       "studyType": "Bachelor",
       "startDate": "2023",
       "endDate": "2026",
-      "highlights": [
-        "Expected graduation June 2026",
-        "Focus on embedded systems and electronics for robotics applications"
-      ],
+      "highlights": ["Expected graduation June 2026", "Focus on embedded systems and electronics for robotics applications"],
       "courses": [],
       "score": "3.77/4.00"
     }
@@ -172,71 +161,35 @@
       "location": "Istanbul, Turkey",
       "startDate": "2024-09",
       "endDate": "present",
-      "courses": [
-        "ME312 Analysis and Synthesis of Mechanisms",
-        "ME403 Introduction to Robotics"
-      ],
-      "highlights": [
-        "Led labs/recitations, held weekly office hours, and supervised course projects for 20+ students per semester."
-      ],
+      "courses": ["ME312 Analysis and Synthesis of Mechanisms", "ME403 Introduction to Robotics"],
+      "highlights": ["Led labs/recitations, held weekly office hours, and supervised course projects for 20+ students per semester."],
       "summary": "Teaching assistant for ME312 and ME403; labs, recitations, and project supervision."
     }
   ],
   "skills": [
     {
       "name": "Robotics Stack",
-      "keywords": [
-        "ROS 1/2 (Noetic, Humble)",
-        "URDF/Xacro",
-        "ros2_control",
-        "MoveIt/MoveIt2",
-        "Navigation2",
-        "Gazebo"
-      ]
+      "keywords": ["ROS 1/2 (Noetic, Humble)", "URDF/Xacro", "ros2_control", "MoveIt/MoveIt2", "Navigation2", "Gazebo"]
     },
     {
       "name": "Modeling & Control",
-      "keywords": [
-        "State estimation (EKF)",
-        "LQR",
-        "MATLAB/Simulink",
-        "Autolev"
-      ]
+      "keywords": ["State estimation (EKF)", "LQR", "MATLAB/Simulink", "Autolev"]
     },
     {
       "name": "Learning & Simulation",
-      "keywords": [
-        "RL (BC, PPO; OpenAI Gym)",
-        "JAX (Equinox, Optax, Diffrax)",
-        "MuJoCo",
-        "Brax"
-      ]
+      "keywords": ["RL (BC, PPO; OpenAI Gym)", "JAX (Equinox, Optax, Diffrax)", "MuJoCo", "Brax"]
     },
     {
       "name": "Perception",
-      "keywords": [
-        "OpenCV",
-        "MediaPipe",
-        "ArUco",
-        "RealSense SDK"
-      ]
+      "keywords": ["OpenCV", "MediaPipe", "ArUco", "RealSense SDK"]
     },
     {
       "name": "Programming & Dev",
-      "keywords": [
-        "Python",
-        "C++",
-        "Docker",
-        "Git"
-      ]
+      "keywords": ["Python", "C++", "Docker", "Git"]
     },
     {
       "name": "Embedded & Electronics",
-      "keywords": [
-        "Arduino",
-        "ESP32",
-        "LTSpice"
-      ]
+      "keywords": ["Arduino", "ESP32", "LTSpice"]
     }
   ],
   "projects": [
@@ -291,9 +244,7 @@
     {
       "name": "Cart-Pole Swing-Up Control (JAX & MuJoCo)",
       "summary": "Classical LQR and neural controllers with differentiable simulation for robust swing-up under disturbances.",
-      "highlights": [
-        "Implemented in JAX/Equinox/Diffrax; validated robustness across disturbance profiles."
-      ],
+      "highlights": ["Implemented in JAX/Equinox/Diffrax; validated robustness across disturbance profiles."],
       "startDate": "2024-10",
       "endDate": "2025-01",
       "url": "/projects/mujoco_cartpole/"
@@ -301,9 +252,7 @@
     {
       "name": "Robotic Item Placement on Cluttered Desks (Baxter)",
       "summary": "Gazebo + ROS Noetic pipeline demonstrating clutter-aware placement policies on Baxter with MoveIt integration.",
-      "highlights": [
-        "Resolved MoveIt integration and validated end-to-end pipeline in simulation."
-      ],
+      "highlights": ["Resolved MoveIt integration and validated end-to-end pipeline in simulation."],
       "startDate": "2023-01",
       "endDate": "2024-01",
       "url": "/projects/baxter_item_placement/"
@@ -418,20 +367,11 @@
   "interests": [
     {
       "name": "Robotics",
-      "keywords": [
-        "Control Systems",
-        "Embedded Systems",
-        "Simulation",
-        "Automation"
-      ]
+      "keywords": ["Control Systems", "Embedded Systems", "Simulation", "Automation"]
     },
     {
       "name": "Machine Learning",
-      "keywords": [
-        "Reinforcement Learning",
-        "Optimization",
-        "Data-Driven Control"
-      ]
+      "keywords": ["Reinforcement Learning", "Optimization", "Data-Driven Control"]
     }
   ]
 }

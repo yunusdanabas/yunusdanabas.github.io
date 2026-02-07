@@ -16,9 +16,9 @@ img: /assets/img/403project/403_project.jpeg
 This project—completed for **ME403 — Introduction to Robotics (Spring 2024, Sabancı University)**—developed a **model-based real-time controller** for a **planar 2-DOF, 5-link manipulator**.  
 Key goals:
 
-* Achieve **sub-millimetre end-effector accuracy** on dynamic paths  
-* Bridge **simulation (SIL)** and **embedded deployment (HIL)** seamlessly  
-* Provide a **re-usable MATLAB/Simulink template** for undergraduate robotics labs
+- Achieve **sub-millimetre end-effector accuracy** on dynamic paths
+- Bridge **simulation (SIL)** and **embedded deployment (HIL)** seamlessly
+- Provide a **re-usable MATLAB/Simulink template** for undergraduate robotics labs
 
 <br>
 
@@ -36,19 +36,19 @@ Key goals:
 The stack follows a **computed-torque framework** augmented with a **PD + gravity compensator**.  
 Software is split into **three Simulink model hierarchies** that map 1-to-1 onto TI C2000 peripherals.
 
-| Layer               | Role                               | Runs On            |
-|---------------------|------------------------------------|--------------------|
-| Task-Space Planner  | Generates x-y trajectories         | Host PC (SIL/HIL)  |
-| Controller Core     | Inverse kinematics + computed-torque PD | TI C2000 (HIL) |
-| Motor Interface     | PWM output + encoder decoding      | TI C2000 (HIL)     |
+| Layer              | Role                                    | Runs On           |
+| ------------------ | --------------------------------------- | ----------------- |
+| Task-Space Planner | Generates x-y trajectories              | Host PC (SIL/HIL) |
+| Controller Core    | Inverse kinematics + computed-torque PD | TI C2000 (HIL)    |
+| Motor Interface    | PWM output + encoder decoding           | TI C2000 (HIL)    |
 
 ### Control Loop (1 kHz)
 
-1. **Trajectory Sample** – desired end-effector pose  
-2. **Inverse Kinematics** – joint targets (θ<sub>des</sub>, ẋ<sub>des</sub>)  
-3. **Computed-Torque Law** – τ = *M*(q)\[\*\]α + *V* + *G*  
-4. **PD + G Compensation** – fine-tunes stiffness & damping  
-5. **PWM Generation** – duty cycles to H-bridges  
+1. **Trajectory Sample** – desired end-effector pose
+2. **Inverse Kinematics** – joint targets (θ<sub>des</sub>, ẋ<sub>des</sub>)
+3. **Computed-Torque Law** – τ = _M_(q)\[\*\]α + _V_ + _G_
+4. **PD + G Compensation** – fine-tunes stiffness & damping
+5. **PWM Generation** – duty cycles to H-bridges
 6. **Encoder Feedback** – closes joint-space loop
 
 ```matlab
@@ -61,15 +61,14 @@ tau = M(q)*(qdd_des + Kd*(qd_des - qd) + Kp*(q_des - q)) ...
 
 ## 3&nbsp;·&nbsp;Simulation & Real-Time Testing
 
-| Stage                     | Environment                                        | Purpose                                                                 |
-| ------------------------- | -------------------------------------------------- | ----------------------------------------------------------------------- |
-| **SIL**                   | Simscape Multibody + MATLAB ODE45                  | Verify kinematics, dynamics, and controller logic without I/O latency   |
-| **Processor-in-the-Loop** | TI C2000 F28379D + external mode                   | Measure computation time (< 180 µs / step)                              |
-| **HIL**                   | Full manipulator with DC motors & optical encoders | Validate closed-loop tracking and load tolerance                        |
+| Stage                     | Environment                                        | Purpose                                                               |
+| ------------------------- | -------------------------------------------------- | --------------------------------------------------------------------- |
+| **SIL**                   | Simscape Multibody + MATLAB ODE45                  | Verify kinematics, dynamics, and controller logic without I/O latency |
+| **Processor-in-the-Loop** | TI C2000 F28379D + external mode                   | Measure computation time (< 180 µs / step)                            |
+| **HIL**                   | Full manipulator with DC motors & optical encoders | Validate closed-loop tracking and load tolerance                      |
 
-> *Total transition time from SIL to validated HIL: **< 3 hours** thanks to code-gen-friendly model structure.*
+> _Total transition time from SIL to validated HIL: **< 3 hours** thanks to code-gen-friendly model structure._
 
 <br>
 
-> *Completed for **ME403 — Introduction to Robotics (Spring 2024, Sabancı University)**.*
-
+> _Completed for **ME403 — Introduction to Robotics (Spring 2024, Sabancı University)**._

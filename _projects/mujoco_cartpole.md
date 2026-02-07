@@ -32,11 +32,13 @@ img: /assets/img/MuJoCo_CartPole.png
 ## Overview
 
 **DiffSwing** is a hybrid control system that solves the classic cart-pole swing-up problem by combining:
+
 - **Neural energy shaping** for robust swing-up from arbitrary initial conditions
-- **Classical LQR control** for precise stabilization around the upright position  
+- **Classical LQR control** for precise stabilization around the upright position
 - **End-to-end differentiable training** in JAX for sample-efficient policy learning
 
 ### Key Achievements
+
 - **98% success rate** across wide initial pose/velocity distributions
 - **1.9s average swing-up time** from pendant position
 - **Real-time deployment** at 1 kHz in MuJoCo 3.x
@@ -52,26 +54,28 @@ img: /assets/img/MuJoCo_CartPole.png
 ## Technical Approach
 
 ### System Dynamics
+
 The cart-pole system is parameterized as:
 
-| Parameter | Description | Value |
-|-----------|-------------|-------|
-| M | Cart mass | 1.0 kg |
-| m | Pole mass | 0.1 kg |
-| l | Pole half-length | 0.5 m |
-| g | Gravitational acceleration | 9.81 m/s² |
+| Parameter | Description                | Value     |
+| --------- | -------------------------- | --------- |
+| M         | Cart mass                  | 1.0 kg    |
+| m         | Pole mass                  | 0.1 kg    |
+| l         | Pole half-length           | 0.5 m     |
+| g         | Gravitational acceleration | 9.81 m/s² |
 
 **State representation**: `[x, cos(θ), sin(θ), ẋ, θ̇]` — trigonometric encoding ensures smooth gradients across angle wrapping.
 
 ### Hybrid Control Architecture
 
-| Controller | Purpose | Implementation | Parameters |
-|------------|---------|----------------|------------|
+| Controller     | Purpose                   | Implementation           | Parameters     |
+| -------------- | ------------------------- | ------------------------ | -------------- |
 | **Neural MLP** | Energy shaping & swing-up | 2×64 hidden layers, tanh | ~9k parameters |
-| **LQR** | Upright stabilization | Riccati solution | Q, R matrices |
-| **Linear** | Baseline comparison | Direct state feedback | 4 gains |
+| **LQR**        | Upright stabilization     | Riccati solution         | Q, R matrices  |
+| **Linear**     | Baseline comparison       | Direct state feedback    | 4 gains        |
 
 ### Training Objective
+
 The neural policy optimizes:
 
 $$J = \sum_t \left[ w_E (E(t) - E_{\text{target}})^2 + w_x x(t)^2 + w_u u(t)^2 \right]$$
@@ -101,6 +105,7 @@ DiffSwing/
 ```
 
 ### Key Technologies
+
 - **JAX**: Automatic differentiation through dynamics
 - **Equinox**: Neural network framework
 - **Diffrax**: ODE integration with gradients
@@ -113,14 +118,15 @@ DiffSwing/
 
 ### Performance Comparison
 
-| Metric | Neural Network | Linear | LQR (stabilization) |
-|--------|----------------|--------|-------------------|
-| **Success Rate** (−π...π, ±2 rad/s) | **98%** | 82% | N/A |
-| **Swing-up Time** (mean) | **1.9s** | 3.1s | — |
-| **Cart Deviation** (RMS) | 0.14m | 0.22m | **0.05m** |
-| **Peak Control Force** | 12N | 11N | **6N** |
+| Metric                              | Neural Network | Linear | LQR (stabilization) |
+| ----------------------------------- | -------------- | ------ | ------------------- |
+| **Success Rate** (−π...π, ±2 rad/s) | **98%**        | 82%    | N/A                 |
+| **Swing-up Time** (mean)            | **1.9s**       | 3.1s   | —                   |
+| **Cart Deviation** (RMS)            | 0.14m          | 0.22m  | **0.05m**           |
+| **Peak Control Force**              | 12N            | 11N    | **6N**              |
 
 ### Control Strategy
+
 1. **Phase 1**: Neural network performs energy pumping until `|θ| < 12°`
 2. **Phase 2**: Seamless handoff to LQR controller for fine stabilization
 3. **Result**: Combines the neural network's robust swing-up with LQR's optimal stabilization
@@ -130,11 +136,13 @@ DiffSwing/
 ## Quick Start {#quick-start}
 
 ### Installation
+
 ```bash
 pip install jax equinox optax diffrax mujoco mujoco-python-viewer matplotlib numpy
 ```
 
 ### Training
+
 ```bash
 # Train neural network controller (~5 minutes)
 python scripts/train_nn_controller.py
@@ -144,6 +152,7 @@ tensorboard --logdir logs/
 ```
 
 ### Deployment
+
 ```bash
 # Deploy trained model in MuJoCo
 python scripts/nn_mujoco.py --model trained_nn.eqx
@@ -155,7 +164,9 @@ python scripts/run_simulation.py --controller linear
 ```
 
 ### Configuration
+
 Key training parameters in `config.py`:
+
 - Learning rate: 1e-3 (Adam)
 - Batch size: 256 initial states
 - Training steps: 5000
@@ -166,11 +177,13 @@ Key training parameters in `config.py`:
 ## Future Directions
 
 ### Technical Improvements
+
 - **Adaptive handoff**: Smooth weighted blending between controllers
-- **Model predictive control**: Receding-horizon energy shaping layer  
+- **Model predictive control**: Receding-horizon energy shaping layer
 - **Domain randomization**: Robust policies for sim-to-real transfer
 
-### Experimental Validation  
+### Experimental Validation
+
 - **Hardware implementation**: Low-cost setup with Teensy 4.1 microcontroller
 - **Real-world testing**: Validation on physical cart-pole system
 - **Comparative studies**: Benchmarking against other swing-up methods
@@ -180,4 +193,3 @@ Key training parameters in `config.py`:
 **License**: MIT — contributions and extensions welcome!
 
 ---
-

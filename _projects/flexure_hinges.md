@@ -45,20 +45,25 @@ The work explored a recurring constraint in **6-DoF force–torque sensing**: in
 ## 2. Workflow (milestones)
 
 1. **Market / systems framing**
+
    - Normalized FT sensor specs (force/moment ranges, size) and collected representative robotics constraints.
 
 2. **Literature grounding to equations**
+
    - Crossed-flexure pivot (CFP) basics: stiffness varies with load, and the **crossing point** can significantly change behavior (Wittrick).
    - Lateral-loading CFP modeling: realistic scenarios include external forces (not only pure couples), and **parasitic center-shift** becomes central for sensing and crosstalk (Zelenika & Bona).
 
 3. **MATLAB implementation**
+
    - Built a dimensionless formulation and a numerical solver for the nonlinear equilibrium.
    - Added utilities to compute derived kinematics (e.g., center drift) and to visualize predicted hinge shapes.
 
 4. **CAD to prototype iteration**
+
    - CAD assembly to enforce consistent strip alignment and clamping and to enable repeatable measurement.
 
 5. **Measurement pipeline (vision)**
+
    - MATLAB image processing for quick iteration: ROI selection, edge detection, curve fitting.
    - Used as a debugging and comparison aid, not as final metrology.
 
@@ -105,7 +110,7 @@ A crossed-flexure pivot realizes compliant rotation by elastic bending of two in
 
 ## 4. Equations and methods (from literature to solver to derived kinematics)
 
-This section explains the *modeling steps* used in the project, with pointers to the cited literature.
+This section explains the _modeling steps_ used in the project, with pointers to the cited literature.
 
 ### 4.1 What the lateral-loading CFP model solves
 
@@ -120,7 +125,7 @@ This gives **11 unknowns**, so **11 compatibility and equilibrium equations** ar
 
 ### 4.2 Dimensionless variables
 
-To keep the model scalable across strip sizes and materials (and to improve numerical conditioning), the solver uses a dimensionless form. Following the parameterization used in the literature (e.g., Zelenika & Bona; see also *Theoretical Framework and Scaling Optimization of Crossed-Flexure Architectures for Precision Sensing*), the project uses:
+To keep the model scalable across strip sizes and materials (and to improve numerical conditioning), the solver uses a dimensionless form. Following the parameterization used in the literature (e.g., Zelenika & Bona; see also _Theoretical Framework and Scaling Optimization of Crossed-Flexure Architectures for Precision Sensing_), the project uses:
 
 $$
 h=\frac{H L^{2}}{EI}\csc\alpha,\quad
@@ -128,10 +133,10 @@ v=\frac{V L^{2}}{EI}\sec\alpha,\quad
 \xi=\frac{2\delta}{\theta L}-1
 $$
 
-- $L$: characteristic strip length  
-- $EI$: bending rigidity  
-- $\alpha$: strip orientation angle  
-- $h$, $v$: dimensionless horizontal and vertical loads  
+- $L$: characteristic strip length
+- $EI$: bending rigidity
+- $\alpha$: strip orientation angle
+- $h$, $v$: dimensionless horizontal and vertical loads
 - $\xi$: dimensionless deflection variable (used per strip, e.g., $\xi_1$, $\xi_2$)
 
 A derived quantity used in back-substitution is $\lambda$, which captures geometry and shortening effects in terms of the stiffness parameters $\beta$ and $\xi$:
@@ -321,11 +326,11 @@ The report also documents design work for a robot-base measurement setup: adapte
 
 ## References
 
-- **Wittrick, W. H.** (1951). *The properties of crossed flexure pivots and the influence of the point at which the strips cross*. Aeronautical Quarterly, Cambridge Core.
-- **Zelenika, S., & Bona, F. D.** (2002). *Analytical and experimental characterisation of high-precision flexural pivots subjected to lateral loads*. Precision Engineering. [University of Arizona mirror](https://wp.optics.arizona.edu/optomech/wp-content/uploads/sites/53/2016/10/Zelenika-2002.pdf).
-- **Gunnink, K., Aarts, R., & Brouwer, D.** (2013). *Performance optimization of large stroke flexure hinges for high stiffness and eigenfrequency*. Precision Engineering.
+- **Wittrick, W. H.** (1951). _The properties of crossed flexure pivots and the influence of the point at which the strips cross_. Aeronautical Quarterly, Cambridge Core.
+- **Zelenika, S., & Bona, F. D.** (2002). _Analytical and experimental characterisation of high-precision flexural pivots subjected to lateral loads_. Precision Engineering. [University of Arizona mirror](https://wp.optics.arizona.edu/optomech/wp-content/uploads/sites/53/2016/10/Zelenika-2002.pdf).
+- **Gunnink, K., Aarts, R., & Brouwer, D.** (2013). _Performance optimization of large stroke flexure hinges for high stiffness and eigenfrequency_. Precision Engineering.
 - **Thalmann, P., & Henein, S.** (TRIVOT / zero parasitic center-shift kinematic design). EPFL Infoscience.
-- *Theoretical Framework and Scaling Optimization of Crossed-Flexure Architectures for Precision Sensing* — analytical foundations, dimensionless parameterization, and literature synthesis used to guide the modeling approach.
+- _Theoretical Framework and Scaling Optimization of Crossed-Flexure Architectures for Precision Sensing_ — analytical foundations, dimensionless parameterization, and literature synthesis used to guide the modeling approach.
 
 ---
 

@@ -12,7 +12,7 @@ permalink: /projects/passive_walker_rl/
 date: 2025-05-30
 category: Research Projects
 tags: [reinforcement-learning, robotics, jax, brax]
-img: /assets/img/passive_walker_rl/xml_passive_walker.png     # social share banner
+img: /assets/img/passive_walker_rl/xml_passive_walker.png # social share banner
 author: Yunus Emre Danabaş
 ---
 
@@ -34,25 +34,25 @@ author: Yunus Emre Danabaş
 
 ## 1 · Overview & Motivation
 
-> **Problem statement —** *How can a passive-dynamic biped learn a stable downhill gait in **fewer than 10⁶ simulation steps** on commodity hardware?*
+> **Problem statement —** _How can a passive-dynamic biped learn a stable downhill gait in **fewer than 10⁶ simulation steps** on commodity hardware?_
 
 Bipedal walking is an under-actuated, contact-rich control problem; naïve RL burns millions of samples.  
 **Passive Walker RL** solves this with a **three-component curriculum**, each **≤ 300 lines of code**, executed end-to-end in JAX.
 
-| Stage | Engine & Size | Core Idea | One-Sentence Takeaway | Wall-Clock † |
-|-------|---------------|-----------|-----------------------|--------------|
-| **Finite-State Expert** | MuJoCo XML · 100 LoC | Hip swing ±0.3 rad, knees retract on contact | Generates **≈ 30 k** fault-tolerant demos in 30 s | < 30 s |
-| **Behaviour Cloning** | 2-layer MLP (~10 k params) · Equinox | Supervised fit (MSE / Huber / L1) from 11-D proprio to 3 joint targets | Delivers a “walk-from-boot” policy scoring **0.26 Δx step⁻¹** | 2–3 min (CPU) |
-| **PPO Fine-Tuning** | Brax 2 · Optax | BC-initialised actor + critic, imitation loss β(t)→0 | Reaches **steady gait in 10⁵ steps, 5× faster** than scratch | 8 min (RTX 4060 Ti) |
+| Stage                   | Engine & Size                        | Core Idea                                                              | One-Sentence Takeaway                                         | Wall-Clock †        |
+| ----------------------- | ------------------------------------ | ---------------------------------------------------------------------- | ------------------------------------------------------------- | ------------------- |
+| **Finite-State Expert** | MuJoCo XML · 100 LoC                 | Hip swing ±0.3 rad, knees retract on contact                           | Generates **≈ 30 k** fault-tolerant demos in 30 s             | < 30 s              |
+| **Behaviour Cloning**   | 2-layer MLP (~10 k params) · Equinox | Supervised fit (MSE / Huber / L1) from 11-D proprio to 3 joint targets | Delivers a “walk-from-boot” policy scoring **0.26 Δx step⁻¹** | 2–3 min (CPU)       |
+| **PPO Fine-Tuning**     | Brax 2 · Optax                       | BC-initialised actor + critic, imitation loss β(t)→0                   | Reaches **steady gait in 10⁵ steps, 5× faster** than scratch  | 8 min (RTX 4060 Ti) |
 
 † Measured on AMD Ryzen 7 5800H + RTX 4060 Ti, physics Δt = 1 ms.
 
 Why it matters  
-: *Curriculum beats brute force* (an order-of-magnitude fewer samples);  
-  *MuJoCo fidelity + Brax speed* (> 1 M env-steps s⁻¹);  
-  *Compact yet expressive* (1 M-param policy);  
-  *Reproducible* (hash-named artefacts, one-command replay);  
-  *Open* (≈ 6 k LoC, MIT).
+: _Curriculum beats brute force_ (an order-of-magnitude fewer samples);  
+ _MuJoCo fidelity + Brax speed_ (> 1 M env-steps s⁻¹);  
+ _Compact yet expressive_ (1 M-param policy);  
+ _Reproducible_ (hash-named artefacts, one-command replay);  
+ _Open_ (≈ 6 k LoC, MIT).
 
 ---
 
@@ -89,21 +89,21 @@ The walker (Fig.&nbsp;1) is a five-body planar biped with seven DoF—slide-x, s
 
 ## 3 · Curriculum Stages
 
-### 3.1 Finite-State Expert  
+### 3.1 Finite-State Expert
+
 Two hip states and a knee retraction FSM produce demonstrations at 1 kHz; **≈ 30 000** state-action pairs per run.
 
-### 3.2 Behaviour Cloning  
+### 3.2 Behaviour Cloning
+
 **Observation Vector (11 Dimensions)**
 Each timestep provides the following standardized features:
 
-* **Positional state:** `x`, `z`, torso pitch angle
-* **Velocities:** `ẋ`, `ż`, hip angular velocity, knee linear velocities
-* **Joint positions:** hip angle, left/right knee extensions
-* **Joint velocities:** hip q̇, left/right knee q̇
+- **Positional state:** `x`, `z`, torso pitch angle
+- **Velocities:** `ẋ`, `ż`, hip angular velocity, knee linear velocities
+- **Joint positions:** hip angle, left/right knee extensions
+- **Joint velocities:** hip q̇, left/right knee q̇
 
 All features are extracted from MuJoCo in physical units and z-score normalised (zero mean, unit variance).
-
-
 
 <div align="center">
   <img src="/assets/img/passive_walker_rl/bc/method_comparison.png"
@@ -123,26 +123,25 @@ All features are extracted from MuJoCo in physical units and z-score normalised 
 
 > Huber loss achieved the best trade-off, yielding the highest downstream reward despite slightly higher MSE.
 
+### 3.3 PPO Fine-Tuning
 
-### 3.3 PPO Fine-Tuning  
+_Reward function_ \(r*t = x*{t+1} - x_t\) (forward progress).  
+_Termination_ — episode ends if
 
-*Reward function*   \(r_t = x_{t+1} - x_t\) (forward progress).  
-*Termination* — episode ends if  
-
-* torso z < 0.5 m *(height drop)*, or  
-* \|pitch\| > 0.8 rad *(excessive tilt)*.
+- torso z < 0.5 m _(height drop)_, or
+- \|pitch\| > 0.8 rad _(excessive tilt)_.
 
 PPO hyper-parameters:
 
-| Parameter | Value | Notes |
-|-----------|-------|-------|
-| γ | 0.99 | discount |
-| λ | 0.95 | GAE |
-| ε | 0.2 | clip |
-| Entropy cost | 0.01 | exploration |
-| Batch | 64 | update minibatch |
-| Roll-out length | 128 | per env |
-| Actor LR | 1e-3 | best in sweep |
+| Parameter       | Value | Notes            |
+| --------------- | ----- | ---------------- |
+| γ               | 0.99  | discount         |
+| λ               | 0.95  | GAE              |
+| ε               | 0.2   | clip             |
+| Entropy cost    | 0.01  | exploration      |
+| Batch           | 64    | update minibatch |
+| Roll-out length | 128   | per env          |
+| Actor LR        | 1e-3  | best in sweep    |
 
 ---
 
@@ -169,18 +168,17 @@ PPO hyper-parameters:
 
 ## 5 · Results
 
-| Metric | BC-Seeded PPO | Scratch PPO |
-|--------|---------------|-------------|
-| Steps to first stable gait | **1 × 10⁵** | 5 × 10⁵ |
-| Final mean Δx step⁻¹ | **0.28 ± 0.02** | 0.24 ± 0.05 |
-| GPU wall-clock | **≈ 8 min** | 25 min |
+| Metric                     | BC-Seeded PPO   | Scratch PPO |
+| -------------------------- | --------------- | ----------- |
+| Steps to first stable gait | **1 × 10⁵**     | 5 × 10⁵     |
+| Final mean Δx step⁻¹       | **0.28 ± 0.02** | 0.24 ± 0.05 |
+| GPU wall-clock             | **≈ 8 min**     | 25 min      |
 
 <video autoplay muted loop playsinline controls style="width: 100%; max-height: 500px; border-radius: 8px; margin-top: 1rem;">
   <source src="/assets/video/passive_walker_rl/walking_video.mp4" type="video/mp4">
 </video>
 
 <p class="text-center mt-2"><em><strong>Video 1 —</strong> 30-second deterministic MuJoCo replay using the best Brax-trained policy (no falls).</em></p>
-
 
 ---
 
@@ -192,7 +190,7 @@ python -m passive_walker.ppo.bc_init.run_pipeline \
        --device gpu \
        --total-steps 5000000 \
        --hz 1000
-````
+```
 
 All artefacts land in `results/passive_walker_rl/<timestamp>/` with SHA-256 config hashes.
 
@@ -200,10 +198,10 @@ All artefacts land in `results/passive_walker_rl/<timestamp>/` with SHA-256 conf
 
 ## 7 · Future Work
 
-* Uneven-terrain randomisation for sim-to-real
-* Energy-aware rewards to penalise **torque peaks**
-* TPU `pmap` training for > 10 M env-steps s⁻¹
-* Hardware validation on a planar biped rig
+- Uneven-terrain randomisation for sim-to-real
+- Energy-aware rewards to penalise **torque peaks**
+- TPU `pmap` training for > 10 M env-steps s⁻¹
+- Hardware validation on a planar biped rig
 
 ---
 

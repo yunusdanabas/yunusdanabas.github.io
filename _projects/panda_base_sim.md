@@ -68,27 +68,28 @@ This is the main entry point. It:
 4. Spawns the robot into Gazebo via `gazebo_ros/spawn_model`.
 5. Spawns controllers via `controller_manager/spawner`:
 
-   * `franka_state_controller`
-   * one selected example controller (default: `cartesian_impedance_example_controller`)
-   * optionally `franka_gripper`
+   - `franka_state_controller`
+   - one selected example controller (default: `cartesian_impedance_example_controller`)
+   - optionally `franka_gripper`
+
 6. Starts `robot_state_publisher` / `joint_state_publisher`.
 7. Optionally launches **RViz** with `robots/panda_base_sim.rviz`.
 8. Enables the **interactive marker node** automatically when the Cartesian impedance controller is selected.
 
 Useful arguments exposed by the launch file include:
 
-* `headless`, `paused`, `world`, `rviz`
-* `use_gripper`, `controller`
-* spawn pose args (`spawn_x/y/z`, `spawn_roll/pitch/yaw`)
+- `headless`, `paused`, `world`, `rviz`
+- `use_gripper`, `controller`
+- spawn pose args (`spawn_x/y/z`, `spawn_roll/pitch/yaw`)
 
 ### 4.2 `onlybase_gazebo.launch` (fast base-only checks)
 
 This launch file is intentionally minimal for quick iteration on the mechanical model:
 
-* Launches an empty Gazebo world
-* Spawns `urdf/base_sensor_urdf.urdf` (**base + sensor placeholder, no arm**)
-* Publishes a static TF `base_link → base_footprint`
-* Publishes `/calibrated` as `true` (to satisfy nodes that expect calibration gating)
+- Launches an empty Gazebo world
+- Spawns `urdf/base_sensor_urdf.urdf` (**base + sensor placeholder, no arm**)
+- Publishes a static TF `base_link → base_footprint`
+- Publishes `/calibrated` as `true` (to satisfy nodes that expect calibration gating)
 
 ---
 
@@ -98,9 +99,9 @@ Controller definitions and Franka simulation parameters live in `config/` (e.g.,
 
 When using `cartesian_impedance_example_controller`, the package can run `scripts/interactive_marker.py`:
 
-* Reads the current end-effector pose
-* Lets you drag a 6-DoF marker in RViz
-* Publishes the target to the controller topic (equilibrium pose), with workspace bounding for safer interaction
+- Reads the current end-effector pose
+- Lets you drag a 6-DoF marker in RViz
+- Publishes the target to the controller topic (equilibrium pose), with workspace bounding for safer interaction
 
 ---
 
@@ -173,7 +174,7 @@ When using `cartesian_impedance_example_controller`, the package can run `script
 
 ## 8. Resources
 
-* <a href="https://github.com/yunusdanabas/panda_base_sim" target="_blank"><strong>GitHub Repository</strong></a>
-* <a href="/assets/pdf/panda_base_sim/YunusEmreDanabas_report.pdf" target="_blank"><strong>Forschungspraxis Report (PDF)</strong></a>
+- <a href="https://github.com/yunusdanabas/panda_base_sim" target="_blank"><strong>GitHub Repository</strong></a>
+- <a href="/assets/pdf/panda_base_sim/YunusEmreDanabas_report.pdf" target="_blank"><strong>Forschungspraxis Report (PDF)</strong></a>
 
 ---

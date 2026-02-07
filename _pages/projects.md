@@ -13,15 +13,15 @@ display_categories: ["Research Projects", "Course Projects"]
 <div class="projects">
 
 {% comment %}
-  Iterate over the requested categories in order
+Iterate over the requested categories in order
 {% endcomment %}
 {% for category in page.display_categories %}
-  <a id="{{ category | slugify }}" href=".#{{ category | slugify }}">
-    <h2 class="category mt-5 mb-4">{{ category }}</h2>
-  </a>
+<a id="{{ category | slugify }}" href=".#{{ category | slugify }}">
+<h2 class="category mt-5 mb-4">{{ category }}</h2>
+</a>
 
-  {% assign cat_projects = site.projects | where: "category", category %}
-  {% assign sorted_projects = cat_projects | sort: "importance" %}
+{% assign cat_projects = site.projects | where: "category", category %}
+{% assign sorted_projects = cat_projects | sort: "importance" %}
 
   <div class="row g-4">
   {% for project in sorted_projects %}
@@ -74,7 +74,9 @@ display_categories: ["Research Projects", "Course Projects"]
       </div>   <!-- card -->
 
     </div>     <!-- col -->
-  {% endfor %}
+
+{% endfor %}
+
   </div>       <!-- row -->
 {% endfor %}
 </div>

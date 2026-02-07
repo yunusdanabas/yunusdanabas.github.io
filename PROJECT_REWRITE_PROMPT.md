@@ -30,18 +30,18 @@ Using the project materials and the current page as reference:
 
 Keep this structure. Only adjust values; do not remove required keys.
 
-| Field | Required | Notes |
-|-------|----------|--------|
-| `layout` | Yes | Always `page`. |
-| `title` | Yes | Page and card title. Use quotes if it contains colons or special characters. |
-| `collection` | Yes | Always `projects`. |
-| `importance` | Yes | Integer; lower = higher on the projects list (e.g. 1 or 2). |
-| `description` | Yes | Short blurb (one or two sentences). Used in project cards and under the page title. Use `>` for multi-line. |
-| `permalink` | Optional | Override URL, e.g. `/projects/panda_base_sim/`. |
-| `date` | Optional | ISO date, e.g. `2024-08-31`. |
-| `category` | Yes | Must be exactly **`Research Projects`** or **`Course Projects`** so the project appears on the listing. |
-| `tags` | Optional | Array, e.g. `[robotics, ROS, simulation]`. Shown as badges on cards. |
-| `img` | Optional | Card thumbnail path, e.g. `/assets/img/panda_base_sim/thumbnail.png`. |
+| Field         | Required | Notes                                                                                                       |
+| ------------- | -------- | ----------------------------------------------------------------------------------------------------------- |
+| `layout`      | Yes      | Always `page`.                                                                                              |
+| `title`       | Yes      | Page and card title. Use quotes if it contains colons or special characters.                                |
+| `collection`  | Yes      | Always `projects`.                                                                                          |
+| `importance`  | Yes      | Integer; lower = higher on the projects list (e.g. 1 or 2).                                                 |
+| `description` | Yes      | Short blurb (one or two sentences). Used in project cards and under the page title. Use `>` for multi-line. |
+| `permalink`   | Optional | Override URL, e.g. `/projects/panda_base_sim/`.                                                             |
+| `date`        | Optional | ISO date, e.g. `2024-08-31`.                                                                                |
+| `category`    | Yes      | Must be exactly **`Research Projects`** or **`Course Projects`** so the project appears on the listing.     |
+| `tags`        | Optional | Array, e.g. `[robotics, ROS, simulation]`. Shown as badges on cards.                                        |
+| `img`         | Optional | Card thumbnail path, e.g. `/assets/img/panda_base_sim/thumbnail.png`.                                       |
 
 Optional for cards: `summary` (overrides `description` for card blurb), `startDate`, `endDate`.
 

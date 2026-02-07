@@ -44,9 +44,10 @@ Two control modes are supported:
 - **Static (discrete) mode**: single-frame hand signs are translated into incremental `Twist` updates (forward/back, turning, stop).
 - **Steering mode**: a "hands-on-wheel" pose enables dynamic steering gestures, while static gestures control speed.
 
-It combines **MediaPipe hand tracking** with lightweight neural models to recognize both **static commands** (e.g., *Stop*, *Speed Up*) and **steering gestures** (e.g., *Turn Left*). Outputs are published to `/cmd_vel` for use in **Gazebo or real robots**.
+It combines **MediaPipe hand tracking** with lightweight neural models to recognize both **static commands** (e.g., _Stop_, _Speed Up_) and **steering gestures** (e.g., _Turn Left_). Outputs are published to `/cmd_vel` for use in **Gazebo or real robots**.
 
 This project was developed as a **solo capstone for EE417: Computer Vision** at **Sabancı University (Spring 2025)** with the goal of making robot teleop:
+
 - **Cheaper** – no special hardware
 - **Smarter** – hybrid gesture control
 - **Faster** – 13 ms latency on GPU
@@ -62,18 +63,18 @@ Hand-Steer Sim is structured as a **modular ROS Noetic pipeline**, with each maj
 
 - **Camera**: `hsim_camera_pub` publishes `sensor_msgs/Image` on `/image_raw` (webcam or RealSense).
 - **Static mode**: `hsim_hand_sign` publishes `/gesture/hand_sign`; `hsim_gest2twist` subscribes and publishes `Twist` to the robot controller.
-- **Steering mode**: `hsim_steer_sign` publishes `/gesture/steering_static` and `/gesture/steering_dyn`; `hsim_wheel2twist` subscribes to both and publishes `Twist` (turn commands only when *Holding Wheel* is active).
+- **Steering mode**: `hsim_steer_sign` publishes `/gesture/steering_static` and `/gesture/steering_dyn`; `hsim_wheel2twist` subscribes to both and publishes `Twist` (turn commands only when _Holding Wheel_ is active).
 
 ### Gesture-to-Velocity Pipeline
 
 1. **Camera Input** – Streams 960×540 RGB frames at 30 FPS
 2. **Landmark Extraction** – MediaPipe Hands detects 21 hand keypoints per frame
 3. **Dual-Branch Inference**:
-   - *Static MLP* → detects one-shot gestures:  
+   - _Static MLP_ → detects one-shot gestures:  
      `Stop`, `Holding Wheel`, `Speed Up`, `Speed Down`
-   - *Dynamic LSTM* → processes 16-frame MCP trajectories for:  
+   - _Dynamic LSTM_ → processes 16-frame MCP trajectories for:  
      `Turn Left`, `Turn Right`, `Forward`
-4. **Gesture Fusion** – Steering gestures only apply when *Holding Wheel* is detected
+4. **Gesture Fusion** – Steering gestures only apply when _Holding Wheel_ is detected
 5. **ROS Mapping** – Translates gestures into `geometry_msgs/Twist` velocity commands
 6. **Actuation** – Commands sent to Gazebo or a real robot (default topic: `/robot_diff_drive_controller/cmd_vel`)
 
@@ -85,14 +86,14 @@ Hand-Steer Sim is structured as a **modular ROS Noetic pipeline**, with each maj
 
 ### ROS Node Breakdown
 
-| Node | Role | Publishes / Subscribes |
-|------|------|------------------------|
-| `hsim_camera_pub` | Camera to ROS image stream | Pub: `/image_raw` |
-| `hsim_hand_sign` | Static recognizer (single-frame) | Sub: `/image_raw` · Pub: `/gesture/hand_sign` |
-| `hsim_gest2twist` | Discrete gesture to Twist | Sub: `/gesture/hand_sign` · Pub: `/robot_diff_drive_controller/cmd_vel` |
-| `hsim_steer_sign` | Steering recognizer (static + dynamic) | Sub: `/image_raw` · Pub: `/gesture/steering_static`, `/gesture/steering_dyn` |
-| `hsim_wheel2twist` | Gated fusion to Twist | Sub: `/gesture/steering_static`, `/gesture/steering_dyn` · Pub: `/robot_diff_drive_controller/cmd_vel` |
-| `gazebo_ros_control` | Optional sim controller | Sub: `/robot_diff_drive_controller/cmd_vel` |
+| Node                 | Role                                   | Publishes / Subscribes                                                                                 |
+| -------------------- | -------------------------------------- | ------------------------------------------------------------------------------------------------------ |
+| `hsim_camera_pub`    | Camera to ROS image stream             | Pub: `/image_raw`                                                                                      |
+| `hsim_hand_sign`     | Static recognizer (single-frame)       | Sub: `/image_raw` · Pub: `/gesture/hand_sign`                                                          |
+| `hsim_gest2twist`    | Discrete gesture to Twist              | Sub: `/gesture/hand_sign` · Pub: `/robot_diff_drive_controller/cmd_vel`                                |
+| `hsim_steer_sign`    | Steering recognizer (static + dynamic) | Sub: `/image_raw` · Pub: `/gesture/steering_static`, `/gesture/steering_dyn`                           |
+| `hsim_wheel2twist`   | Gated fusion to Twist                  | Sub: `/gesture/steering_static`, `/gesture/steering_dyn` · Pub: `/robot_diff_drive_controller/cmd_vel` |
+| `gazebo_ros_control` | Optional sim controller                | Sub: `/robot_diff_drive_controller/cmd_vel`                                                            |
 
 ### Launching the System
 
@@ -113,14 +114,14 @@ roslaunch hand_steer_sim sign_control.launch \
 
 Gesture labels are converted to `geometry_msgs/Twist` increments for a differential-drive robot:
 
-| Gesture | Linear velocity (m/s) | Angular velocity (rad/s) |
-|---------|----------------------:|-------------------------:|
-| Stop | 0.00 | 0.00 |
-| Speed Up | +0.08 | No change |
-| Speed Down | −0.08 | No change |
-| Turn Left | No change | +0.05 |
-| Turn Right | No change | −0.05 |
-| Forward | No change | No change |
+| Gesture    | Linear velocity (m/s) | Angular velocity (rad/s) |
+| ---------- | --------------------: | -----------------------: |
+| Stop       |                  0.00 |                     0.00 |
+| Speed Up   |                 +0.08 |                No change |
+| Speed Down |                 −0.08 |                No change |
+| Turn Left  |             No change |                    +0.05 |
+| Turn Right |             No change |                    −0.05 |
+| Forward    |             No change |                No change |
 
 Turn Left/Right are applied only when **Holding Wheel** is active. Outputs are clamped for safety (e.g., `|v| ≤ 2.0 m/s`, `|ω| ≤ 2.0 rad/s` in steering mode).
 
@@ -133,12 +134,14 @@ Hand-Steer Sim uses a **dual-branch neural architecture**: **static gestures** f
 ### Neural Models
 
 #### Static Gesture Classifier (MLP)
+
 - **Input:** 42-D vector (21 hand landmarks × 2D, wrist-normalized and scaled)
 - **Classes:** `Stop`, `Holding Wheel`, `Speed Up`, `Speed Down`
 - **Architecture:** 20 → 10 → 4 neurons
 - **Size:** ~1.1k parameters → 4.4 kB (TFLite, FP16)
 
 #### Dynamic Steering Classifier (LSTM)
+
 - **Input:** 128-D vector (16 frames × 4 MCP joints × 2D); MCP joints: indices 5, 9, 13, 17
 - **Classes:** `Turn Left`, `Turn Right`, `Forward`
 - **Architecture:** LSTM(32) → Dense(32) → 3-class Softmax
@@ -148,32 +151,32 @@ Hand-Steer Sim uses a **dual-branch neural architecture**: **static gestures** f
 
 ### Gesture Types
 
-| Branch | Gesture | Purpose |
-|--------|---------|---------|
-| Static | Stop | Freeze all movement |
-| | Holding Wheel | Enable dynamic gestures |
-| | Speed Up | Increment linear velocity |
-| | Speed Down | Decrement linear velocity |
-| Dynamic | Turn Left | Adjust angular velocity (+) |
-| | Turn Right | Adjust angular velocity (−) |
-| | Forward | Maintain direction (no turn) |
+| Branch  | Gesture       | Purpose                      |
+| ------- | ------------- | ---------------------------- |
+| Static  | Stop          | Freeze all movement          |
+|         | Holding Wheel | Enable dynamic gestures      |
+|         | Speed Up      | Increment linear velocity    |
+|         | Speed Down    | Decrement linear velocity    |
+| Dynamic | Turn Left     | Adjust angular velocity (+)  |
+|         | Turn Right    | Adjust angular velocity (−)  |
+|         | Forward       | Maintain direction (no turn) |
 
-*All dynamic outputs are gated by the Holding Wheel gesture. Temporal smoothing (majority vote over 16 frames) reduces flicker.*
+_All dynamic outputs are gated by the Holding Wheel gesture. Temporal smoothing (majority vote over 16 frames) reduces flicker._
 
 ### Dataset Overview
 
 Collected using a custom GUI that overlays landmarks and allows fast class labeling. All data was captured using a RealSense D435 or webcam at 960×540 @ 30 FPS. Data split: **train/val/test = 60% / 15% / 25%** (single split; no cross-validation).
 
 | Gesture Type | Classes | Total Samples |
-|--------------|---------|---------------|
-| Static | 4 | ~4,600 |
-| Dynamic | 3 | ~1,700 |
+| ------------ | ------- | ------------- |
+| Static       | 4       | ~4,600        |
+| Dynamic      | 3       | ~1,700        |
 
 ---
 
 ## 5. Results & Performance
 
-Benchmarks are for **gesture accuracy**, **latency**, and **real-time responsiveness**. Both classifiers were evaluated on held-out test sets. *Caveat: data from a single participant and a single split.*
+Benchmarks are for **gesture accuracy**, **latency**, and **real-time responsiveness**. Both classifiers were evaluated on held-out test sets. _Caveat: data from a single participant and a single split._
 
 ### Accuracy (Test Set)
 
@@ -183,39 +186,41 @@ Benchmarks are for **gesture accuracy**, **latency**, and **real-time responsive
 <details markdown="1">
 <summary><strong>Confusion Matrix — Static MLP</strong></summary>
 
-| True \ Pred | Stop | Hold | Up | Down |
-|-------------|-----:|-----:|---:|-----:|
-| **Stop** | **464** | 0 | 0 | 0 |
-| **Hold** | 0 | **125** | 0 | 0 |
-| **Up** | 0 | 0 | **279** | 0 |
-| **Down** | 0 | 0 | 1 | **287** |
+| True \ Pred |    Stop |    Hold |      Up |    Down |
+| ----------- | ------: | ------: | ------: | ------: |
+| **Stop**    | **464** |       0 |       0 |       0 |
+| **Hold**    |       0 | **125** |       0 |       0 |
+| **Up**      |       0 |       0 | **279** |       0 |
+| **Down**    |       0 |       0 |       1 | **287** |
+
 </details>
 
 <details markdown="1">
 <summary><strong>Confusion Matrix — Dynamic LSTM</strong></summary>
 
-| True \ Pred | Left | Right | Forward |
-|-------------|-----:|------:|--------:|
-| **Left** | **128** | 0 | 0 |
-| **Right** | 0 | **126** | 0 |
-| **Forward** | 0 | 1 | **174** |
+| True \ Pred |    Left |   Right | Forward |
+| ----------- | ------: | ------: | ------: |
+| **Left**    | **128** |       0 |       0 |
+| **Right**   |       0 | **126** |       0 |
+| **Forward** |       0 |       1 | **174** |
+
 </details>
 
 ### Latency Benchmarks
 
 Measured on 960×540 @ 30 FPS. End-to-end includes camera decode, inference, and display/publish overhead.
 
-| Platform | Decode (ms) | Inference (ms) | Display (ms) | Total E2E (ms) | FPS |
-|----------|------------:|---------------:|-------------:|----------------:|----:|
-| **GPU (RTX 4060 Ti)** | 0.5 | 8.6 | 4.0 | **13.2** | 76 |
-| ThinkPad E14 (CPU) | 0.5 | 20.1 | 4.3 | 25.0 | 39 |
-| ThinkPad E14 + Gazebo | 4.7 | 94.1 | 10.7 | 109.6 | 9 |
+| Platform              | Decode (ms) | Inference (ms) | Display (ms) | Total E2E (ms) | FPS |
+| --------------------- | ----------: | -------------: | -----------: | -------------: | --: |
+| **GPU (RTX 4060 Ti)** |         0.5 |            8.6 |          4.0 |       **13.2** |  76 |
+| ThinkPad E14 (CPU)    |         0.5 |           20.1 |          4.3 |           25.0 |  39 |
+| ThinkPad E14 + Gazebo |         4.7 |           94.1 |         10.7 |          109.6 |   9 |
 
 The core pipeline runs in real time on CPU; **Gazebo adds significant load** on laptop-class CPU, so GPU is the practical option for smooth simulation.
 
 ### Practical Notes & Limitations
 
-- **Forward gesture**: Although offline metrics are high, *Forward* is harder to hold steadily in real time because it is more symmetric than lateral turns; small deviations can be misread as steering. A **dead-zone filter** in the mapping node is a natural next step.
+- **Forward gesture**: Although offline metrics are high, _Forward_ is harder to hold steadily in real time because it is more symmetric than lateral turns; small deviations can be misread as steering. A **dead-zone filter** in the mapping node is a natural next step.
 - **Steering metaphor**: A "wheel" metaphor fits **Ackermann steering** better than differential drive; switching the simulated vehicle model could improve usability.
 - **Generalization**: Broader validation across users, lighting, and camera placement is needed for claims beyond this prototype.
 
@@ -262,4 +267,4 @@ docker run -it --rm --gpus all \
 
 Hand-Steer Sim was built as a **solo capstone project** for **EE417 — Computer Vision (Spring 2025, Sabancı University)**.
 
-> *No license restrictions — feel free to fork, adapt, and improve.*
+> _No license restrictions — feel free to fork, adapt, and improve._

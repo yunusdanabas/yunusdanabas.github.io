@@ -103,12 +103,12 @@ The optimal solution for this project lies between the two extremes. A **per-sid
 
 The decision to adopt a per-side actuation architecture is summarized in the comparative analysis below. This approach provides the best balance of capability, complexity, and power efficiency for a compact lunar science rover. It delivers the essential heave and roll authority needed for the mission while remaining simple, robust, and energy-efficient.
 
-| Architecture | Actuator count | Steady hold power | Sealing complexity | Posture authority | Key characteristics and suitability |
-|:---|:---:|:---:|:---:|:---:|---|
-| Passive Rocker-Bogie (MER / ExoMars) | 0 | N/A | Low | None | Highly reliable, excellent passive terrain conformity. No commanded posture. High suitability as a baseline. |
-| **Per-Side Actuation (Our Concept)** | **2** | **Very low (&lt;1 W)** | **Medium** | **Heave + Roll** | **Optimal balance: Provides critical heave/roll control while preserving passive pitch. Low power and complexity. Very high suitability (Selected).** |
-| Per-Corner Actuation (Lan / Gratton) | 4+ | Medium | High | Full (Heave, Roll, Pitch) | Maximum posture authority for extreme terrain, but at a high cost of mass, power, and control complexity. Medium suitability. |
-| Wheel-on-Leg (MMX) | 6+ | High | Very high | Full + Leg Placement | Unparalleled adaptability for highly discontinuous terrain. Prohibitively complex for a compact lunar mission. Very low suitability. |
+| Architecture                         | Actuator count |   Steady hold power    | Sealing complexity |     Posture authority     | Key characteristics and suitability                                                                                                                   |
+| :----------------------------------- | :------------: | :--------------------: | :----------------: | :-----------------------: | ----------------------------------------------------------------------------------------------------------------------------------------------------- |
+| Passive Rocker-Bogie (MER / ExoMars) |       0        |          N/A           |        Low         |           None            | Highly reliable, excellent passive terrain conformity. No commanded posture. High suitability as a baseline.                                          |
+| **Per-Side Actuation (Our Concept)** |     **2**      | **Very low (&lt;1 W)** |     **Medium**     |     **Heave + Roll**      | **Optimal balance: Provides critical heave/roll control while preserving passive pitch. Low power and complexity. Very high suitability (Selected).** |
+| Per-Corner Actuation (Lan / Gratton) |       4+       |         Medium         |        High        | Full (Heave, Roll, Pitch) | Maximum posture authority for extreme terrain, but at a high cost of mass, power, and control complexity. Medium suitability.                         |
+| Wheel-on-Leg (MMX)                   |       6+       |          High          |     Very high      |   Full + Leg Placement    | Unparalleled adaptability for highly discontinuous terrain. Prohibitively complex for a compact lunar mission. Very low suitability.                  |
 
 ---
 
@@ -164,13 +164,13 @@ To ensure reliability in the harsh lunar environment, a multi-layer dust mitigat
 
 The system is designed to meet a set of specific, quantifiable performance targets. These values are derived from mission requirements for science operations and safe traversal.
 
-| Parameter | Target value | Rationale |
-|---|:---:|---|
-| Ride height range | 100–250 mm | Provides sufficient range for both obstacle clearance (High Traverse) and near-ground science (Contact-Low). |
-| Steady hold power | &lt; 1.0 W | Critical for power efficiency during long-duration science, enabled by the self-locking leadscrew. |
-| Posture transition time | 5–15 s | Ensures quasi-static, controlled motion to maintain stability and protect the mechanism. |
-| Residual roll error | &lt; 1.0 deg | Required for stable instrument pointing and safety on side-slopes up to 15 degrees. |
-| Actuator force (static) | 500–1000 N | Sized to support the rover's mass and handle expected load distribution. |
+| Parameter               | Target value | Rationale                                                                                                    |
+| ----------------------- | :----------: | ------------------------------------------------------------------------------------------------------------ |
+| Ride height range       |  100–250 mm  | Provides sufficient range for both obstacle clearance (High Traverse) and near-ground science (Contact-Low). |
+| Steady hold power       |  &lt; 1.0 W  | Critical for power efficiency during long-duration science, enabled by the self-locking leadscrew.           |
+| Posture transition time |    5–15 s    | Ensures quasi-static, controlled motion to maintain stability and protect the mechanism.                     |
+| Residual roll error     | &lt; 1.0 deg | Required for stable instrument pointing and safety on side-slopes up to 15 degrees.                          |
+| Actuator force (static) |  500–1000 N  | Sized to support the rover's mass and handle expected load distribution.                                     |
 
 #### Operational Posture Presets
 
@@ -235,7 +235,7 @@ A key feature of the design is the passive mechanical differential that averages
 
 To integrate posture capabilities with the rover's autonomy, a simple and robust interface is provided via a **ROS 2 Action** named `SetPosture.action`. This allows a high-level planner to command a target posture (e.g., `HIGH` or `LOW`) and monitor its execution. The Posture Manager handles all underlying complexity, including trajectory generation and safety checks. This design is well-suited for integration with modern planning systems, such as Behavior Tree-based navigators.
 
-The action is defined with three parts: a *goal* for the client to send, a *result* to signal completion, and continuous *feedback* during the transition:
+The action is defined with three parts: a _goal_ for the client to send, a _result_ to signal completion, and continuous _feedback_ during the transition:
 
 - **Goal:** `target_posture` (enum), `roll_offset_rad` (float), `heave_offset_m` (float).
 - **Result:** `success` (bool).
@@ -259,21 +259,21 @@ The V&V plan confirms that the system meets its requirements through a series of
 %}
 </div>
 
-| Test name | Key metric(s) | Success criteria |
-|---|---|---|
-| **1. Preset Transition Test** (Flat Plane World) | Transition Time (s), Joint Velocity Profile | Meets the 5–15 s target. Smooth, trapezoidal velocity profile with no overshoot or oscillation. |
-| **2. Roll Leveling Test** (Static Ramp World) | Residual Roll Error (deg), Steady-State Joint Effort (Nm) | Maintained at &lt; 1.0 deg while stationary on the ramp. Minimal oscillation, indicating stable controller performance. |
-| **3. Low-Power Hold Test** (Static Ramp World) | Power Consumption (W), Position Drift (mm) | Near-zero (&lt;1 W) steady-state power draw in Contact-Low stance. No detectable drift over a simulated 10-minute hold period. |
+| Test name                                        | Key metric(s)                                             | Success criteria                                                                                                               |
+| ------------------------------------------------ | --------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------ |
+| **1. Preset Transition Test** (Flat Plane World) | Transition Time (s), Joint Velocity Profile               | Meets the 5–15 s target. Smooth, trapezoidal velocity profile with no overshoot or oscillation.                                |
+| **2. Roll Leveling Test** (Static Ramp World)    | Residual Roll Error (deg), Steady-State Joint Effort (Nm) | Maintained at &lt; 1.0 deg while stationary on the ramp. Minimal oscillation, indicating stable controller performance.        |
+| **3. Low-Power Hold Test** (Static Ramp World)   | Power Consumption (W), Position Drift (mm)                | Near-zero (&lt;1 W) steady-state power draw in Contact-Low stance. No detectable drift over a simulated 10-minute hold period. |
 
 ### 5.2 Failure Mode and Effects Analysis (FMEA)
 
 A preliminary FMEA was conducted to identify and mitigate potential system failures. The analysis focuses on ensuring the system prioritizes graceful degradation and fail-safe behaviors.
 
-| Failure mode | Potential effect(s) | Mitigation strategy |
-|---|---|---|
-| **Actuator Seizure** | Loss of motion on one side. Inability to change posture. Potential for chassis twisting if the other actuator is commanded to move. | The Posture Manager detects the fault (via encoder timeout or high current) and immediately inhibits all motion. The system reverts to a safe, fully passive mode. |
-| **IMU Failure** | Loss of accurate roll feedback. Active leveling controller could issue erratic or dangerous commands, leading to instability. | The control software will use a data-validity check and a message heartbeat timeout to detect sensor failure. Upon fault, all active leveling is disabled and the system reverts to passive mode. |
-| **Dust Seal Failure** | Gradual ingress of abrasive dust into the leadscrew mechanism, leading to accelerated wear and increased friction over time. | This is a graceful degradation. The Posture Manager will monitor motor current during transitions. A significant, trending increase will trigger a health status warning, flagging the need for inspection. |
+| Failure mode          | Potential effect(s)                                                                                                                 | Mitigation strategy                                                                                                                                                                                         |
+| --------------------- | ----------------------------------------------------------------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| **Actuator Seizure**  | Loss of motion on one side. Inability to change posture. Potential for chassis twisting if the other actuator is commanded to move. | The Posture Manager detects the fault (via encoder timeout or high current) and immediately inhibits all motion. The system reverts to a safe, fully passive mode.                                          |
+| **IMU Failure**       | Loss of accurate roll feedback. Active leveling controller could issue erratic or dangerous commands, leading to instability.       | The control software will use a data-validity check and a message heartbeat timeout to detect sensor failure. Upon fault, all active leveling is disabled and the system reverts to passive mode.           |
+| **Dust Seal Failure** | Gradual ingress of abrasive dust into the leadscrew mechanism, leading to accelerated wear and increased friction over time.        | This is a graceful degradation. The Posture Manager will monitor motor current during transitions. A significant, trending increase will trigger a health status warning, flagging the need for inspection. |
 
 ---
 

@@ -11,7 +11,7 @@ tags: [robotics, kinematics, dynamics, simulation]
 img: /assets/img/3rrp/rrp_systemImage2.png
 ---
 
-<!-- Course Projects  -->  
+<!-- Course Projects  -->
 <p>
   <a href="/assets/pdf/3rrp/YunusEmreDanabas_RRP_ProjectReport.pdf"
      class="btn btn-outline-secondary" role="button" target="_blank">
@@ -21,26 +21,26 @@ img: /assets/img/3rrp/rrp_systemImage2.png
 
 ## 1&nbsp;·&nbsp;Overview & Motivation
 
-The **3-RRP planar parallel manipulator** offers high stiffness and full planar dexterity using three *revolute–revolute–prismatic* legs.  
-Between **Oct 2024 – Jan 2025** (EE 521 · *Kinematics & Dynamics of Machines*, Sabancı University) I performed an end-to-end analysis to
+The **3-RRP planar parallel manipulator** offers high stiffness and full planar dexterity using three _revolute–revolute–prismatic_ legs.  
+Between **Oct 2024 – Jan 2025** (EE 521 · _Kinematics & Dynamics of Machines_, Sabancı University) I performed an end-to-end analysis to
 
-* derive **closed-form forward & inverse kinematics**,
-* map the **largest symmetric workspace** and its **Global Isotropy Index (GII)**,
-* formulate **equations of motion** with **Kane’s** and **Lagrange (Baumgarte-stabilised)** methods, and
-* **validate** both models in **MATLAB / Simulink** under small force & torque perturbations.
+- derive **closed-form forward & inverse kinematics**,
+- map the **largest symmetric workspace** and its **Global Isotropy Index (GII)**,
+- formulate **equations of motion** with **Kane’s** and **Lagrange (Baumgarte-stabilised)** methods, and
+- **validate** both models in **MATLAB / Simulink** under small force & torque perturbations.
 
 <br>
 
 ## 2&nbsp;·&nbsp;Modeling Workflow
 
-| Stage | Toolchain | Outcome |
-|-------|-----------|---------|
-| Symbolic kinematics | Autolev + manual algebra | Closed-form FK / IK |
-| Workspace sampling | MATLAB (`parfor`) | ≈ 230 mm-radius reach |
-| Isotropy metric | MATLAB · SVD(J) | **GII = 0.46** |
-| Dynamics (Kane) | Autolev → MATLAB | Compact ODEs |
-| Dynamics (Lagrange) | Autolev + λ, Baumgarte | DAE system |
-| Validation | Simulink | Stable under 0.001 N/N·m |
+| Stage               | Toolchain                | Outcome                  |
+| ------------------- | ------------------------ | ------------------------ |
+| Symbolic kinematics | Autolev + manual algebra | Closed-form FK / IK      |
+| Workspace sampling  | MATLAB (`parfor`)        | ≈ 230 mm-radius reach    |
+| Isotropy metric     | MATLAB · SVD(J)          | **GII = 0.46**           |
+| Dynamics (Kane)     | Autolev → MATLAB         | Compact ODEs             |
+| Dynamics (Lagrange) | Autolev + λ, Baumgarte   | DAE system               |
+| Validation          | Simulink                 | Stable under 0.001 N/N·m |
 
 <br>
 
@@ -57,12 +57,12 @@ Between **Oct 2024 – Jan 2025** (EE 521 · *Kinematics & Dynamics of Machines*
 
 ## 3&nbsp;·&nbsp;Key Results
 
-| Metric | Value / Observation |
-|--------|--------------------|
-| **Workspace** | Circular, *R* ≈ 230 mm (link length 200 mm) |
-| **Global Isotropy Index** | **0.46** (min σ / max σ) |
-| **Dynamics drift** | < 0.5 % state error over 5 s |
-| **RHS eval (Kane)** | ~20 µs (MATLAB R2024a) |
+| Metric                    | Value / Observation                         |
+| ------------------------- | ------------------------------------------- |
+| **Workspace**             | Circular, _R_ ≈ 230 mm (link length 200 mm) |
+| **Global Isotropy Index** | **0.46** (min σ / max σ)                    |
+| **Dynamics drift**        | < 0.5 % state error over 5 s                |
+| **RHS eval (Kane)**       | ~20 µs (MATLAB R2024a)                      |
 
 <br>
 
@@ -88,22 +88,22 @@ Between **Oct 2024 – Jan 2025** (EE 521 · *Kinematics & Dynamics of Machines*
 
 ## 4&nbsp;·&nbsp;Kane vs Lagrange — Quick Take
 
-| Aspect | **Kane’s Method** | **Lagrange + λ** |
-|--------|------------------|------------------|
-| Constraint handling | Implicit (partial velocities) | Explicit multipliers |
-| Symbolic length | Shorter | Longer |
-| Numerical stiffness | Low | Moderate (α, β tuning) |
-| Physical intuition | Force / velocity | Energy focus |
-| Best use | Real-time control | Energy shaping |
+| Aspect              | **Kane’s Method**             | **Lagrange + λ**       |
+| ------------------- | ----------------------------- | ---------------------- |
+| Constraint handling | Implicit (partial velocities) | Explicit multipliers   |
+| Symbolic length     | Shorter                       | Longer                 |
+| Numerical stiffness | Low                           | Moderate (α, β tuning) |
+| Physical intuition  | Force / velocity              | Energy focus           |
+| Best use            | Real-time control             | Energy shaping         |
 
 <br>
 
 ## 5&nbsp;·&nbsp;Deliverables & Next Steps
 
-* **Simulink library** – drag-and-drop FK, IK, Jacobian, dynamics blocks  
-* **MATLAB scripts** – workspace & isotropy samplers, disturbance demos  
-* **Full PDF** – derivations, listings, discussion  
+- **Simulink library** – drag-and-drop FK, IK, Jacobian, dynamics blocks
+- **MATLAB scripts** – workspace & isotropy samplers, disturbance demos
+- **Full PDF** – derivations, listings, discussion
 
 **Future work:** add joint friction & compliance, design Jacobian-weighted impedance control, and build a benchtop prototype for hardware correlation.
 
-> *Solo term project for **EE 521 — Kinematics & Dynamics of Machines (Fall 2024, Sabancı University)**.*
+> _Solo term project for **EE 521 — Kinematics & Dynamics of Machines (Fall 2024, Sabancı University)**._

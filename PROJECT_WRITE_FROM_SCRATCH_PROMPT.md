@@ -30,18 +30,18 @@ Using only the project materials (and any slug I provide):
 
 Include all required keys. Use the slug I provide or the one you suggest.
 
-| Field | Required | Notes |
-|-------|----------|--------|
-| `layout` | Yes | Always `page`. |
-| `title` | Yes | Page and card title. Use quotes if it contains colons or special characters. |
-| `collection` | Yes | Always `projects`. |
-| `importance` | Yes | Integer; lower = higher on the projects list (e.g. 1 or 2). Default to 2 if unsure. |
-| `description` | Yes | Short blurb (one or two sentences). Used in project cards and under the page title. Use `>` for multi-line. |
-| `permalink` | Yes (recommended) | Set to `/projects/<slug>/` so the URL is stable. |
-| `date` | Optional | ISO date if known, e.g. `2024-08-31`. |
-| `category` | Yes | Must be exactly **`Research Projects`** or **`Course Projects`**. Choose from the materials or ask me. |
-| `tags` | Optional | Array, e.g. `[robotics, simulation]`. Derive from the project. |
-| `img` | Optional | Card thumbnail path, e.g. `/assets/img/<slug>/thumbnail.png`. If I have not specified images, use a placeholder path and tell me to add the image later. |
+| Field         | Required          | Notes                                                                                                                                                    |
+| ------------- | ----------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| `layout`      | Yes               | Always `page`.                                                                                                                                           |
+| `title`       | Yes               | Page and card title. Use quotes if it contains colons or special characters.                                                                             |
+| `collection`  | Yes               | Always `projects`.                                                                                                                                       |
+| `importance`  | Yes               | Integer; lower = higher on the projects list (e.g. 1 or 2). Default to 2 if unsure.                                                                      |
+| `description` | Yes               | Short blurb (one or two sentences). Used in project cards and under the page title. Use `>` for multi-line.                                              |
+| `permalink`   | Yes (recommended) | Set to `/projects/<slug>/` so the URL is stable.                                                                                                         |
+| `date`        | Optional          | ISO date if known, e.g. `2024-08-31`.                                                                                                                    |
+| `category`    | Yes               | Must be exactly **`Research Projects`** or **`Course Projects`**. Choose from the materials or ask me.                                                   |
+| `tags`        | Optional          | Array, e.g. `[robotics, simulation]`. Derive from the project.                                                                                           |
+| `img`         | Optional          | Card thumbnail path, e.g. `/assets/img/<slug>/thumbnail.png`. If I have not specified images, use a placeholder path and tell me to add the image later. |
 
 Optional: `summary`, `startDate`, `endDate` if relevant.
 

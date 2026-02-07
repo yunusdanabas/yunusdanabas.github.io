@@ -11,7 +11,6 @@ tags: ["robotics", "ROS", "Gazebo", "SLAM", "multi-robot"]
 img: /assets/img/multiexplorer/multiexplore_map.png
 ---
 
-
 <p>
   <a href="https://github.com/yunusdanabas/multiexplorer_yunusdanabas" class="btn btn-outline-primary" role="button" target="_blank">
     <i class="fab fa-github"></i> GitHub Repo
@@ -38,10 +37,10 @@ The entire project is **simulation-only** (Gazebo + RViz), so it is easy to repr
 
 At a high level, each robot repeatedly:
 
-1) builds a local map,  
-2) finds "frontiers" (boundaries between known and unknown space),  
-3) sends navigation goals toward those frontiers,  
-4) and contributes its local map to a global merged map.
+1. builds a local map,
+2. finds "frontiers" (boundaries between known and unknown space),
+3. sends navigation goals toward those frontiers,
+4. and contributes its local map to a global merged map.
 
 ### Core building blocks
 
@@ -62,11 +61,11 @@ Each robot runs in its own namespace (e.g., `tb3_0`, `tb3_1`, `tb3_2`) so that S
 
 Typical patterns used throughout the package:
 
-- **Per-robot topics:**  
+- **Per-robot topics:**
   - `/tb3_0/scan`, `/tb3_0/odom`, `/tb3_0/map` (and similarly for `tb3_1`, `tb3_2`)
-- **Per-robot frames:**  
+- **Per-robot frames:**
   - `tb3_0/base_footprint`, `tb3_0/odom` (etc.)
-- **Merged map topic:**  
+- **Merged map topic:**
   - `/tb3/map` (used as the shared "global" map for exploration/navigation)
 
 ### Map merging strategy
@@ -97,20 +96,23 @@ The package provides one-command launches to reproduce the main scenarios:
 
 ## 5. Key Parameters I Tuned (Process Focus)
 
-A large part of this project was learning how to make a full pipeline behave *reasonably* in simulation by iterating on parameters.
+A large part of this project was learning how to make a full pipeline behave _reasonably_ in simulation by iterating on parameters.
 
 Examples of parameters used in the multi-robot launch:
 
 ### `explore_lite`
+
 - `planner_frequency`, `progress_timeout` (how often to replan / when to give up on a frontier)
 - `min_frontier_size` (filters tiny frontiers)
 - `potential_scale`, `gain_scale`, `orientation_scale` (frontier scoring)
 
 ### `move_base` (DWA)
+
 - per-robot costmap and DWA configs (kept separate to avoid cross-talk)
 - local planner behavior tuned through YAML parameter sets
 
 ### `gmapping`
+
 - namespaced frames (`base_frame`, `odom_frame`, `map_frame`)
 - SLAM sensitivity and update thresholds (especially relevant once robots start moving faster)
 
@@ -139,9 +141,9 @@ roslaunch multiexplorer_yunusdanabas multi_robotexp.launch     # 3 robots
 
 ## 7. Lessons Learned
 
-* **Namespacing and TF discipline** matter more than anything else for multi-robot ROS1 setups.
-* **Map merging is a real system component**, not just a visualization step: topic choices, frame conventions, and update rates affect exploration stability.
-* **Parameter iteration is unavoidable**: exploration behavior is highly sensitive to frontier thresholds, replanning logic, and navigation costmaps.
+- **Namespacing and TF discipline** matter more than anything else for multi-robot ROS1 setups.
+- **Map merging is a real system component**, not just a visualization step: topic choices, frame conventions, and update rates affect exploration stability.
+- **Parameter iteration is unavoidable**: exploration behavior is highly sensitive to frontier thresholds, replanning logic, and navigation costmaps.
 
 ---
 
@@ -173,5 +175,5 @@ roslaunch multiexplorer_yunusdanabas multi_robotexp.launch     # 3 robots
 
 ## 9. Resources
 
-* <a href="https://github.com/yunusdanabas/multiexplorer_yunusdanabas" target="_blank"><strong>GitHub Repository</strong></a>
-* <a href="https://www.canva.com/design/DAGe6rFLM7U/w38mwYjYpvIZk73nA4x4lg/view" target="_blank"><strong>Canva Presentation Slides</strong></a>
+- <a href="https://github.com/yunusdanabas/multiexplorer_yunusdanabas" target="_blank"><strong>GitHub Repository</strong></a>
+- <a href="https://www.canva.com/design/DAGe6rFLM7U/w38mwYjYpvIZk73nA4x4lg/view" target="_blank"><strong>Canva Presentation Slides</strong></a>
