@@ -2,7 +2,7 @@
 layout: page
 title: "Panda-Base Digital Twin — ROS Noetic / Gazebo Package"
 collection: projects
-importance: 2
+importance: 3
 description: >
   ROS Noetic package that provides a Gazebo 11 + RViz digital twin of a Franka Emika Panda mounted on a custom aluminium-profile base.
   Built as a reusable simulation workspace for URDF/Xacro iteration, controller bring-up, and safe pre-hardware validation.

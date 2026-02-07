@@ -2,7 +2,7 @@
 layout: page
 title: "Multiexplorer — Multi-Robot Frontier Exploration with TurtleBot3"
 collection: projects
-importance: 5
+importance: 7
 description: "My first ROS project: a Gazebo-based study comparing single-, double-, and triple-robot frontier exploration, SLAM, and map-merging with TurtleBot3."
 permalink: /projects/multiexplorer/
 date: 2023-09-15

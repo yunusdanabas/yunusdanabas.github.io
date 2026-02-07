@@ -60,7 +60,14 @@ module ExternalPosts
       doc.data['title'] = content[:title]
       doc.data['feed_content'] = content[:content]
       doc.data['description'] = content[:summary]
-      doc.data['date'] = content[:published]
+      # Normalize to Time so Jekyll/gems never call to_time on a Date (Rails 8.1 deprecation)
+      doc.data['date'] = if content[:published].nil?
+        content[:published]
+      elsif content[:published].is_a?(Time)
+        content[:published]
+      else
+        parse_published_date(content[:published])
+      end
       doc.data['redirect'] = url
       doc.content = content[:content]
       site.collections['posts'].docs << doc
@@ -80,7 +87,7 @@ module ExternalPosts
       when String
         Time.parse(published_date).utc
       when Date
-        published_date.to_time.utc
+        Time.utc(published_date.year, published_date.mon, published_date.mday)
       else
         raise "Invalid date format for #{published_date}"
       end

@@ -3,7 +3,7 @@ layout: page
 title: How can a robot place an item on a cluttered desk?
 description: PAGE WİLL BE UPDATED
 img: /assets/img/baxter_robot.png
-importance: 4
+importance: 6
 category: Research Projects
 ---
 

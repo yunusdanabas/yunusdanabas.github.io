@@ -2,7 +2,7 @@
 layout: page
 title: "Crossed-Flexure Pivot Study — Process-Driven Modeling & Prototyping"
 collection: projects
-importance: 1
+importance: 2
 description: >
   Process-focused study of crossed-flexure (cross-spring) pivots as compliant stages for
   force–torque sensing: literature grounding (parasitic center-shift, lateral loading),

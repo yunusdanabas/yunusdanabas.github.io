@@ -683,12 +683,19 @@ footer.sticky-bottom {
   }
 
   h2.category {
-    color: var(--global-divider-color);
+    color: var(--global-text-color);
+    font-weight: bold;
     border-bottom: 1px solid var(--global-divider-color);
     padding-top: 0.5rem;
     margin-top: 2rem;
     margin-bottom: 1rem;
     text-align: right;
+  }
+
+  .card-body .badge {
+    background-color: var(--global-divider-color) !important;
+    color: var(--global-text-color) !important;
+    font-size: 0.9em;
   }
 }
 

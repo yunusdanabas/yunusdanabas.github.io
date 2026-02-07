@@ -14,8 +14,6 @@ tags: [robotics, rovers, suspension, lunar, ros2, gazebo, ros2_control, simulati
 img: /assets/img/prisma_lunar_rover_internship/MobileRobotReconfigurations_A_LowGroundClearance_B_HighGroundClearance_C_LeveledConfiguration_HJiang.png
 mathjax: true
 author: Yunus Emre Danabaş
-startDate: 2025-06-01
-endDate: 2025-10-20
 ---
 
 <div class="mb-3">
