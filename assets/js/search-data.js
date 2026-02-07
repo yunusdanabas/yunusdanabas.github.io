@@ -331,7 +331,12 @@ ninja.data = [{
           window.location.href = "/blog/2015/formatting-and-links/";
         
       },
-    },{id: "projects-how-can-a-robot-place-an-item-on-a-cluttered-desk",
+    },{id: "projects-at42qt1011-touch-sensor-pcb-prototype",
+          title: 'AT42QT1011 Touch Sensor PCB Prototype',
+          description: "A small AT42QT1011-based capacitive touch sensor PCB designed in KiCad and fabricated on an LPKF S63. A hands-on exercise in schematic capture, PCB layout, and in-house prototyping.",
+          section: "Projects",handler: () => {
+              window.location.href = "/projects/asmetal_sensor/";
+            },},{id: "projects-how-can-a-robot-place-an-item-on-a-cluttered-desk",
           title: 'How can a robot place an item on a cluttered desk?',
           description: "PAGE WİLL BE UPDATED",
           section: "Projects",handler: () => {
