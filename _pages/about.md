@@ -13,31 +13,26 @@ profile:
 social: true
 ---
 
-At Sabancı University, I graduated **1st in Mechatronics (2025)** and am completing a second degree in **Electronics**, where I’m currently **ranked 7th**. My work spans robotics, control, and embedded systems, combining rigorous theory with practical development.
+I’m a Mechatronics and Electronics Engineering double major at Sabancı University. I graduated **1st in Mechatronics (2025)** and I’m completing my second degree in **Electronics**. My work sits at the intersection of robotics, control, and embedded systems, with an emphasis on building systems that are reproducible, testable, and robust enough to leave the lab.
 
-On the research side, I have worked with [**PRISMA Lab**](https://prisma.dieti.unina.it/) (University of Naples Federico II), the [**Munich Institute of Robotics and Machine Intelligence (TUM MIRMI)**](https://www.mirmi.tum.de/), and Sabancı University’s [**Human–Machine Interaction Laboratory**](https://hmi.sabanciuniv.edu/) with [**Prof. Volkan Patoğlu**](https://scholar.google.com/citations?user=McT4RRAAAAAJ) on projects spanning planetary robotics, advanced sensing, and simulation-driven control. On the industry side, my roles at [**TÜBİTAK BİLGEM**](https://bilgem.tubitak.gov.tr/), [**Pubinno Inc.**](https://pubinno.com/), and [**AS Robotics (COMAU Turkey)**](https://www.asmetal.com.tr/en/products/robotics-and-automation/) focused on multi-robot coordination, automated mechatronic systems, and industrial robotics. Leading the [**SURover student robotics team**](https://www.linkedin.com/company/sabancirover/) sharpened my ability to turn simulations into reliable, functional hardware.
+My research experience includes work with [**PRISMA Lab**](https://prisma.dieti.unina.it/) (University of Naples Federico II), the [**Munich Institute of Robotics and Machine Intelligence (TUM MIRMI)**](https://www.mirmi.tum.de/), and Sabancı University’s [**Human–Machine Interaction Laboratory**](https://hmi.sabanciuniv.edu/) with [**Prof. Volkan Patoğlu**](https://scholar.google.com/citations?user=McT4RRAAAAAJ). Across these settings, I’ve focused on simulation-driven development, sensing, and control using engineering discipline to move from requirements to working prototypes. 
 
-Currently, I serve as a teaching assistant to [**Prof. Volkan Patoğlu**](https://scholar.google.com/citations?user=McT4RRAAAAAJ) in Sabancı University’s [**Human–Machine Interaction Laboratory**](https://hmi.sabanciuniv.edu/), assisting students in _ME312 Analysis & Synthesis of Mechanisms_ and _ME403 Introduction to Robotics_. In this role, I help bridge theoretical concepts and practical applications, guiding students from foundational mechanism design through to functional prototype realization.
+In industry, I contributed at [**TÜBİTAK BİLGEM**](https://bilgem.tubitak.gov.tr/), [**Pubinno Inc.**](https://pubinno.com/), and [**AS Robotics (COMAU Turkey)**](https://www.asmetal.com.tr/en/products/robotics-and-automation/) on multi-robot coordination, automated mechatronic systems, and industrial robotics. Leading the [**SURover student robotics team**](https://www.linkedin.com/company/sabancirover/) strengthened my ability to turn simulation results into reliable hardware under real constraints.
 
-I like building things that work, trying them in real settings, and improving them step by step.
+Currently, I serve as a teaching assistant to [**Prof. Volkan Patoğlu**](https://scholar.google.com/citations?user=McT4RRAAAAAJ) at Sabancı University, supporting _ME312 Analysis & Synthesis of Mechanisms_ and _ME403 Introduction to Robotics_. I enjoy bridging theory and practice—helping students move from core concepts to functional prototypes.
 
-If you have shared interests in robotics, control systems, or potential collaborations, please feel free to reach out.
+I like building things that work, trying them in real settings, and improving them step by step. If you’d like to collaborate, feel free to reach out.
 
 ---
 
 ## Research Interests
 
-- **Robotic Control & Simulation**  
-  Developing data-driven and model-based control strategies, validated through real-time simulation, to effectively handle complex robotic tasks involving dynamic interactions and contacts.
+I’m broadly interested in robotics, and I’ve intentionally tried to explore many subfields through my projects, internships, and coursework. With a mixed background in mechatronics, electronics, and a solid set of computer science courses, I enjoy working at the boundaries between hardware and software, and picking the right tools for the job.
 
-- **Wearable Robotics & Sensor Integration**  
-  Integrating lightweight sensors with closed-loop control methods to enhance performance and functionality of assistive devices, rehabilitation systems, and mobile robots.
+I’m especially interested in human-centered robotics, including teleoperation, robot teaching, and haptics. I like problems where the goal is to make robots easier to control, safer to use, and more trustworthy in real settings.
 
-- **Mechanical & Mechatronic Design**  
-  Utilizing CAD-based design and rapid prototyping—incorporating flexure mechanisms, additive manufacturing, and precision machining—to efficiently transform ideas into reliable robotic hardware.
+On the autonomy side, I’m interested in robot control and learning for systems that interact with the world, especially contact-rich tasks where modeling and sensing both matter. I’m also drawn to simulation-driven development, building pipelines that make it easier to test ideas quickly and then move them onto real robots.
 
-- **Embedded Systems & Hardware–Software Integration**  
-  Creating robust, microcontroller-based architectures that seamlessly integrate electronics, software, and control algorithms into cohesive, dependable robotic platforms.
+Finally, I’m interested in mobile robotics, including navigation and practical autonomy for robots that operate in imperfect environments. I care about reliability, robustness, and clean integration of sensing, control, and software so the system works outside of ideal lab conditions.
 
-- **Human–Robot Interaction**  
-  Designing intuitive gesture-based interfaces, haptic feedback systems, and multi-modal sensor fusion frameworks to enable safe, natural, and efficient collaboration between humans and robots.
+

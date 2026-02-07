@@ -10,6 +10,12 @@ tags: [robotics, ROS, Baxter, manipulation, Gazebo, MoveIt]
 img: /assets/img/baxter_robot.png
 ---
 
+<div class="mb-3">
+  <a href="https://github.com/yunusdanabas/baxter_noetic" class="btn btn-outline-primary" role="button" target="_blank">
+    <i class="fab fa-github"></i> GitHub Repo
+  </a>
+</div>
+
 ## 1. Overview
 
 We developed an algorithm using **Bayesian Optimization with transfer learning** for sequential object placement and rearrangement with collision-free arrangements on cluttered surfaces. The goal is to plan where and in what order to place or move objects (e.g. on a desk or table) so that the robot can complete tasks without collisions and with fewer trials. Transfer learning helps reuse experience across similar scenes to speed up planning. The system targets efficient manipulation planning in complex, real-world environments.

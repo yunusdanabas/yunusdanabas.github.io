@@ -2,12 +2,12 @@
   "transcript_pdf": "YunusEmreDanabas_Transcript.pdf",
   "basics": {
     "name": "Yunus Emre Danabaş",
-    "label": "B.Sc. Mechatronics & Electronics Engineering Student",
+    "label": "B.Sc. Mechatronics (2025) · B.Sc. Electronics (Expected 2026)",
     "image": "",
     "email": "yunusdanabas@sabanciuniv.edu",
     "phone": "+90 5059546704",
     "url": "https://yunusemredanabas.com",
-    "summary": "I am a final-year undergraduate at Sabancı University pursuing a double major in Mechatronics and Electronics Engineering. Graduating top of my Mechatronics class, I combine rigorous academic foundations with extensive hands-on experience in robotics, control systems, and embedded technologies to drive innovative research and practical robotic solutions.",
+    "summary": "Final-year undergrad at Sabancı, combining Mechatronics (2025) and Electronics (expected 2026) with hands-on robotics, control, and embedded systems—focus on robust, end-to-end solutions.",
     "location": {
       "address": "Istanbul, Turkey",
       "postalCode": "",
@@ -38,7 +38,7 @@
       "startDate": "2020",
       "endDate": "2025",
       "score": "3.77/4.00",
-      "highlights": ["Graduated June 2025", "Combined specialization in robotics, control, and embedded systems across both majors"],
+      "highlights": ["Graduated June 2025; Ranked 1st in Department", "Combined specialization in robotics, control, and embedded systems across both majors"],
       "courses": ["Kinematics and Dynamics of Machines", "Introduction to Robotics", "Autonomous Mobile Robotics", "Deep Learning for Robot Control"],
       "transcript": "/assets/pdf/YunusEmreDanabas_Transcript.pdf"
     },
@@ -50,7 +50,7 @@
       "studyType": "Bachelor",
       "startDate": "2023",
       "endDate": "2026",
-      "highlights": ["Expected graduation June 2026", "Focus on embedded systems and electronics for robotics applications"],
+      "highlights": ["Double Major, expected June 2026", "Focus on embedded systems and electronics for robotics applications"],
       "courses": [],
       "score": "3.77/4.00"
     }
@@ -64,9 +64,9 @@
       "startDate": "2025-10",
       "endDate": "present",
       "highlights": [
-        "Designing a touch-based grip sensor to enable zero-gravity manual guidance for COMAU manipulators.",
-        "Developing a handheld motion-teaching device that records end-effector poses/orientations for autonomous replay.",
-        "Contributing to mechanical integration and control logic across both projects (C++/Python, industrial robot APIs); completed PDL2 training."
+        "Prototyped a capacitive grip/touch sensor; designed and fabricated a simple PCB in-house (KiCad, LPKF).",
+        "Developing a handheld motion-teaching (programming-by-demonstration) workflow for COMAU robots; pose capture and replay prototype in progress.",
+        "Implementing integration and control tooling in C++/Python using COMAU APIs; completed PDL2 training."
       ],
       "summary": "Part-time role designing manual guidance and motion-teaching interfaces for industrial robots."
     },
@@ -75,14 +75,19 @@
       "position": "Research Intern",
       "url": "https://prisma.dieti.unina.it/",
       "startDate": "2025-06",
-      "endDate": "present",
-      "highlights": [
-        "Designing a per-side actuated suspension combining active roll/heave control with passive pitch-averaging for a compact lunar rover.",
-        "Building CAD and ROS 2/Gazebo models with URDF/Xacro; adding posture presets and a hybrid suspension plugin for roll-leveling tests on 5–10° ramps.",
-        "Integrating self-locking linear actuators per side and synthesizing design guidelines from lunar rover and mobile robotics literature."
+      "endDate": "2025-10",
+      "projectUrls": [
+        {
+          "name": "Lunar Rover Suspension",
+          "url": "/projects/prisma_lunar_rover_internship/"
+        }
       ],
-      "location": "Napoli, Italy",
-      "summary": "Erasmus+ internship on posture-controllable lunar micro-rover suspension: mechanism design and ROS 2/Gazebo integration."
+      "highlights": [
+        "Defined a per-side actuated suspension concept for a compact lunar micro-rover, enabling ride height (heave) and roll leveling while preserving passive pitch averaging.",
+        "Initiated ROS 2 + Gazebo simulation pipeline (CAD to URDF/Xacro; ros2_control; posture presets) and handed off Gazebo C++ plugin development for passive differential emulation.",
+        "Synthesized design guidelines from lunar rover and mobile robotics literature; integrated self-locking linear actuators per side."
+      ],
+      "location": "Napoli, Italy"
     },
     {
       "name": "Munich Institute of Robotics and Machine Intelligence (TUM MIRMI)",
@@ -105,7 +110,7 @@
         "Developed a parametric MATLAB simulation pipeline based on Wittrick's crossed-strip flexure theory to rapidly explore hinge geometries, loading scenarios, and deformation characteristics.",
         "Fabricated physical prototypes using SolidWorks for CAD design and implemented precise instrumentation with strain gauges; created a detailed installation and testing manual.",
         "Validated deformation models experimentally using a custom computer-vision pipeline (edge detection, RANSAC curve fitting), ensuring consistency between analytical predictions and real-world data.",
-        "Implemented Gazebo-based digital twins to simulate and analyze the dynamic response of the flexure-stage integration onto a robotic system, facilitating pre-hardware controller tuning and stability assessment."
+        "Created a Gazebo digital twin for flexure-stage integration, enabling pre-hardware controller tuning and stability assessment."
       ],
       "location": "Munich, Germany"
     },
@@ -168,38 +173,46 @@
   ],
   "skills": [
     {
+      "name": "CAD & Fabrication",
+      "keywords": ["SolidWorks (CSWA)", "Onshape", "Fusion 360", "FDM 3D printing"]
+    },
+    {
       "name": "Robotics Stack",
-      "keywords": ["ROS 1/2 (Noetic, Humble)", "URDF/Xacro", "ros2_control", "MoveIt/MoveIt2", "Navigation2", "Gazebo"]
+      "keywords": ["ROS 1/2", "micro-ROS", "URDF/Xacro", "Gazebo", "ros2_control", "MoveIt/MoveIt2", "Navigation2"]
     },
     {
       "name": "Modeling & Control",
-      "keywords": ["State estimation (EKF)", "LQR", "MATLAB/Simulink", "Autolev"]
+      "keywords": ["MATLAB/Simulink", "Autolev"]
     },
     {
       "name": "Learning & Simulation",
-      "keywords": ["RL (BC, PPO; OpenAI Gym)", "JAX (Equinox, Optax, Diffrax)", "MuJoCo", "Brax"]
+      "keywords": ["JAX (Equinox, Optax, Diffrax)", "MuJoCo", "Brax", "RL (BC, PPO)"]
     },
     {
       "name": "Perception",
       "keywords": ["OpenCV", "MediaPipe", "ArUco", "RealSense SDK"]
     },
     {
-      "name": "Programming & Dev",
-      "keywords": ["Python", "C++", "Docker", "Git"]
+      "name": "Programming",
+      "keywords": ["Python", "C/C++", "MATLAB", "Assembly"]
     },
     {
       "name": "Embedded & Electronics",
-      "keywords": ["Arduino", "ESP32", "LTSpice"]
+      "keywords": ["Arduino", "ESP32", "Verilog", "LTspice", "PCB design (KiCad)", "PCB prototyping/production (LPKF S63)"]
+    },
+    {
+      "name": "Tools & DevOps",
+      "keywords": ["Git", "Docker", "Linux"]
     }
   ],
   "projects": [
     {
       "name": "Passive Walker RL Pipeline",
-      "summary": "Three-stage curriculum (FSM ➜ Behaviour Cloning ➜ PPO) that trains a passive-dynamic biped to walk using MuJoCo fidelity and Brax GPU speed.",
+      "summary": "Graduation project: three-stage curriculum (FSM seeding ➜ Behaviour Cloning ➜ PPO) that trains a passive-dynamic biped to achieve stable downhill gait in fewer than 10⁶ steps. MuJoCo supplies fidelity; Brax delivers >1M env-steps/s for GPU-parallel sweeps. Supervised by Prof. Volkan Patoğlu and Dr. Aykut Cihan Satici.",
       "highlights": [
-        "Bootstrapped expert demonstrations in 30 s, then reached stable gait in 10⁵ steps",
-        "Implemented JAX + Equinox + Optax stack; open-sourced code and reports",
-        "Performed large-scale hyper-parameter sweeps on GPU to optimise policy efficiency"
+        "Finite-state expert generates ~30k demos in 30 s; BC yields walk-from-boot policy; PPO reaches steady gait in 10⁵ steps (5× faster than scratch)",
+        "Implemented JAX + Equinox + Optax stack; 1M-param policy; reproducible hash-named artefacts and one-command replay",
+        "Published code, configs, and logs (MIT); ran hyperparameter sweeps for robust policies"
       ],
       "startDate": "2024-10",
       "endDate": "2025-05",
@@ -207,11 +220,11 @@
     },
     {
       "name": "Hand-Steer Sim — Gesture Teleoperation",
-      "summary": "Webcam-only hand-gesture interface replacing physical joysticks for ROS mobile robots.",
+      "summary": "Solo capstone (EE417 Computer Vision, Spring 2025): vision-only teleoperation stack converting webcam/RealSense video into ROS geometry_msgs/Twist for differential-drive robots. Supports discrete hand-sign mode and steering-wheel metaphor with MediaPipe landmarks and compact TFLite models. Docker (CPU/GPU) and Gazebo integration.",
       "highlights": [
-        "MediaPipe landmarks drive 1 k-param MLP (static) and 6 k-param LSTM (steering)",
-        "Achieved 99 % macro-F1 and 13 ms end-to-end latency on GPU (25 ms CPU)",
-        "One-command ROS Noetic or Docker launch starts camera, inference, and Gazebo"
+        "Dual-branch inference: 1k-param MLP for static gestures (Stop, Holding Wheel, Speed Up/Down); 6k-param LSTM for steering trajectories (Turn Left/Right, Forward)",
+        "99% macro-F1 on held-out test; 13 ms end-to-end latency on GPU (25 ms CPU) at 30 FPS",
+        "Released fused /cmd_vel launcher, dataset, training notebooks, and CPU/GPU Docker images for reproducible deployment"
       ],
       "startDate": "2025-03",
       "endDate": "2025-05",
@@ -219,11 +232,11 @@
     },
     {
       "name": "MultiExplorer — Multi-Robot Frontier Exploration",
-      "summary": "ROS + Gazebo comparison of single- vs multi-robot TurtleBot3 frontier exploration and SLAM.",
+      "summary": "First ROS project after TÜBİTAK BİLGEM boot camp: Gazebo-based study comparing single-, double-, and triple-robot TurtleBot3 frontier exploration and SLAM. Built end-to-end autonomous exploration pipeline with namespaces, TF, launch design, and topic remapping.",
       "highlights": [
-        "Implemented explore_lite, GMapping, and multirobot_map_merge in namespaced stacks",
-        "Merged maps in real time; triple-robot setup cut coverage time by ≈ 50 %",
-        "Provided headless CI launches and Canva presentation for dissemination"
+        "Implemented explore_lite, GMapping, move_base/DWA, and multirobot_map_merge in namespaced stacks",
+        "Merged maps in real time; benchmarked 1/2/3-robot configurations; triple-robot setup reduced coverage time vs single-robot baseline",
+        "Headless Gazebo launches for CI; Canva presentation for dissemination"
       ],
       "startDate": "2023-09",
       "endDate": "2023-09",
@@ -231,11 +244,11 @@
     },
     {
       "name": "SURover — Technical Team Captain",
-      "summary": "Built a ROS + Gazebo digital twin and led mechanical/electronics/software integration for a field-ready rover.",
+      "summary": "Sabancı University Rover Team: built ROS + Gazebo digital twin and led mechanical, electronics, and software integration for a field-ready rover. Oversaw team operations and project continuity within IEEE Student Chapter.",
       "highlights": [
-        "Authored URDF/Xacro and MoveIt pipelines enabling drivetrain and manipulator simulation.",
-        "Implemented multi-sensor fusion and ArUco-based fiducial SLAM with ZED2, RealSense D435i, and RPLIDAR-A3.",
-        "Led mechanical fabrication, cabling, and Arduino-based motor control."
+        "Authored URDF/Xacro and MoveIt pipelines for drivetrain and manipulator; enabled sim-to-hardware deployment",
+        "Multi-sensor fusion and ArUco-based fiducial SLAM with ZED2, RealSense D435i, and RPLIDAR-A3",
+        "Wi-Fi joystick with watchdog and E-stop; mechanical fabrication, cabling, and Arduino-based motor control"
       ],
       "startDate": "2022-06",
       "endDate": "2025-01",
@@ -243,37 +256,39 @@
     },
     {
       "name": "Cart-Pole Swing-Up Control (JAX & MuJoCo)",
-      "summary": "Classical LQR and neural controllers with differentiable simulation for robust swing-up under disturbances.",
-      "highlights": ["Implemented in JAX/Equinox/Diffrax; validated robustness across disturbance profiles."],
+      "summary": "Hybrid control combining neural energy shaping with classical LQR for cart-pole swing-up. End-to-end differentiable training in JAX (Equinox/Diffrax); real-time deployment at 1 kHz in MuJoCo 3.x. Supervised by Dr. Aykut Cihan Satici.",
+      "highlights": [
+        "Neural energy shaping for robust swing-up from arbitrary initial conditions; LQR for stabilization around upright",
+        "98% success rate across disturbance profiles; ~1.9 s swing-up time; <5 min CPU training with analytical gradients",
+        "Implemented in JAX/Equinox/Diffrax; validated robustness across pose and velocity distributions"
+      ],
       "startDate": "2024-10",
       "endDate": "2025-01",
       "url": "/projects/mujoco_cartpole/"
     },
     {
       "name": "Robotic Item Placement on Cluttered Desks (Baxter)",
-      "summary": "Gazebo + ROS Noetic pipeline demonstrating clutter-aware placement policies on Baxter with MoveIt integration.",
-      "highlights": ["Resolved MoveIt integration and validated end-to-end pipeline in simulation."],
+      "summary": "Group project (Prof. Volkan Patoğlu, Prof. Esra Erdem): Bayesian optimization with transfer learning for sequential, collision-free object placement on cluttered surfaces. I ported Baxter SDK to ROS Noetic (Python 3) and repaired MoveIt and Gazebo pipeline for sim-to-robot deployment.",
+      "highlights": [
+        "Updated core interface, enable/disable, tuck/untuck, cameras, example scripts; Gazebo stack for pre-hardware testing",
+        "Same stack on sim and hardware enables develop-in-Gazebo, deploy-on-Baxter workflow with minimal changes",
+        "Demonstrated clutter-aware placement policies; MoveIt for motion planning in both settings"
+      ],
       "startDate": "2023-01",
       "endDate": "2024-01",
-      "url": "/projects/baxter_item_placement/"
+      "url": "/projects/baxter/"
     }
   ],
   "awards": [
     {
       "title": "Extracurricular Student Activities Leadership Award",
-      "date": "2023",
-      "awarder": "Sabancı University",
-      "url": ""
-    },
-    {
-      "title": "Extracurricular Student Activities Leadership Award",
-      "date": "2024",
+      "date": "2023, 2024",
       "awarder": "Sabancı University",
       "url": ""
     },
     {
       "title": "Merit-Based Full Tuition Scholarship",
-      "date": "2020–Present",
+      "date": "2020–2025",
       "awarder": "Sabancı University",
       "url": ""
     },
@@ -285,13 +300,13 @@
     },
     {
       "title": "Dean's High Honor",
-      "date": "2020–Present",
+      "date": "2020–2025",
       "awarder": "Sabancı University",
       "url": ""
     },
     {
-      "title": "Ranked 7th in the Electronics Engineering Department",
-      "date": "Present",
+      "title": "Ranked 7th in the Electronics Engineering Department (as of 2025)",
+      "date": "2025",
       "awarder": "Sabancı University",
       "url": ""
     }
