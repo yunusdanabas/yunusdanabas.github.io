@@ -177,17 +177,6 @@ ninja.data = [{
           window.location.href = "/blog/2023/jupyter-notebook/";
         
       },
-    },{id: "post-a-post-with-custom-blockquotes",
-      
-        title: "a post with custom blockquotes",
-      
-      description: "an example of a blog post with custom blockquotes",
-      section: "Posts",
-      handler: () => {
-        
-          window.location.href = "/blog/2023/custom-blockquotes/";
-        
-      },
     },{id: "post-a-post-with-table-of-contents-on-a-sidebar",
       
         title: "a post with table of contents on a sidebar",
@@ -362,13 +351,13 @@ ninja.data = [{
           description: "MATLAB/Simulink and TI C2000 control stack: computed-torque, PD with gravity compensation, and joint/task-space transforms for millimetre-level trajectory tracking on a 5-link planar robot in real time.",
           section: "Projects",handler: () => {
               window.location.href = "/projects/2dof_manipulator/";
-            },},{id: "projects-panda-base-digital-twin-ros-noetic-gazebo-package",
-          title: 'Panda-Base Digital Twin — ROS Noetic / Gazebo Package',
-          description: "ROS Noetic package that provides a Gazebo 11 + RViz digital twin of a Franka Emika Panda mounted on a custom aluminium-profile base. Built as a reusable simulation workspace for URDF/Xacro iteration, controller bring-up, and safe pre-hardware validation.",
+            },},{id: "projects-tum-mirmi-panda-base-digital-twin-ros-noetic-gazebo-package",
+          title: 'TUM MIRMI — Panda-Base Digital Twin — ROS Noetic / Gazebo Package',
+          description: "ROS Noetic package that provides a Gazebo 11 + RViz digital twin of a Franka Emika Panda mounted on a custom aluminium-profile base. Built as a reusable simulation workspace for URDF/Xacro iteration, controller bring-up, and safe pre-hardware validation. Developed at TUM MIRMI.",
           section: "Projects",handler: () => {
               window.location.href = "/projects/panda_base_sim/";
-            },},{id: "projects-crossed-flexure-pivot-study-process-driven-modeling-amp-prototyping",
-          title: 'Crossed-Flexure Pivot Study — Process-Driven Modeling &amp;amp; Prototyping',
+            },},{id: "projects-tum-mirmi-crossed-flexure-pivot-study-process-driven-modeling-amp-prototyping",
+          title: 'TUM MIRMI — Crossed-Flexure Pivot Study — Process-Driven Modeling &amp;amp; Prototyping',
           description: "Process-focused study of crossed-flexure (cross-spring) pivots as compliant stages for force–torque sensing: literature grounding (parasitic center-shift, lateral loading), dimensionless modeling, Newton–Raphson MATLAB solver, CAD to prototype iterations, and vision-based deformation tracking. Conducted at TUM-MIRMI under Mehmet Can Yıldırım and Prof. Sami Haddadin.",
           section: "Projects",handler: () => {
               window.location.href = "/projects/flexure_hinge_torque_sensor/";
