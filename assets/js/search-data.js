@@ -336,9 +336,9 @@ ninja.data = [{
           description: "A small AT42QT1011-based capacitive touch sensor PCB designed in KiCad and fabricated on an LPKF S63. A hands-on exercise in schematic capture, PCB layout, and in-house prototyping.",
           section: "Projects",handler: () => {
               window.location.href = "/projects/asmetal_sensor/";
-            },},{id: "projects-how-can-a-robot-place-an-item-on-a-cluttered-desk",
-          title: 'How can a robot place an item on a cluttered desk?',
-          description: "PAGE WİLL BE UPDATED",
+            },},{id: "projects-baxter-manipulation-with-ros-noetic-and-object-rearrangement",
+          title: 'Baxter manipulation with ROS Noetic and object rearrangement',
+          description: "Group project on Bayesian Optimization with transfer learning for sequential object placement and rearrangement on cluttered surfaces. I worked on the physical robot side and ported the Baxter codebase to ROS Noetic.",
           section: "Projects",handler: () => {
               window.location.href = "/projects/baxter/";
             },},{id: "projects-multiexplorer-multi-robot-frontier-exploration-with-turtlebot3",
