@@ -331,9 +331,9 @@ ninja.data = [{
           window.location.href = "/blog/2015/formatting-and-links/";
         
       },
-    },{id: "projects-at42qt1011-touch-sensor-pcb-prototype",
-          title: 'AT42QT1011 Touch Sensor PCB Prototype',
-          description: "A small AT42QT1011-based capacitive touch sensor PCB designed in KiCad and fabricated on an LPKF S63. A hands-on exercise in schematic capture, PCB layout, and in-house prototyping.",
+    },{id: "projects-at42qt1011-capacitive-grip-touch-sensor-pcb",
+          title: 'AT42QT1011 Capacitive Grip/Touch Sensor PCB',
+          description: "AT42QT1011-based capacitive grip/touch sensor PCB work for industrial gripper applications, designed in KiCad and fabricated in-house on an LPKF S63.",
           section: "Projects",handler: () => {
               window.location.href = "/projects/asmetal_sensor/";
             },},{id: "projects-baxter-manipulation-with-ros-noetic-and-object-rearrangement",
