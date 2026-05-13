@@ -58,17 +58,19 @@
   "work": [
     {
       "name": "As Robotics (COMAU Turkey)",
-      "position": "Part-time Robotics Engineer",
+      "position": "Part-time Robotics Engineer; Technical Lead, EVKA Wireless TÜBİTAK Project",
       "url": "https://www.asmetal.com.tr/en/products/robotics-and-automation/",
       "location": "Istanbul, Turkey",
       "startDate": "2025-10",
       "endDate": "present",
       "highlights": [
-        "Prototyped a capacitive grip/touch sensor; designed and fabricated a simple PCB in-house (KiCad, LPKF).",
-        "Developing a handheld motion-teaching (programming-by-demonstration) workflow for COMAU robots; pose capture and replay prototype in progress.",
-        "Implementing integration and control tooling in C++/Python using COMAU APIs; completed PDL2 training."
+        "Leading the technical development of EVKA Wireless / EVKA 2.0, a TÜBİTAK-backed wireless tele-imitation system for industrial robot programming with COMAU robots.",
+        "Architecting the embedded-to-ROS pipeline using ESP32-based sensing, dual-IMU/UWB positioning concepts, micro-ROS over WiFi, ROS 2 visualization, and PDL2-oriented robot path generation.",
+        "Developed EVKA Position as a separate encoder-based 3D positioning platform, converting rotary and draw-wire encoder data into Cartesian coordinates with calibration, filtering, dashboard, and TCP/WebSocket/serial interfaces.",
+        "Designed and fabricated capacitive grip/touch sensor PCBs using KiCad and LPKF, including AT42QT1011-based capacitive sensing hardware for industrial gripper applications.",
+        "Built C++/Python integration and testing tools while gaining hands-on experience with COMAU robot operation, PDL2 programming, and controller-level workflows."
       ],
-      "summary": "Part-time role designing manual guidance and motion-teaching interfaces for industrial robots."
+      "summary": "Technical lead for EVKA Wireless / EVKA 2.0, a TÜBİTAK-backed wireless tele-imitation system for COMAU industrial robot programming."
     },
     {
       "name": "PRISMA Lab, University of Naples Federico II",
@@ -166,9 +168,23 @@
       "location": "Istanbul, Turkey",
       "startDate": "2024-09",
       "endDate": "present",
-      "courses": ["ME312 Analysis and Synthesis of Mechanisms", "ME403 Introduction to Robotics"],
-      "highlights": ["Led labs/recitations, held weekly office hours, and supervised course projects for 20+ students per semester."],
-      "summary": "Teaching assistant for ME312 and ME403; labs, recitations, and project supervision."
+      "instructors": [
+        {
+          "name": "Prof. Volkan Patoğlu",
+          "url": "https://scholar.google.com/citations?hl=en&user=McT4RRAAAAAJ"
+        },
+        {
+          "name": "Asst. Prof. Dr. Meltem Elitaş",
+          "url": "https://scholar.google.com/citations?user=gQSfkp4AAAAJ&hl=en"
+        },
+        {
+          "name": "Asst. Prof. Melih Türkseven",
+          "url": "https://scholar.google.com/citations?user=vYxhKTAAAAAJ&hl=en"
+        }
+      ],
+      "courses": ["ME312 Analysis and Synthesis of Mechanisms", "ME403 Introduction to Robotics", "ME304 Motion Control Systems"],
+      "highlights": ["Led labs/recitations, held weekly office hours, and supervised course projects for 15+ students per semester."],
+      "summary": "Teaching assistant for ME312, ME403, and ME304; labs, recitations, and project supervision."
     }
   ],
   "skills": [

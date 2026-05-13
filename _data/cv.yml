@@ -40,14 +40,16 @@
 - title: Research & Engineering Experience
   type: time_table
   contents:
-    - title: Part-time Robotics Engineer
+    - title: Part-time Robotics Engineer; Technical Lead, EVKA Wireless TÜBİTAK Project
       institution: As Robotics (COMAU Turkey)
       location: Istanbul, Turkey
       year: Oct 2025 – Present
       description:
-        - Designing a touch-based grip sensor to enable zero-gravity manual guidance for COMAU manipulators
-        - Developing a handheld motion-teaching device that records end-effector poses for autonomous replay
-        - Supporting mechanical integration and control logic across both projects (C++/Python, industrial robot APIs); completed PDL2 training
+        - Leading the technical development of EVKA Wireless / EVKA 2.0, a TÜBİTAK-backed wireless tele-imitation system for industrial robot programming with COMAU robots
+        - Architecting the embedded-to-ROS pipeline using ESP32-based sensing, dual-IMU/UWB positioning concepts, micro-ROS over WiFi, ROS 2 visualization, and PDL2-oriented robot path generation
+        - Developed EVKA Position as a separate encoder-based 3D positioning platform, converting rotary and draw-wire encoder data into Cartesian coordinates with calibration, filtering, dashboard, and TCP/WebSocket/serial interfaces
+        - Designed and fabricated capacitive grip/touch sensor PCBs using KiCad and LPKF, including AT42QT1011-based capacitive sensing hardware for industrial gripper applications
+        - Built C++/Python integration and testing tools while gaining hands-on experience with COMAU robot operation, PDL2 programming, and controller-level workflows
     - title: Research Intern
       institution: PRISMA Lab, University of Naples Federico II
       location: Napoli, Italy
@@ -123,13 +125,14 @@
 - title: Teaching Experience
   type: time_table
   contents:
-    - title: Teaching Assistant (Prof. Volkan Patoğlu)
+    - title: Teaching Assistant
       institution: Sabancı University
       location: Istanbul, Turkey
       year: Sep 2024 – Present
       description:
-        - Supported ME312 Analysis and Synthesis of Mechanisms and ME403 Introduction to Robotics
-        - Led labs and recitations, held weekly office hours, and supervised course projects for 20+ students per semester
+        - "Instructors: Prof. Volkan Patoğlu, Asst. Prof. Dr. Meltem Elitaş, Asst. Prof. Melih Türkseven"
+        - "Courses: ME312 Analysis and Synthesis of Mechanisms; ME403 Introduction to Robotics; ME304 Motion Control Systems"
+        - Led labs/recitations, held weekly office hours, and supervised course projects for 15+ students per semester
 
 - title: Honors & Awards
   type: time_table

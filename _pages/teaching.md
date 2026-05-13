@@ -2,11 +2,17 @@
 layout: page
 permalink: /teaching/
 title: teaching
-description: Materials for courses you taught. Replace this text with your description.
+description: Teaching assistant experience at Sabancı University.
 nav: false
 nav_order: 6
 ---
 
-For now, this page is assumed to be a static description of your courses. You can convert it to a collection similar to `_projects/` so that you can have a dedicated page for each course.
+## Sabancı University
 
-Organize your courses by years, topics, or universities, however you like!
+**Teaching Assistant** · Istanbul, Turkey · Sep 2024–Present
+
+**Instructors:** [Prof. Volkan Patoğlu](https://scholar.google.com/citations?hl=en&user=McT4RRAAAAAJ), [Asst. Prof. Dr. Meltem Elitaş](https://scholar.google.com/citations?user=gQSfkp4AAAAJ&hl=en), [Asst. Prof. Melih Türkseven](https://scholar.google.com/citations?user=vYxhKTAAAAAJ&hl=en)
+
+**Courses:** ME312 Analysis and Synthesis of Mechanisms; ME403 Introduction to Robotics; ME304 Motion Control Systems
+
+- Led labs/recitations, held weekly office hours, and supervised course projects for 15+ students per semester.

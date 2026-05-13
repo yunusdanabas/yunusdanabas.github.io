@@ -1,30 +1,32 @@
 ---
 layout: page
-title: "AT42QT1011 Touch Sensor PCB Prototype"
+title: "AT42QT1011 Capacitive Grip/Touch Sensor PCB"
 collection: projects
 importance: 4
 description: >
-  A small AT42QT1011-based capacitive touch sensor PCB designed in KiCad and fabricated on an LPKF S63.
-  A hands-on exercise in schematic capture, PCB layout, and in-house prototyping.
+  AT42QT1011-based capacitive grip/touch sensor PCB work for industrial gripper applications,
+  designed in KiCad and fabricated in-house on an LPKF S63.
 permalink: /projects/asmetal_sensor/
 category: Research Projects
-tags: [pcb, electronics, capacitive-sensing, kicad, lpkf, at42qt1011]
+tags: [pcb, electronics, capacitive-sensing, industrial-grippers, kicad, lpkf, at42qt1011]
 img: /assets/img/asmetal_sensor/thumbnail.png
 ---
 
 ## 1. Overview
 
-This is a **basic capacitive touch sensor PCB** built around **Microchip AT42QT1011**.  
-The main motivation was practical: the intended sensor IC was **not available locally in Turkey**, so I sourced an **AT42QT1011** and produced the PCB myself.
+This project documents the capacitive grip/touch sensing hardware I developed at **As Robotics (COMAU Turkey)** for industrial gripper applications. The prototype is built around the **Microchip AT42QT1011** and was designed to provide a compact digital touch signal that could be integrated into a robot end-effector.
+
+The main motivation was practical: the intended sensor IC was **not available locally in Turkey**, so I sourced an **AT42QT1011**, adapted the circuit around the available component, and produced the PCB in-house.
 
 ---
 
 ## 2. What I did
 
-- Designed the schematic + layout in **KiCad**
-- Implemented a **minimal reference-style front-end** (AT42QT1011 + tuning/RC parts + decoupling)
-- Fabricated the board using an **LPKF S63**
-- Used this project to practice **PCB design workflow** and learn **LPKF S63 prototyping**
+- Designed the schematic and layout in **KiCad** for an AT42QT1011-based capacitive grip/touch sensor
+- Implemented a compact **reference-style front-end** with tuning/RC parts, decoupling, and a simple output header
+- Fabricated the board in-house using an **LPKF S63** and hand-soldered the SMD components
+- Integrated the PCB into a robot end-effector as a capacitive sensing prototype for gripper interaction
+- Used the build to strengthen the full PCB workflow from schematic capture to fabrication and bench testing
 
 ---
 
@@ -98,7 +100,7 @@ The **AT42QT1011** drives a charge-transfer capacitive measurement between **SNS
       class="img-fluid rounded z-depth-1" %}
   </div>
 </div>
-<p class="text-muted small">Capacitive touch sensor integrated into the robot end-effector.</p>
+<p class="text-muted small">Capacitive grip/touch sensor integrated into the robot end-effector.</p>
 
 ### Videos
 
