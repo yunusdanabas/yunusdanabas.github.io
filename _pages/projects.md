@@ -7,7 +7,7 @@ description: >
   Click on any card for full details.
 nav: true
 nav_order: 3
-display_categories: ["Research Projects", "Course Projects"]
+display_categories: ["Research Projects", "Course Projects", "Teaching & Open Source"]
 ---
 
 <div class="projects">
