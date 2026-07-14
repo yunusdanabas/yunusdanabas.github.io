@@ -12,8 +12,7 @@ description: >
   Personal site of Yunus Emre Danabaş — robotics, control, and embedded systems research,
   projects, and teaching at Sabancı University.
 
-footer_text: >
-  © Yunus Emre Danabaş. Built with Jekyll and al-folio.
+footer_text:
 
 keywords: robotics, mechatronics, control systems, embedded systems, ROS, simulation, Sabancı University
 lang: en # the language of your site (for example: en, fr, cn, ru, etc.)
@@ -30,7 +29,8 @@ back_to_top: true # set to false to disable the back to top button
 # -----------------------------------------------------------------------------
 
 navbar_fixed: true
-footer_fixed: true
+footer_fixed: false
+enable_footer: false
 
 # Dimensions
 max_width: 1200px # max width of the page
