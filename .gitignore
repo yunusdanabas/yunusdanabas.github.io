@@ -14,3 +14,8 @@ vendor
 
 # Project drafts
 /_pdrafts
+
+# Local authoring prompts and debug logs
+PROJECT_WRITE_FROM_SCRATCH_PROMPT.md
+PROJECT_REWRITE_PROMPT.md
+.cursor/debug.log

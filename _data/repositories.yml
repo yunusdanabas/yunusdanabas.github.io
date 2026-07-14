@@ -1,14 +1,14 @@
 github_users:
-  - torvalds
-  - alshedivat
+  - yunusdanabas
 
 repo_description_lines_max: 2
 
 github_repos:
-  - alshedivat/al-folio
-  - jekyll/jekyll
-  - twbs/bootstrap
-  - jquery/jquery
-  - FortAwesome/Font-Awesome
-  - mathjax/MathJax
-  - jpswalsh/academicons
+  - yunusdanabas/dobot-robotics-lab
+  - yunusdanabas/panda_base_sim
+  - yunusdanabas/hand_steer_sim
+  - yunusdanabas/passive_walker_rl
+  - yunusdanabas/MuJoCo_CartPole
+  - yunusdanabas/multiexplorer_yunusdanabas
+  - yunusdanabas/FPGA-AirHockey
+  - yunusdanabas/baxter_noetic
