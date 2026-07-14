@@ -31,10 +31,10 @@ Report-only review of flagged copy issues on yunusemredanabas.com. **No prose wa
 **Issue:** Filenames indicate literature figures from other researchers:
 
 | Filename suffix | Count |
-|-----------------|-------|
-| `_HJiang` | 4 |
-| `_TianxiangLan` | 1 |
-| `_EricGratton` | 1 |
+| --------------- | ----- |
+| `_HJiang`       | 4     |
+| `_TianxiangLan` | 1     |
+| `_EricGratton`  | 1     |
 
 Only one caption explicitly says "From Jiang et al." A reader cannot tell which figures are original work vs. cited literature.
 
@@ -46,7 +46,7 @@ Only one caption explicitly says "From Jiang et al." A reader cannot tell which 
 
 **File:** `_pages/about.md` (line 24)
 
-**Issue:** The closing paragraph — *"I like building things that work… feel free to reach out"* — repeats themes already covered by 14 project pages and buries the call to action. Contact info (`yunusdanabas@sabanciuniv.edu`) appears only in the profile sidebar.
+**Issue:** The closing paragraph — _"I like building things that work… feel free to reach out"_ — repeats themes already covered by 14 project pages and buries the call to action. Contact info (`yunusdanabas@sabanciuniv.edu`) appears only in the profile sidebar.
 
 **Suggestion:** Add an explicit action block near the top or end of the about page: **Download CV · Email · GitHub · LinkedIn**.
 
@@ -56,13 +56,13 @@ Only one caption explicitly says "From Jiang et al." A reader cannot tell which 
 
 **Files:** `_projects/fpga_airhockey.md`, `_projects/me403_manipulator.md`, `_projects/mujoco_cartpole.md`
 
-**Issue:** These pages do not state whether the work was solo or team-based. `baxter.md` sets a good precedent: *"Group project… I worked on the physical robot side."*
+**Issue:** These pages do not state whether the work was solo or team-based. `baxter.md` sets a good precedent: _"Group project… I worked on the physical robot side."_
 
-| Project | Current state |
-|---------|---------------|
-| `fpga_airhockey` | No solo/team statement |
-| `me403_manipulator` | Course project named, no team/solo |
-| `mujoco_cartpole` | No solo/team statement (ME58006 course context implied only via PDF link) |
+| Project             | Current state                                                             |
+| ------------------- | ------------------------------------------------------------------------- |
+| `fpga_airhockey`    | No solo/team statement                                                    |
+| `me403_manipulator` | Course project named, no team/solo                                        |
+| `mujoco_cartpole`   | No solo/team statement (ME58006 course context implied only via PDF link) |
 
 **Suggestion:** Add one sentence each clarifying authorship scope, matching the baxter pattern.
 
@@ -78,4 +78,4 @@ Only one caption explicitly says "From Jiang et al." A reader cannot tell which 
 
 ---
 
-*Generated as Phase 7 of the site-wide cleanup. Review and edit at your discretion.*
+_Generated as Phase 7 of the site-wide cleanup. Review and edit at your discretion._

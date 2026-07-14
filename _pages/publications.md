@@ -18,11 +18,11 @@ Internship and research reports with full technical write-ups. Each report corre
 Engineering plan and system design for a simulation-ready lunar micro-rover, covering mechanical layout, ROS 2/Gazebo architecture, and navigation integration.
 
 <p>
-  <a href="{{ '/assets/pdf/prisma_lunar_rover_internship/YunusEmreDanabas_PRISMA_Report.pdf' | relative_url }}" class="btn btn-outline-secondary" role="button" target="_blank">
+  <a href="/assets/pdf/prisma_lunar_rover_internship/YunusEmreDanabas_PRISMA_Report.pdf" class="btn btn-outline-secondary" role="button" target="_blank">
     <i class="fas fa-file-pdf"></i> Download report (PDF)
   </a>
   &nbsp;
-  <a href="{{ '/projects/prisma_lunar_rover_internship/' | relative_url }}" class="btn btn-outline-primary" role="button">
+  <a href="/projects/prisma_lunar_rover_internship/" class="btn btn-outline-primary" role="button">
     <i class="fas fa-project-diagram"></i> Project page
   </a>
 </p>
@@ -36,11 +36,11 @@ Engineering plan and system design for a simulation-ready lunar micro-rover, cov
 Design, fabrication, and vision-based measurement of a crossed-flexure pivot mechanism, including CAD iteration and strain-gauge instrumentation planning.
 
 <p>
-  <a href="{{ '/assets/pdf/flexure_hinge/YunusEmreDanabas_report.pdf' | relative_url }}" class="btn btn-outline-secondary" role="button" target="_blank">
+  <a href="/assets/pdf/flexure_hinge/YunusEmreDanabas_report.pdf" class="btn btn-outline-secondary" role="button" target="_blank">
     <i class="fas fa-file-pdf"></i> Download report (PDF)
   </a>
   &nbsp;
-  <a href="{{ '/projects/flexure_hinge_torque_sensor/' | relative_url }}" class="btn btn-outline-primary" role="button">
+  <a href="/projects/flexure_hinge_torque_sensor/" class="btn btn-outline-primary" role="button">
     <i class="fas fa-project-diagram"></i> Project page
   </a>
 </p>
@@ -54,11 +54,11 @@ Design, fabrication, and vision-based measurement of a crossed-flexure pivot mec
 Digital twin of a force-torque sensor test rig with Franka Panda integration, including URDF/XACRO modeling, Gazebo simulation, and interactive teleoperation.
 
 <p>
-  <a href="{{ '/assets/pdf/panda_base_sim/YunusEmreDanabas_report.pdf' | relative_url }}" class="btn btn-outline-secondary" role="button" target="_blank">
+  <a href="/assets/pdf/panda_base_sim/YunusEmreDanabas_report.pdf" class="btn btn-outline-secondary" role="button" target="_blank">
     <i class="fas fa-file-pdf"></i> Download report (PDF)
   </a>
   &nbsp;
-  <a href="{{ '/projects/panda_base_sim/' | relative_url }}" class="btn btn-outline-primary" role="button">
+  <a href="/projects/panda_base_sim/" class="btn btn-outline-primary" role="button">
     <i class="fas fa-project-diagram"></i> Project page
   </a>
 </p>

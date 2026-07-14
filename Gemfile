@@ -29,7 +29,7 @@ group :other_plugins do
     gem 'css_parser'
     gem 'feedjira'
     gem 'httparty', '>= 0.24.0'
-    gem 'observer'       # used by jekyll-scholar
+    gem 'observer'
     gem 'ostruct'        # used by jekyll-twitter-plugin
     gem 'terser'         # used by jekyll-terser
     # gem 'unicode_utils' -- should be already installed by jekyll
