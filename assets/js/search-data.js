@@ -396,6 +396,11 @@ ninja.data = [{
           description: "Summer 2025 research internship at PRISMA Lab (Univ. of Naples Federico II): I developed and justified a per-side actuated suspension concept for a compact lunar rover (heave + roll, passive pitch averaging) and delivered a simulation-first implementation roadmap (ROS 2 + Gazebo) for posture-aware autonomy.",
           section: "Projects",handler: () => {
               window.location.href = "/projects/prisma_lunar_rover_internship/";
+            },},{id: "projects-dobot-robotics-lab-open-source-teaching-package-for-magician-amp-mg400",
+          title: 'Dobot Robotics Lab — Open-Source Teaching Package for Magician &amp;amp; MG400',
+          description: "An open (Apache-2.0) robotics teaching package built for ME403 Introduction to Robotics: four progressive labs — forward kinematics, Jacobian/inverse kinematics, path planning, and image-based visual servoing — on a simulation-first stack that runs the Dobot Magician and MG400 with no hardware attached. 138 tests pass in 17 seconds on a laptop with no robot in the room.",
+          section: "Projects",handler: () => {
+              window.location.href = "/projects/dobot_robotics_lab/";
             },},{
         id: 'social-email',
         title: 'email',
