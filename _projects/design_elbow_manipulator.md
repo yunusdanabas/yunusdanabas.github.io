@@ -11,7 +11,7 @@ tags: [mechanical-design, power-electronics, control-systems, robotics]
 img: /assets/img/me408_elbow/me408_design_closedForm.jpeg
 ---
 
-## 1&nbsp;·&nbsp;Overview & Motivation
+## 1. Overview & Motivation
 
 This solo ME408 project (Sabancı University) produced the **only design in a class of 20+** that satisfied all structural, weight, and accuracy specs.  
 The goals were:
@@ -29,7 +29,7 @@ The goals were:
 
 <br>
 
-## 2&nbsp;·&nbsp;Mechanical Design
+## 2. Mechanical Design
 
 - CAD in **SOLIDWORKS** with topology-inspired link geometry
 - **Static & dynamic FEA** → safety factor > 2 while trimming 18 % mass
@@ -37,7 +37,7 @@ The goals were:
 
 <br>
 
-## 3&nbsp;·&nbsp;Power Electronics
+## 3. Power Electronics
 
 - **Buck-boost converter** designed in **LTspice**
   - 7 % voltage ripple, < 5 % inductor current ripple at 1 A load
@@ -45,7 +45,7 @@ The goals were:
 
 <br>
 
-## 4&nbsp;·&nbsp;Control Architecture
+## 4. Control Architecture
 
 | Loop      | Controller   | Inputs                        | Outputs           |
 | --------- | ------------ | ----------------------------- | ----------------- |
@@ -57,7 +57,7 @@ The goals were:
 
 <br>
 
-## 5&nbsp;·&nbsp;System Integration & Validation
+## 5. System Integration & Validation
 
 All subsystems were co-simulated:
 

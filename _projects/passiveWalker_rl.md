@@ -2,7 +2,7 @@
 layout: page
 title: "Passive Walker RL — Curriculum-Driven Biped Locomotion in JAX & Brax"
 collection: projects
-importance: 4
+importance: 5
 description: |
   A three-stage pipeline (≤ 300 LoC per stage) that bootstraps a passive-dynamic biped
   from a finite-state expert to a GPU-scale PPO policy in minutes.  MuJoCo supplies
@@ -32,7 +32,7 @@ author: Yunus Emre Danabaş
   </a>
 </p>
 
-## 1 · Overview & Motivation
+## 1. Overview & Motivation
 
 > **Problem statement —** _How can a passive-dynamic biped learn a stable downhill gait in **fewer than 10⁶ simulation steps** on commodity hardware?_
 
@@ -56,38 +56,30 @@ Why it matters
 
 ---
 
-## 2 · Physics Model & Environment
+## 2. Physics Model & Environment
 
 The walker (Fig.&nbsp;1) is a five-body planar biped with seven DoF—slide-x, slide-z, yaw, one hip hinge, two prismatic knees—walking down an 11.5° virtual slope.
 
-<table>
-<tr>
-  <td width="48%">
-    <img src="/assets/img/passive_walker_rl/fsm/joint_kinematics.png"
-         alt="Joint angles and velocities over a gait cycle" width="100%">
-  </td>
-  <td width="48%">
-    <img src="/assets/img/passive_walker_rl/fsm/body_motion.png"
-         alt="Torso pitch angle and forward speed evolution" width="100%">
-  </td>
-</tr>
-<tr>
-  <td width="48%">
-    <img src="/assets/img/passive_walker_rl/fsm/foot_height.png"
-         alt="Swing- and stance-foot height versus time" width="100%">
-  </td>
-  <td width="48%">
-    <img src="/assets/img/passive_walker_rl/fsm/com_path.png"
-         alt="Center-of-mass path in the sagittal plane" width="100%">
-  </td>
-</tr>
-</table>
+<div class="row justify-content-sm-center">
+  <div class="col-sm-6">
+    {% include figure.liquid path="assets/img/passive_walker_rl/fsm/joint_kinematics.png" title="Joint angles and velocities over a gait cycle" class="img-fluid rounded z-depth-1" %}
+  </div>
+  <div class="col-sm-6">
+    {% include figure.liquid path="assets/img/passive_walker_rl/fsm/body_motion.png" title="Torso pitch angle and forward speed evolution" class="img-fluid rounded z-depth-1" %}
+  </div>
+  <div class="col-sm-6 mt-3">
+    {% include figure.liquid path="assets/img/passive_walker_rl/fsm/foot_height.png" title="Swing- and stance-foot height versus time" class="img-fluid rounded z-depth-1" %}
+  </div>
+  <div class="col-sm-6 mt-3">
+    {% include figure.liquid path="assets/img/passive_walker_rl/fsm/com_path.png" title="Center-of-mass path in the sagittal plane" class="img-fluid rounded z-depth-1" %}
+  </div>
+</div>
 
 **Fig.&nbsp;1 —** Finite-state expert trajectories: cyclic joint timing, stable torso pitch, periodic CoM track.
 
 ---
 
-## 3 · Curriculum Stages
+## 3. Curriculum Stages
 
 ### 3.1 Finite-State Expert
 
@@ -106,9 +98,7 @@ Each timestep provides the following standardized features:
 All features are extracted from MuJoCo in physical units and z-score normalised (zero mean, unit variance).
 
 <div align="center">
-  <img src="/assets/img/passive_walker_rl/bc/method_comparison.png"
-       alt="Comparison of BC loss functions: training curves, final rewards, and runtime"
-       width="85%">
+  {% include figure.liquid path="assets/img/passive_walker_rl/bc/method_comparison.png" title="Comparison of BC loss functions: training curves, final rewards, and runtime" class="img-fluid rounded z-depth-1" %}
   <p><em>Figure 3 — Performance comparison of behaviour cloning variants across loss types.</em></p>
 </div>
 
@@ -145,28 +135,24 @@ PPO hyper-parameters:
 
 ---
 
-## 4 · Brax Vectorisation & Hyper-parameter Sweep
+## 4. Brax Vectorisation & Hyper-parameter Sweep
 
 `convert_xml.py` freezes the MJCF into `System.pkl.gz`; `jax.vmap` batches 128–1024 walkers → **> 1 M env-steps s⁻¹**.
 
-<table>
-<tr>
-  <td width="48%">
-    <img src="/assets/img/passive_walker_rl/brax/reward_scale.png"
-         alt="Final reward versus reward-scale (0.5 vs 1.0)" width="100%">
-  </td>
-  <td width="48%">
-    <img src="/assets/img/passive_walker_rl/brax/lr_reward.png"
-         alt="Final reward versus learning rate across architectures" width="100%">
-  </td>
-</tr>
-</table>
+<div class="row justify-content-sm-center">
+  <div class="col-sm-6">
+    {% include figure.liquid path="assets/img/passive_walker_rl/brax/reward_scale.png" title="Final reward versus reward-scale (0.5 vs 1.0)" class="img-fluid rounded z-depth-1" %}
+  </div>
+  <div class="col-sm-6">
+    {% include figure.liquid path="assets/img/passive_walker_rl/brax/lr_reward.png" title="Final reward versus learning rate across architectures" class="img-fluid rounded z-depth-1" %}
+  </div>
+</div>
 
 **Fig.&nbsp;2 —** 120-run grid shows a sweet-spot: reward-scale 0.5, LR 1e-3, “medium” (~1 M params) network.
 
 ---
 
-## 5 · Results
+## 5. Results
 
 | Metric                     | BC-Seeded PPO   | Scratch PPO |
 | -------------------------- | --------------- | ----------- |
@@ -182,7 +168,7 @@ PPO hyper-parameters:
 
 ---
 
-## 6 · Reproduce It (One Command)
+## 6. Reproduce It (One Command)
 
 ```bash
 python -m passive_walker.ppo.bc_init.run_pipeline \
@@ -196,7 +182,7 @@ All artefacts land in `results/passive_walker_rl/<timestamp>/` with SHA-256 conf
 
 ---
 
-## 7 · Future Work
+## 7. Future Work
 
 - Uneven-terrain randomisation for sim-to-real
 - Energy-aware rewards to penalise **torque peaks**

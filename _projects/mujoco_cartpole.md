@@ -29,7 +29,7 @@ img: /assets/img/MuJoCo_CartPole.png
 
 ---
 
-## Overview
+## 1. Overview
 
 **DiffSwing** is a hybrid control system that solves the classic cart-pole swing-up problem by combining:
 
@@ -45,13 +45,13 @@ img: /assets/img/MuJoCo_CartPole.png
 - **Training efficiency**: < 5 minutes on CPU using analytical gradients
 
 <div align="center">
-  <img src="/assets/img/MuJoCo_CartPole.png" width="85%" alt="MuJoCo Cart-Pole Simulation"/>
+  {% include figure.liquid path="assets/img/MuJoCo_CartPole.png" title="Real-time MuJoCo simulation during neural network control phase" class="img-fluid rounded z-depth-1" %}
   <p><em>Real-time MuJoCo simulation during neural network control phase</em></p>
 </div>
 
 ---
 
-## Technical Approach
+## 2. Technical Approach
 
 ### System Dynamics
 
@@ -84,7 +84,7 @@ where $E_{\text{target}} = 2mgl$ (energy difference between upright and hanging 
 
 ---
 
-## Implementation
+## 3. Implementation
 
 ### Software Architecture
 
@@ -114,7 +114,7 @@ DiffSwing/
 
 ---
 
-## Results
+## 4. Results
 
 ### Performance Comparison
 
@@ -133,7 +133,7 @@ DiffSwing/
 
 ---
 
-## Quick Start {#quick-start}
+## 5. Quick Start {#quick-start}
 
 ### Installation
 
@@ -174,7 +174,7 @@ Key training parameters in `config.py`:
 
 ---
 
-## Future Directions
+## 6. Future Directions
 
 ### Technical Improvements
 

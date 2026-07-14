@@ -21,7 +21,7 @@ img: /assets/img/fpga_airhockey/fpga_board.jpeg
   </a>
 </p>
 
-## 1&nbsp;·&nbsp;Overview & Motivation
+## 1. Overview & Motivation
 
 **FPGA-AirHockey** brings the classic arcade game to digital hardware: a 5 × 5 LED “rink,” dual seven-segment scoreboards, and responsive two-button controls—all **written in pure Verilog** and deployed on a **Digilent Nexys A7**.  
 Originally built for **CS303 – Logic & Digital System Design** (Sabancı University, _Fall 2023-24_), the goal was to master:
@@ -32,7 +32,7 @@ Originally built for **CS303 – Logic & Digital System Design** (Sabancı Unive
 
 <br>
 
-## 2&nbsp;·&nbsp;System Architecture
+## 2. System Architecture
 
 <div align="center">
   {% include figure.liquid
@@ -55,7 +55,7 @@ _All RTL is simulation-verified via `hockey_tb.v` before synthesis._
 
 <br>
 
-## 3&nbsp;·&nbsp;Gameplay Logic
+## 3. Gameplay Logic
 
 1. **Serve** – Player A hits **BTNL**; puck traverses the LED grid toward Player B.
 2. **Return** – Player B presses **BTNR** when the puck reaches their chosen coordinate (set by slide switches).
@@ -66,7 +66,7 @@ Timing is governed by a selectable puck speed (0.5 s or 1 s per cell) via `PUCK_
 
 <br>
 
-## 4&nbsp;·&nbsp;Key Features
+## 4. Key Features
 
 - **Interactive Two-Player Mode** — Simple BTNL/BTNR buttons act as paddles
 - **Dynamic Visuals** — 25 LEDs animate puck motion; seven-segment HUD shows `[X,Y]` and running scores
@@ -76,7 +76,7 @@ Timing is governed by a selectable puck speed (0.5 s or 1 s per cell) via `PUCK_
 
 <br>
 
-## 5&nbsp;·&nbsp;Build & Deployment
+## 5. Build & Deployment
 
 | Step          | Action                                                     |
 | ------------- | ---------------------------------------------------------- |
@@ -90,7 +90,7 @@ A ready-made Vivado project (`FPGA-AirHockey.xpr`) is included for 2023.1+.
 
 <br>
 
-## 6&nbsp;·&nbsp;Demo
+## 6. Demo
 
 <div class="row">
   <div class="col-sm mt-3 mt-md-0" style="max-width:500px;">

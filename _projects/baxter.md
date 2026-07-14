@@ -3,6 +3,7 @@ layout: page
 title: Baxter manipulation with ROS Noetic and object rearrangement
 description: Group project on Bayesian Optimization with transfer learning for sequential object placement and rearrangement on cluttered surfaces. I worked on the physical robot side and ported the Baxter codebase to ROS Noetic.
 permalink: /projects/baxter/
+date: 2024-12-01
 collection: projects
 importance: 6
 category: Research Projects

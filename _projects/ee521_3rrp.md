@@ -19,7 +19,7 @@ img: /assets/img/3rrp/rrp_systemImage2.png
   </a>
 </p>
 
-## 1&nbsp;·&nbsp;Overview & Motivation
+## 1. Overview & Motivation
 
 The **3-RRP planar parallel manipulator** offers high stiffness and full planar dexterity using three _revolute–revolute–prismatic_ legs.  
 Between **Oct 2024 – Jan 2025** (EE 521 · _Kinematics & Dynamics of Machines_, Sabancı University) I performed an end-to-end analysis to
@@ -31,7 +31,7 @@ Between **Oct 2024 – Jan 2025** (EE 521 · _Kinematics & Dynamics of Machines_
 
 <br>
 
-## 2&nbsp;·&nbsp;Modeling Workflow
+## 2. Modeling Workflow
 
 | Stage               | Toolchain                | Outcome                  |
 | ------------------- | ------------------------ | ------------------------ |
@@ -55,7 +55,7 @@ Between **Oct 2024 – Jan 2025** (EE 521 · _Kinematics & Dynamics of Machines_
 
 <br>
 
-## 3&nbsp;·&nbsp;Key Results
+## 3. Key Results
 
 | Metric                    | Value / Observation                         |
 | ------------------------- | ------------------------------------------- |
@@ -86,7 +86,7 @@ Between **Oct 2024 – Jan 2025** (EE 521 · _Kinematics & Dynamics of Machines_
 
 <br>
 
-## 4&nbsp;·&nbsp;Kane vs Lagrange — Quick Take
+## 4. Kane vs Lagrange — Quick Take
 
 | Aspect              | **Kane’s Method**             | **Lagrange + λ**       |
 | ------------------- | ----------------------------- | ---------------------- |
@@ -98,7 +98,7 @@ Between **Oct 2024 – Jan 2025** (EE 521 · _Kinematics & Dynamics of Machines_
 
 <br>
 
-## 5&nbsp;·&nbsp;Deliverables & Next Steps
+## 5. Deliverables & Next Steps
 
 - **Simulink library** – drag-and-drop FK, IK, Jacobian, dynamics blocks
 - **MATLAB scripts** – workspace & isotropy samplers, disturbance demos

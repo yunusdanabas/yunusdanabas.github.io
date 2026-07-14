@@ -7,6 +7,7 @@ description: >
   AT42QT1011-based capacitive grip/touch sensor PCB work for industrial gripper applications,
   designed in KiCad and fabricated in-house on an LPKF S63.
 permalink: /projects/asmetal_sensor/
+date: 2025-06-01
 category: Research Projects
 tags: [pcb, electronics, capacitive-sensing, industrial-grippers, kicad, lpkf, at42qt1011]
 img: /assets/img/asmetal_sensor/thumbnail.png

@@ -28,7 +28,7 @@ Iterate over the requested categories in order
   {% for project in sorted_projects %}
     <div class="col-md-12 col-lg-6 d-flex">
 
-      {%- assign img_src = project.img | default: "/assets/img/placeholder-640x360.svg" -%}
+      {%- assign img_src = project.img -%}
       <div class="card shadow-sm flex-fill">
 
         <a href="{{ project.url }}" class="stretched-link">

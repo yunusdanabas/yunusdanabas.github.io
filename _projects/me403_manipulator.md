@@ -11,7 +11,7 @@ tags: [robotics, control, real-time]
 img: /assets/img/403project/403_project.jpeg
 ---
 
-## 1&nbsp;·&nbsp;Overview & Motivation
+## 1. Overview & Motivation
 
 This project—completed for **ME403 — Introduction to Robotics (Spring 2024, Sabancı University)**—developed a **model-based real-time controller** for a **planar 2-DOF, 5-link manipulator**.  
 Key goals:
@@ -31,7 +31,7 @@ Key goals:
 
 <br>
 
-## 2&nbsp;·&nbsp;Control Architecture
+## 2. Control Architecture
 
 The stack follows a **computed-torque framework** augmented with a **PD + gravity compensator**.  
 Software is split into **three Simulink model hierarchies** that map 1-to-1 onto TI C2000 peripherals.
@@ -59,7 +59,7 @@ tau = M(q)*(qdd_des + Kd*(qd_des - qd) + Kp*(q_des - q)) ...
 
 <br>
 
-## 3&nbsp;·&nbsp;Simulation & Real-Time Testing
+## 3. Simulation & Real-Time Testing
 
 | Stage                     | Environment                                        | Purpose                                                               |
 | ------------------------- | -------------------------------------------------- | --------------------------------------------------------------------- |
