@@ -47,7 +47,7 @@ Between **Oct 2024 – Jan 2025** (EE 521 · _Kinematics & Dynamics of Machines_
 ### Pipeline Snapshot
 
 <div align="center">
-  {% include figure.liquid loading="eager"
+  {% include figure.liquid
      path="assets/img/3rrp/rrp_systemImage.png"
      title="Labeled 3-RRP schematic"
      class="img-fluid rounded z-depth-1" %}
@@ -68,13 +68,13 @@ Between **Oct 2024 – Jan 2025** (EE 521 · _Kinematics & Dynamics of Machines_
 
 <div class="row">
   <div class="col-sm mt-3 mt-md-0">
-    {% include figure.liquid loading="eager"
+    {% include figure.liquid
        path="assets/img/3rrp/rrp_workspace.jpeg"
        title="Reachable Workspace"
        class="img-fluid rounded z-depth-1" %}
   </div>
   <div class="col-sm mt-3 mt-md-0">
-    {% include figure.liquid loading="eager"
+    {% include figure.liquid
        path="assets/img/3rrp/rrp_forceSimulation.jpeg"
        title="Small-Load Response"
        class="img-fluid rounded z-depth-1" %}

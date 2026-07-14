@@ -23,7 +23,7 @@ Key goals:
 <br>
 
 <div align="center">
-  {% include figure.liquid loading="eager"
+  {% include figure.liquid
      path="assets/img/403project/403_project.jpeg"
      title="CAD view and joint layout of the 5-link manipulator"
      class="img-fluid rounded z-depth-1" %}

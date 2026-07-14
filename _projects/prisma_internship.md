@@ -53,7 +53,7 @@ This approach is enabled by the choice of a **self-locking linear actuator**, wh
   path="assets/img/prisma_lunar_rover_internship/ParameterModelActiveSuspension_HJiang.png"
   title="Conceptual model of the per-side actuated suspension. A linear actuator (L_c) controls the linkage geometry, enabling commanded changes in chassis height (H) and roll while preserving the passive rocker-like kinematics for pitch stability. From Jiang et al. (2019)."
   class="img-fluid rounded z-depth-1"
-  loading="eager"
+ 
 %}
 </div>
 

@@ -30,7 +30,7 @@ img: /assets/img/hand_steer_sim/recorder_gui.png
   path="assets/img/hand_steer_sim/recorder_gui.png"
   title="Recorder GUI used for real-time landmark visualization and fast gesture labeling."
   class="img-fluid rounded z-depth-1"
-  loading="eager"
+ 
 %}
 
 ---

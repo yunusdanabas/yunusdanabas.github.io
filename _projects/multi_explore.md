@@ -151,19 +151,19 @@ roslaunch multiexplorer_yunusdanabas multi_robotexp.launch     # 3 robots
 
 <div class="row">
   <div class="col mt-3 mt-md-0">
-      {% include figure.liquid loading="eager" path="assets/img/multiexplorer/multiexplore_map.png" title="Single-Robot Map" class="img-fluid rounded z-depth-1" %}
+      {% include figure.liquid path="assets/img/multiexplorer/multiexplore_map.png" title="Single-Robot Map" class="img-fluid rounded z-depth-1" %}
   </div>
 </div>
 
 <div class="row">
   <div class="col mt-3 mt-md-0">
-      {% include figure.liquid loading="eager" path="assets/img/multiexplorer/multiexplore_map_comp.png" title="Merged Map (3 robots)" class="img-fluid rounded z-depth-1" %}
+      {% include figure.liquid path="assets/img/multiexplorer/multiexplore_map_comp.png" title="Merged Map (3 robots)" class="img-fluid rounded z-depth-1" %}
   </div>
 </div>
 
 <div class="row">
   <div class="col mt-3 mt-md-0">
-      {% include figure.liquid loading="eager" path="assets/img/multiexplorer/multiexplore_simulation.png" title="Gazebo Snapshot" class="img-fluid rounded z-depth-1" %}
+      {% include figure.liquid path="assets/img/multiexplorer/multiexplore_simulation.png" title="Gazebo Snapshot" class="img-fluid rounded z-depth-1" %}
   </div>
 </div>
 

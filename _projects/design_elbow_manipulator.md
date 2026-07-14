@@ -69,19 +69,19 @@ All subsystems were co-simulated:
 
 <div class="row row-cols-1 row-cols-md-3">
   <div class="col mt-3 mt-md-0">
-    {% include figure.liquid loading="eager"
+    {% include figure.liquid
        path="assets/img/me408_elbow/me408_design_front.jpeg"
        title="Front View"
        class="img-fluid rounded z-depth-1" %}
   </div>
   <div class="col mt-3 mt-md-0">
-    {% include figure.liquid loading="eager"
+    {% include figure.liquid
        path="assets/img/me408_elbow/me408_design_iso.jpeg"
        title="Isometric View"
        class="img-fluid rounded z-depth-1" %}
   </div>
   <div class="col mt-3 mt-md-0">
-    {% include figure.liquid loading="eager"
+    {% include figure.liquid
        path="assets/img/me408_elbow/me408_design_closedForm.jpeg"
        title="Closed-Form Analysis"
        class="img-fluid rounded z-depth-1" %}
@@ -95,13 +95,13 @@ All subsystems were co-simulated:
 
 <div class="row row-cols-1 row-cols-md-2">
   <div class="col mt-3 mt-md-0">
-    {% include figure.liquid loading="eager"
+    {% include figure.liquid
        path="assets/img/me408_elbow/me408_displacement.jpeg"
        title="Displacement FEA"
        class="img-fluid rounded z-depth-1" %}
   </div>
   <div class="col mt-3 mt-md-0">
-    {% include figure.liquid loading="eager"
+    {% include figure.liquid
        path="assets/img/me408_elbow/me408_stress.jpeg"
        title="Von-Mises Stress"
        class="img-fluid rounded z-depth-1" %}

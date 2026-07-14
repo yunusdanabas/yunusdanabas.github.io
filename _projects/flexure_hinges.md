@@ -29,7 +29,7 @@ mathjax: true
 
 <div class="row justify-content-center my-4">
   <div class="col-md-10 text-center">
-    {% include figure.liquid loading="eager"
+    {% include figure.liquid
        path="assets/img/flexure_hinge/ForceTorqueSensor_Graph.png"
        title="Market scan: how force capacity, moment capacity, size, and practical resolution trade off across commercial 6-DoF force–torque sensors (compiled during the internship)."
        class="img-fluid rounded z-depth-1" %}

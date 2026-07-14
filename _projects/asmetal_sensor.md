@@ -45,7 +45,7 @@ The **AT42QT1011** drives a charge-transfer capacitive measurement between **SNS
     {% include figure.liquid path="assets/img/asmetal_sensor/kicad_schematic.png"
       title="Schematic (AT42QT1011 minimal circuit)."
       class="img-fluid rounded z-depth-1"
-      loading="eager" %}
+      %}
   </div>
 </div>
 <p class="text-muted small">Minimal reference design: AT42QT1011 with R1, C1, C2, and 4-pin header (PAD, OUT, VCC, GND).</p>

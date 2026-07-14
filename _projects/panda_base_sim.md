@@ -146,26 +146,26 @@ When using `cartesian_impedance_example_controller`, the package can run `script
 
 <div class="row">
   <div class="col-sm mt-3 mt-md-0">
-    {% include figure.liquid loading="eager" path="assets/img/panda_base_sim/pandaBaseSim_simulation.png" title="Gazebo + RViz snapshot (digital twin running)" class="img-fluid rounded z-depth-1" %}
+    {% include figure.liquid path="assets/img/panda_base_sim/pandaBaseSim_simulation.png" title="Gazebo + RViz snapshot (digital twin running)" class="img-fluid rounded z-depth-1" %}
   </div>
   <div class="col-sm mt-3 mt-md-0">
-    {% include figure.liquid loading="eager" path="assets/img/panda_base_sim/pandaBaseSim_front.png" title="CAD render — front view of the base assembly" class="img-fluid rounded z-depth-1" %}
-  </div>
-</div>
-<div class="row">
-  <div class="col-sm mt-3 mt-md-0">
-    {% include figure.liquid loading="eager" path="assets/img/panda_base_sim/pandaBaseSim_iso.png" title="CAD render — isometric view (base + mounting stack)" class="img-fluid rounded z-depth-1" %}
-  </div>
-  <div class="col-sm mt-3 mt-md-0">
-    {% include figure.liquid loading="eager" path="assets/img/panda_base_sim/pandaBaseSim_side.png" title="CAD render — side view" class="img-fluid rounded z-depth-1" %}
+    {% include figure.liquid path="assets/img/panda_base_sim/pandaBaseSim_front.png" title="CAD render — front view of the base assembly" class="img-fluid rounded z-depth-1" %}
   </div>
 </div>
 <div class="row">
   <div class="col-sm mt-3 mt-md-0">
-    {% include figure.liquid loading="eager" path="assets/img/panda_base_sim/pandaBaseSim_real_base.jpg" title="Real aluminium-profile base (hardware reference)" class="img-fluid rounded z-depth-1" %}
+    {% include figure.liquid path="assets/img/panda_base_sim/pandaBaseSim_iso.png" title="CAD render — isometric view (base + mounting stack)" class="img-fluid rounded z-depth-1" %}
   </div>
   <div class="col-sm mt-3 mt-md-0">
-    {% include figure.liquid loading="eager" path="assets/img/panda_base_sim/pandaBaseSim_sensor.jpg" title="Force-torque sensor used as the modeling reference" class="img-fluid rounded z-depth-1" %}
+    {% include figure.liquid path="assets/img/panda_base_sim/pandaBaseSim_side.png" title="CAD render — side view" class="img-fluid rounded z-depth-1" %}
+  </div>
+</div>
+<div class="row">
+  <div class="col-sm mt-3 mt-md-0">
+    {% include figure.liquid path="assets/img/panda_base_sim/pandaBaseSim_real_base.jpg" title="Real aluminium-profile base (hardware reference)" class="img-fluid rounded z-depth-1" %}
+  </div>
+  <div class="col-sm mt-3 mt-md-0">
+    {% include figure.liquid path="assets/img/panda_base_sim/pandaBaseSim_sensor.jpg" title="Force-torque sensor used as the modeling reference" class="img-fluid rounded z-depth-1" %}
   </div>
 </div>
 <div class="caption">

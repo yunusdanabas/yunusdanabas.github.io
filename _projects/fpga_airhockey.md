@@ -35,7 +35,7 @@ Originally built for **CS303 – Logic & Digital System Design** (Sabancı Unive
 ## 2&nbsp;·&nbsp;System Architecture
 
 <div align="center">
-  {% include figure.liquid loading="eager"
+  {% include figure.liquid
      path="assets/img/fpga_airhockey/system_block_diagram.png"
      title="Top-level architecture: clock, input, game FSM, and display drivers"
      class="img-fluid rounded z-depth-1" %}
@@ -94,7 +94,7 @@ A ready-made Vivado project (`FPGA-AirHockey.xpr`) is included for 2023.1+.
 
 <div class="row">
   <div class="col-sm mt-3 mt-md-0" style="max-width:500px;">
-    {% include figure.liquid loading="eager"
+    {% include figure.liquid
        path="assets/img/fpga_airhockey/fpga_board.jpeg"
        title="Nexys A7 with FPGA-AirHockey loaded"
        class="img-fluid rounded z-depth-1"
