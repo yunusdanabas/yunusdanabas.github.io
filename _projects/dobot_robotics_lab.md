@@ -97,12 +97,12 @@ Each lab ships an `interface.py` runner that already works, plus a `myCode.py` s
 actual algorithm is left blank. The student implements the theory; the surrounding plumbing —
 connection, bounds checking, plotting, playback — is not their problem.
 
-| Lab | Topic | What the student implements |
-| --- | ----- | --------------------------- |
-| **01** | Forward kinematics | The FK chain, from joint angles to end-effector pose |
-| **02** | Jacobian & inverse kinematics | The analytic Jacobian and a weighted Gauss–Newton IK solver |
-| **03** | Path planning | Artificial potential fields **and** one probabilistic planner (PRM or RRT) |
-| **04** | Visual servoing | An image-based visual servoing (IBVS) loop, with ChArUco camera calibration |
+| Lab    | Topic                         | What the student implements                                                 |
+| ------ | ----------------------------- | --------------------------------------------------------------------------- |
+| **01** | Forward kinematics            | The FK chain, from joint angles to end-effector pose                        |
+| **02** | Jacobian & inverse kinematics | The analytic Jacobian and a weighted Gauss–Newton IK solver                 |
+| **03** | Path planning                 | Artificial potential fields **and** one probabilistic planner (PRM or RRT)  |
+| **04** | Visual servoing               | An image-based visual servoing (IBVS) loop, with ChArUco camera calibration |
 
 Labs run against either arm: `DOBOT_ROBOT_TYPE=magician` (the default) or `mg400`.
 
@@ -114,17 +114,17 @@ The package supports two arms that have almost nothing in common at the transpor
 shared session and motion API in front of both — with the genuine asymmetries (Magician-only tool
 offsets, MG400-only networking) documented per lab rather than papered over.
 
-| | **Dobot Magician** | **Dobot MG400** |
-| --- | --- | --- |
-| Link | USB-serial | TCP/IP (Ethernet) |
-| Reach | 320 mm | 440 mm |
+|       | **Dobot Magician**                           | **Dobot MG400**                                   |
+| ----- | -------------------------------------------- | ------------------------------------------------- |
+| Link  | USB-serial                                   | TCP/IP (Ethernet)                                 |
+| Reach | 320 mm                                       | 440 mm                                            |
 | Notes | Suction, gripper, and bare-flange tool modes | Multi-robot station: several arms addressed by IP |
 
 Because the MG400s are networked, the package ships a station IP map, so a room full of arms can be
 addressed by number rather than by hand-edited addresses.
 
 The MG400 also hides a trap worth naming: its motion commands are **body-frame**, but the firmware
-expects an *absolute* elbow angle, `J3_firmware = J2 + J3_body`. Get that wrong and the arm is
+expects an _absolute_ elbow angle, `J3_firmware = J2 + J3_body`. Get that wrong and the arm is
 subtly, consistently off. The package converts explicitly (`body_to_firmware_angles`) and pins the
 convention down with its own test.
 
@@ -132,7 +132,7 @@ convention down with its own test.
 
 ## 5. Simulation layer
 
-What makes the sim-first rule credible rather than aspirational is that it is *checked*, on every
+What makes the sim-first rule credible rather than aspirational is that it is _checked_, on every
 push, by machines other than mine.
 
 - **138 tests, 17 seconds, no hardware.** The suite is organised into four tiers
