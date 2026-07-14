@@ -4,3 +4,8 @@ pubinno.com
 scholar.google.com
 asmetal.com.tr
 docs.conda.io
+# Bot-protected: returns 403 to any non-browser user agent.
+intmath.com
+# PRISMA Lab's own server is intermittently down (503/timeout). The URL is
+# correct; the host is unreliable, so don't fail the build on it.
+prisma.dieti.unina.it

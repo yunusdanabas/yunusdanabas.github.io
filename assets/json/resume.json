@@ -38,7 +38,10 @@
       "startDate": "2020",
       "endDate": "2025",
       "score": "3.77/4.00",
-      "highlights": ["Graduated June 2025; Ranked 1st in Department", "Combined specialization in robotics, control, and embedded systems across both majors"],
+      "highlights": [
+        "Graduated June 2025; Ranked 1st in Department",
+        "Combined specialization in robotics, control, and embedded systems across both majors"
+      ],
       "courses": ["Kinematics and Dynamics of Machines", "Introduction to Robotics", "Autonomous Mobile Robotics", "Deep Learning for Robot Control"],
       "transcript": "/assets/pdf/YunusEmreDanabas_Transcript.pdf"
     },
