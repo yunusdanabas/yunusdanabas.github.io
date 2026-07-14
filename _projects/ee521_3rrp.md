@@ -12,12 +12,6 @@ img: /assets/img/3rrp/rrp_systemImage2.png
 ---
 
 <!-- Course Projects  -->
-<p>
-  <a href="/assets/pdf/3rrp/YunusEmreDanabas_RRP_ProjectReport.pdf"
-     class="btn btn-outline-secondary" role="button" target="_blank">
-    <i class="fas fa-file-pdf"></i> Full Report&nbsp;(PDF)
-  </a>
-</p>
 
 ## 1. Overview & Motivation
 

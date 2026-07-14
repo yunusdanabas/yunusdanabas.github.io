@@ -1,7 +1,7 @@
 ---
 layout: page
 permalink: /repositories/
-title: repositories
+title: Repositories
 description: Selected open-source repositories from robotics, simulation, and embedded systems work.
 nav: true
 nav_order: 4

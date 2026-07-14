@@ -40,7 +40,7 @@ Design, fabrication, and vision-based measurement of a crossed-flexure pivot mec
     <i class="fas fa-file-pdf"></i> Download report (PDF)
   </a>
   &nbsp;
-  <a href="{{ '/projects/flexure_hinges/' | relative_url }}" class="btn btn-outline-primary" role="button">
+  <a href="{{ '/projects/flexure_hinge_torque_sensor/' | relative_url }}" class="btn btn-outline-primary" role="button">
     <i class="fas fa-project-diagram"></i> Project page
   </a>
 </p>

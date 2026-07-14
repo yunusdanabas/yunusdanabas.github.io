@@ -1,7 +1,7 @@
 ---
 layout: page
 permalink: /teaching/
-title: teaching
+title: Teaching
 description: Teaching assistant experience at Sabancı University.
 nav: true
 nav_order: 6

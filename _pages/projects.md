@@ -1,6 +1,6 @@
 ---
 layout: page
-title: projects
+title: Projects
 permalink: /projects/
 description: >
   A curated collection of my work—from Research initiatives to course-based assignments.

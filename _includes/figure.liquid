@@ -64,6 +64,8 @@
         alt="{{ include.alt }}"
       {% elsif include.title %}
         alt="{{ include.title }}"
+      {% elsif include.path %}
+        alt="{{ include.path | split: '/' | last | split: '.' | first | replace: '_', ' ' | replace: '-', ' ' }}"
       {% endif %}
       {% if include.title %}
         title="{{ include.title }}"
