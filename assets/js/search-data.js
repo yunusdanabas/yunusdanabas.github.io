@@ -10,338 +10,41 @@ ninja.data = [{
       window.location.href = "/";
     },
   },{id: "nav-cv",
-          title: "cv",
+          title: "CV",
           description: "A concise summary of my education, work experience, projects, and skills in robotics, mechatronics, and automation.",
           section: "Navigation",
           handler: () => {
             window.location.href = "/cv/";
           },
         },{id: "nav-projects",
-          title: "projects",
+          title: "Projects",
           description: "A curated collection of my work—from Research initiatives to course-based assignments. Click on any card for full details.",
           section: "Navigation",
           handler: () => {
             window.location.href = "/projects/";
           },
-        },{id: "post-a-post-with-image-galleries",
-      
-        title: "a post with image galleries",
-      
-      description: "this is what included image galleries could look like",
-      section: "Posts",
-      handler: () => {
-        
-          window.location.href = "/blog/2024/photo-gallery/";
-        
-      },
-    },{id: "post-google-gemini-updates-flash-1-5-gemma-2-and-project-astra",
-      
-        title: 'Google Gemini updates: Flash 1.5, Gemma 2 and Project Astra <svg width="1.2rem" height="1.2rem" top=".5rem" viewBox="0 0 40 40" xmlns="http://www.w3.org/2000/svg"><path d="M17 13.5v6H5v-12h6m3-3h6v6m0-6-9 9" class="icon_svg-stroke" stroke="#999" stroke-width="1.5" fill="none" fill-rule="evenodd" stroke-linecap="round" stroke-linejoin="round"></path></svg>',
-      
-      description: "We’re sharing updates across our Gemini family of models and a glimpse of Project Astra, our vision for the future of AI assistants.",
-      section: "Posts",
-      handler: () => {
-        
-          window.open("https://blog.google/technology/ai/google-gemini-update-flash-ai-assistant-io-2024/", "_blank");
-        
-      },
-    },{id: "post-a-post-with-tabs",
-      
-        title: "a post with tabs",
-      
-      description: "this is what included tabs in a post could look like",
-      section: "Posts",
-      handler: () => {
-        
-          window.location.href = "/blog/2024/tabs/";
-        
-      },
-    },{id: "post-a-post-with-typograms",
-      
-        title: "a post with typograms",
-      
-      description: "this is what included typograms code could look like",
-      section: "Posts",
-      handler: () => {
-        
-          window.location.href = "/blog/2024/typograms/";
-        
-      },
-    },{id: "post-a-post-that-can-be-cited",
-      
-        title: "a post that can be cited",
-      
-      description: "this is what a post that can be cited looks like",
-      section: "Posts",
-      handler: () => {
-        
-          window.location.href = "/blog/2024/post-citation/";
-        
-      },
-    },{id: "post-a-post-with-pseudo-code",
-      
-        title: "a post with pseudo code",
-      
-      description: "this is what included pseudo code could look like",
-      section: "Posts",
-      handler: () => {
-        
-          window.location.href = "/blog/2024/pseudocode/";
-        
-      },
-    },{id: "post-a-post-with-code-diff",
-      
-        title: "a post with code diff",
-      
-      description: "this is how you can display code diffs",
-      section: "Posts",
-      handler: () => {
-        
-          window.location.href = "/blog/2024/code-diff/";
-        
-      },
-    },{id: "post-a-post-with-vega-lite",
-      
-        title: "a post with vega lite",
-      
-      description: "this is what included vega lite code could look like",
-      section: "Posts",
-      handler: () => {
-        
-          window.location.href = "/blog/2024/vega-lite/";
-        
-      },
-    },{id: "post-a-post-with-geojson",
-      
-        title: "a post with geojson",
-      
-      description: "this is what included geojson code could look like",
-      section: "Posts",
-      handler: () => {
-        
-          window.location.href = "/blog/2024/geojson-map/";
-        
-      },
-    },{id: "post-a-post-with-echarts",
-      
-        title: "a post with echarts",
-      
-      description: "this is what included echarts code could look like",
-      section: "Posts",
-      handler: () => {
-        
-          window.location.href = "/blog/2024/echarts/";
-        
-      },
-    },{id: "post-a-post-with-chart-js",
-      
-        title: "a post with chart.js",
-      
-      description: "this is what included chart.js code could look like",
-      section: "Posts",
-      handler: () => {
-        
-          window.location.href = "/blog/2024/chartjs/";
-        
-      },
-    },{id: "post-a-post-with-tikzjax",
-      
-        title: "a post with TikZJax",
-      
-      description: "this is what included TikZ code could look like",
-      section: "Posts",
-      handler: () => {
-        
-          window.location.href = "/blog/2023/tikzjax/";
-        
-      },
-    },{id: "post-a-post-with-bibliography",
-      
-        title: "a post with bibliography",
-      
-      description: "an example of a blog post with bibliography",
-      section: "Posts",
-      handler: () => {
-        
-          window.location.href = "/blog/2023/post-bibliography/";
-        
-      },
-    },{id: "post-a-post-with-jupyter-notebook",
-      
-        title: "a post with jupyter notebook",
-      
-      description: "an example of a blog post with jupyter notebook",
-      section: "Posts",
-      handler: () => {
-        
-          window.location.href = "/blog/2023/jupyter-notebook/";
-        
-      },
-    },{id: "post-a-post-with-table-of-contents-on-a-sidebar",
-      
-        title: "a post with table of contents on a sidebar",
-      
-      description: "an example of a blog post with table of contents on a sidebar",
-      section: "Posts",
-      handler: () => {
-        
-          window.location.href = "/blog/2023/sidebar-table-of-contents/";
-        
-      },
-    },{id: "post-a-post-with-audios",
-      
-        title: "a post with audios",
-      
-      description: "this is what included audios could look like",
-      section: "Posts",
-      handler: () => {
-        
-          window.location.href = "/blog/2023/audios/";
-        
-      },
-    },{id: "post-a-post-with-videos",
-      
-        title: "a post with videos",
-      
-      description: "this is what included videos could look like",
-      section: "Posts",
-      handler: () => {
-        
-          window.location.href = "/blog/2023/videos/";
-        
-      },
-    },{id: "post-displaying-beautiful-tables-with-bootstrap-tables",
-      
-        title: "displaying beautiful tables with Bootstrap Tables",
-      
-      description: "an example of how to use Bootstrap Tables",
-      section: "Posts",
-      handler: () => {
-        
-          window.location.href = "/blog/2023/tables/";
-        
-      },
-    },{id: "post-a-post-with-table-of-contents",
-      
-        title: "a post with table of contents",
-      
-      description: "an example of a blog post with table of contents",
-      section: "Posts",
-      handler: () => {
-        
-          window.location.href = "/blog/2023/table-of-contents/";
-        
-      },
-    },{id: "post-a-post-with-giscus-comments",
-      
-        title: "a post with giscus comments",
-      
-      description: "an example of a blog post with giscus comments",
-      section: "Posts",
-      handler: () => {
-        
-          window.location.href = "/blog/2022/giscus-comments/";
-        
-      },
-    },{id: "post-displaying-external-posts-on-your-al-folio-blog",
-      
-        title: 'Displaying External Posts on Your al-folio Blog <svg width="1.2rem" height="1.2rem" top=".5rem" viewBox="0 0 40 40" xmlns="http://www.w3.org/2000/svg"><path d="M17 13.5v6H5v-12h6m3-3h6v6m0-6-9 9" class="icon_svg-stroke" stroke="#999" stroke-width="1.5" fill="none" fill-rule="evenodd" stroke-linecap="round" stroke-linejoin="round"></path></svg>',
-      
-      description: "",
-      section: "Posts",
-      handler: () => {
-        
-          window.open("https://medium.com/@al-folio/displaying-external-posts-on-your-al-folio-blog-b60a1d241a0a?source=rss-17feae71c3c4------2", "_blank");
-        
-      },
-    },{id: "post-a-post-with-redirect",
-      
-        title: "a post with redirect",
-      
-      description: "you can also redirect to assets like pdf",
-      section: "Posts",
-      handler: () => {
-        
-          window.location.href = "/assets/pdf/example_pdf.pdf";
-        
-      },
-    },{id: "post-a-post-with-diagrams",
-      
-        title: "a post with diagrams",
-      
-      description: "an example of a blog post with diagrams",
-      section: "Posts",
-      handler: () => {
-        
-          window.location.href = "/blog/2021/diagrams/";
-        
-      },
-    },{id: "post-a-post-with-twitter",
-      
-        title: "a post with twitter",
-      
-      description: "an example of a blog post with twitter",
-      section: "Posts",
-      handler: () => {
-        
-          window.location.href = "/blog/2020/twitter/";
-        
-      },
-    },{id: "post-a-post-with-disqus-comments",
-      
-        title: "a post with disqus comments",
-      
-      description: "an example of a blog post with disqus comments",
-      section: "Posts",
-      handler: () => {
-        
-          window.location.href = "/blog/2015/disqus-comments/";
-        
-      },
-    },{id: "post-a-post-with-math",
-      
-        title: "a post with math",
-      
-      description: "an example of a blog post with some math",
-      section: "Posts",
-      handler: () => {
-        
-          window.location.href = "/blog/2015/math/";
-        
-      },
-    },{id: "post-a-post-with-code",
-      
-        title: "a post with code",
-      
-      description: "an example of a blog post with some code",
-      section: "Posts",
-      handler: () => {
-        
-          window.location.href = "/blog/2015/code/";
-        
-      },
-    },{id: "post-a-post-with-formatting-and-links",
-      
-        title: "a post with formatting and links",
-      
-      description: "march &amp; april, looking forward to summer",
-      section: "Posts",
-      handler: () => {
-        
-          window.location.href = "/blog/2015/formatting-and-links/";
-        
-      },
-    },{id: "projects-at42qt1011-capacitive-grip-touch-sensor-pcb",
-          title: 'AT42QT1011 Capacitive Grip/Touch Sensor PCB',
-          description: "AT42QT1011-based capacitive grip/touch sensor PCB work for industrial gripper applications, designed in KiCad and fabricated in-house on an LPKF S63.",
-          section: "Projects",handler: () => {
-              window.location.href = "/projects/asmetal_sensor/";
-            },},{id: "projects-baxter-manipulation-with-ros-noetic-and-object-rearrangement",
-          title: 'Baxter manipulation with ROS Noetic and object rearrangement',
-          description: "Group project on Bayesian Optimization with transfer learning for sequential object placement and rearrangement on cluttered surfaces. I worked on the physical robot side and ported the Baxter codebase to ROS Noetic.",
-          section: "Projects",handler: () => {
-              window.location.href = "/projects/baxter/";
-            },},{id: "projects-multiexplorer-multi-robot-frontier-exploration-with-turtlebot3",
+        },{id: "nav-repositories",
+          title: "Repositories",
+          description: "Selected open-source repositories from robotics, simulation, and embedded systems work.",
+          section: "Navigation",
+          handler: () => {
+            window.location.href = "/repositories/";
+          },
+        },{id: "nav-technical-reports",
+          title: "Technical Reports",
+          description: "Internship and research reports from PRISMA Lab and TUM MIRMI.",
+          section: "Navigation",
+          handler: () => {
+            window.location.href = "/research/";
+          },
+        },{id: "nav-teaching",
+          title: "Teaching",
+          description: "Teaching assistant experience at Sabancı University.",
+          section: "Navigation",
+          handler: () => {
+            window.location.href = "/teaching/";
+          },
+        },{id: "projects-multiexplorer-multi-robot-frontier-exploration-with-turtlebot3",
           title: 'Multiexplorer — Multi-Robot Frontier Exploration with TurtleBot3',
           description: "My first ROS project: a Gazebo-based study comparing single-, double-, and triple-robot frontier exploration, SLAM, and map-merging with TurtleBot3.",
           section: "Projects",handler: () => {
@@ -366,6 +69,11 @@ ninja.data = [{
           description: "Process-focused study of crossed-flexure (cross-spring) pivots as compliant stages for force–torque sensing: literature grounding (parasitic center-shift, lateral loading), dimensionless modeling, Newton–Raphson MATLAB solver, CAD to prototype iterations, and vision-based deformation tracking. Conducted at TUM-MIRMI under Mehmet Can Yıldırım and Prof. Sami Haddadin.",
           section: "Projects",handler: () => {
               window.location.href = "/projects/flexure_hinge_torque_sensor/";
+            },},{id: "projects-baxter-manipulation-with-ros-noetic-and-object-rearrangement",
+          title: 'Baxter manipulation with ROS Noetic and object rearrangement',
+          description: "Group project on Bayesian Optimization with transfer learning for sequential object placement and rearrangement on cluttered surfaces. I worked on the physical robot side and ported the Baxter codebase to ROS Noetic.",
+          section: "Projects",handler: () => {
+              window.location.href = "/projects/baxter/";
             },},{id: "projects-planar-elbow-manipulator-design-amp-control",
           title: 'Planar Elbow Manipulator — Design &amp;amp; Control',
           description: "A 2-DoF planar elbow manipulator that uniquely met every mechanical requirement in ME408, integrating robust CAD, power electronics, and dual-loop control for precise trajectory tracking.",
@@ -391,6 +99,11 @@ ninja.data = [{
           description: "Hand-Steer Sim is a vision-only teleoperation stack that converts webcam/RealSense video into ROS geometry_msgs/Twist commands for differential-drive robots. It supports two modes—(1) discrete hand-sign driving and (2) a steering-wheel metaphor that gates turn commands behind a Holding Wheel pose—using MediaPipe landmarks and compact TFLite models. Includes data recording GUI, training notebooks, Docker (CPU/GPU), and Gazebo integration.",
           section: "Projects",handler: () => {
               window.location.href = "/projects/hand_steer_sim/";
+            },},{id: "projects-at42qt1011-capacitive-grip-touch-sensor-pcb",
+          title: 'AT42QT1011 Capacitive Grip/Touch Sensor PCB',
+          description: "AT42QT1011-based capacitive grip/touch sensor PCB work for industrial gripper applications, designed in KiCad and fabricated in-house on an LPKF S63.",
+          section: "Projects",handler: () => {
+              window.location.href = "/projects/asmetal_sensor/";
             },},{id: "projects-prisma-lab-internship-posture-capable-suspension-concept-for-a-lunar-micro-rover",
           title: 'PRISMA Lab Internship — Posture-Capable Suspension Concept for a Lunar Micro-Rover',
           description: "Summer 2025 research internship at PRISMA Lab (Univ. of Naples Federico II): I developed and justified a per-side actuated suspension concept for a compact lunar rover (heave + roll, passive pitch averaging) and delivered a simulation-first implementation roadmap (ROS 2 + Gazebo) for posture-aware autonomy.",
