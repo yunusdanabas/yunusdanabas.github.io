@@ -173,9 +173,6 @@
 <script defer src="{{ '/assets/js/common.js' | relative_url | bust_file_cache }}"></script>
 <script defer src="{{ '/assets/js/copy_code.js' | relative_url | bust_file_cache }}" type="text/javascript"></script>
 
-<!-- Jupyter Open External Links New Tab -->
-<script defer src="{{ '/assets/js/jupyter_new_tab.js' | relative_url | bust_file_cache }}"></script>
-
 <!-- Badges -->
 {% if site.enable_publication_badges.altmetric %}
   <script async src="https://d1bxh8uas1mnw7.cloudfront.net/assets/embed.js"></script>
@@ -309,15 +306,6 @@
   <script>
     addBackToTop();
   </script>
-{% endif %}
-
-{% if site.search_enabled %}
-  <!-- Search -->
-  <script type="module" src="{{ '/assets/js/search/ninja-keys.min.js' | relative_url | bust_file_cache }}"></script>
-  <ninja-keys hideBreadcrumbs noAutoLoadMdIcons placeholder="Type to start searching"></ninja-keys>
-  <script src="{{ '/assets/js/search-setup.js' | relative_url | bust_file_cache }}"></script>
-  <script src="{{ '/assets/js/search-data.js' | relative_url }}"></script>
-  <script src="{{ '/assets/js/shortcut-key.js' | relative_url | bust_file_cache }}"></script>
 {% endif %}
 
 {% if site.newsletter.enabled %}
