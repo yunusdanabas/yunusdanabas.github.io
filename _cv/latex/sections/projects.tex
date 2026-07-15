@@ -1,0 +1,40 @@
+\section*{PROJECTS}
+
+\textbf{Hand-Steer Sim --- Gesture Teleoperation for Mobile Robots} \textbar\ \cvlink{https://yunusemredanabas.com/projects/hand_steer_sim/}{\texttt{project page}} \textbar\ \cvlink{https://github.com/yunusdanabas/hand_steer_sim}{\texttt{code}} \hfill Mar 2025--May 2025
+\begin{itemize}
+  \item Developed a camera-only teleoperation stack for differential-drive robots in ROS Noetic: MediaPipe hand landmarks $\rightarrow$ dual-branch TFLite inference (MLP for static commands, LSTM for steering trajectories) $\rightarrow$ \texttt{geometry\_msgs/Twist}
+  \item Achieved 99.65\% accuracy (static) and 99.77\% macro-F1 (dynamic) on a held-out test set; measured 13 ms end-to-end latency on an RTX 4060 Ti ($\sim$25 ms on laptop CPU) at 30 FPS
+  \item Packaged a reproducible ROS+Gazebo workspace with one-command \texttt{roslaunch}; released a data-recording GUI, training notebooks, pretrained TFLite models, and CPU/GPU Dockerfiles
+\end{itemize}
+\entrysep
+
+\textbf{Passive Walker RL Pipeline (Graduation Project)} \textbar\ \cvlink{https://yunusemredanabas.com/projects/passive_walker_rl/}{\texttt{project page}} \textbar\ \cvlink{https://github.com/yunusdanabas/passive_walker_rl}{\texttt{code}} \hfill Oct 2024--May 2025\\
+Supervisors: Prof. Volkan Patoğlu, Dr. Aykut Cihan Satici
+\begin{itemize}
+  \item Trained a passive-dynamic biped via FSM $\rightarrow$ behavior cloning $\rightarrow$ PPO (JAX/Equinox/Optax; Brax/MuJoCo)
+  \item Built expert controllers and a GPU-parallel PPO pipeline; achieved stable gait within $\sim 10^5$ steps
+  \item Released reproducible code, configs, and logs; ran large hyperparameter sweeps for robust policies
+\end{itemize}
+\entrysep
+
+\textbf{SURover (Sabancı University Rover Team), Technical Team Captain} \hfill Jun 2022--Jan 2025
+\begin{itemize}
+  \item Built a ROS+Gazebo digital twin; authored URDF/Xacro and MoveIt pipelines for arm and drivetrain
+  \item Implemented multi-sensor fusion and ArUco-based fiducial SLAM with ZED2, RealSense D435i, and RPLIDAR-A3
+  \item Developed a Wi-Fi joystick and GUI with watchdog and E-stop; led mechanical fabrication/cabling and Arduino-based motor control for a field-ready rover
+\end{itemize}
+\entrysep
+
+\textbf{Cart-Pole Swing-Up Control (JAX \& MuJoCo)} \textbar\ \cvlink{https://yunusemredanabas.com/projects/mujoco_cartpole/}{\texttt{project page}} \textbar\ \cvlink{https://github.com/yunusdanabas/MuJoCo_CartPole}{\texttt{code}} \hfill Oct 2024--Jan 2025\\
+Supervisor: Dr. Aykut Cihan Satici
+\begin{itemize}
+  \item LQR and neural controllers with differentiable closed-loop simulation (JAX/Diffrax/Equinox); trained NN policies via end-to-end backprop through ODE integration using energy-based loss and curriculum learning; validated robust swing-up in MuJoCo under external disturbances
+\end{itemize}
+\entrysep
+
+\textbf{Robotic Item Placement on Cluttered Desks (Baxter)} \textbar\ \cvlink{https://yunusemredanabas.com/projects/baxter/}{\texttt{project page}} \textbar\ \cvlink{https://github.com/yunusdanabas/baxter_noetic}{\texttt{code}} \hfill Jan 2023--Jan 2024\\
+Supervisors: Prof. Volkan Patoğlu, Prof. Esra Erdem
+\begin{itemize}
+  \item Ported the Baxter SDK to ROS Noetic (Python 3), repairing MoveIt integration and the Gazebo pipeline for sim-to-robot deployment
+  \item Group project on Bayesian optimization with transfer learning for sequential, collision-free placement on cluttered surfaces; demonstrated clutter-aware placement policies
+\end{itemize}

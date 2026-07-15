@@ -1,0 +1,49 @@
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage[a4paper,margin=0.68in]{geometry}
+\usepackage{lmodern}
+\usepackage{microtype}
+\usepackage{titlesec}
+\usepackage{enumitem}
+\usepackage{tabularx}
+\usepackage[dvipsnames]{xcolor}
+\usepackage{hyperref}
+
+\hypersetup{
+  colorlinks=true,
+  linkcolor=MidnightBlue,
+  urlcolor=MidnightBlue
+}
+\urlstyle{same}
+
+\pagestyle{empty}
+\setlength{\parindent}{0pt}
+\setlength{\parskip}{0pt}
+\setlist[itemize]{leftmargin=1.15em,topsep=2pt,itemsep=1.2pt,parsep=0pt}
+
+\titleformat{\section}{\large\bfseries}{}{0pt}{}[\vspace{0.1em}\titlerule]
+\titlespacing*{\section}{0pt}{0.9em}{0.55em}
+
+\newcommand{\cvname}{Yunus Emre Danabaş}
+\newcommand{\cvlocation}{Istanbul, Turkey}
+\newcommand{\cvemail}{yunusdanabas@sabanciuniv.edu}
+\newcommand{\cvphone}{+90 505 954 6704}
+\newcommand{\cvsite}{https://yunusemredanabas.com}
+\newcommand{\cvlinkedin}{https://www.linkedin.com/in/yunus-emre-danabas/}
+\newcommand{\cvgithub}{https://github.com/yunusdanabas}
+
+\newcommand{\cvlink}[2]{\href{#1}{\textcolor{MidnightBlue}{#2}}}
+\newcommand{\entrysep}{\vspace{0.35em}}
+
+\newcommand{\cvheader}{%
+  {\huge\textbf{\cvname}}\\[2pt]
+  \cvlocation\\[2pt]
+  \cvlink{mailto:\cvemail}{\cvemail} ---
+  \cvlink{tel:+905059546704}{\cvphone} ---
+  \cvlink{\cvsite}{yunusemredanabas.com} ---
+  \cvlink{\cvlinkedin}{LinkedIn} ---
+  \cvlink{\cvgithub}{GitHub}
+  \vspace{0.45em}
+}
+
+\sloppy

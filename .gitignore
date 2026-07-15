@@ -19,3 +19,16 @@ vendor
 PROJECT_WRITE_FROM_SCRATCH_PROMPT.md
 PROJECT_REWRITE_PROMPT.md
 .cursor/debug.log
+
+# Local CV staging/archive dump
+/YunusEmreDanabas_CV/
+
+# LaTeX CV build artifacts
+/_cv/latex/build/
+/_cv/latex/YunusEmreDanabas_CV.pdf
+/_cv/latex/*.aux
+/_cv/latex/*.fdb_latexmk
+/_cv/latex/*.fls
+/_cv/latex/*.log
+/_cv/latex/*.out
+/_cv/latex/*.synctex.gz
