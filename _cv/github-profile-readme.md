@@ -45,10 +45,10 @@ Istanbul, Turkey
 
 ### Featured Work
 
-| Project | Focus |
-| --- | --- |
-| [Hand-Steer Sim](https://yunusemredanabas.com/projects/hand_steer_sim/) | Camera-only gesture teleoperation with MediaPipe, TFLite, ROS, and Gazebo |
-| [Passive Walker RL](https://yunusemredanabas.com/projects/passive_walker_rl/) | Biped locomotion with MuJoCo, Brax, JAX, behavior cloning, and PPO |
+| Project                                                                                        | Focus                                                                                 |
+| ---------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------- |
+| [Hand-Steer Sim](https://yunusemredanabas.com/projects/hand_steer_sim/)                        | Camera-only gesture teleoperation with MediaPipe, TFLite, ROS, and Gazebo             |
+| [Passive Walker RL](https://yunusemredanabas.com/projects/passive_walker_rl/)                  | Biped locomotion with MuJoCo, Brax, JAX, behavior cloning, and PPO                    |
 | [Lunar Rover Suspension](https://yunusemredanabas.com/projects/prisma_lunar_rover_internship/) | Posture-capable suspension concept and ROS 2 / Gazebo roadmap for a lunar micro-rover |
-| [Flexure Hinge Study](https://yunusemredanabas.com/projects/flexure_hinge_torque_sensor/) | Crossed-flexure modeling, prototyping, and vision-based deformation tracking |
-| [Dobot Robotics Lab](https://yunusemredanabas.com/projects/dobot_robotics_lab/) | Open-source robotics teaching package with simulation-first labs and tests |
+| [Flexure Hinge Study](https://yunusemredanabas.com/projects/flexure_hinge_torque_sensor/)      | Crossed-flexure modeling, prototyping, and vision-based deformation tracking          |
+| [Dobot Robotics Lab](https://yunusemredanabas.com/projects/dobot_robotics_lab/)                | Open-source robotics teaching package with simulation-first labs and tests            |
