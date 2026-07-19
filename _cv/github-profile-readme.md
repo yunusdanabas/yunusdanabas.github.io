@@ -1,8 +1,8 @@
 ### Hi, I'm Yunus Emre Danabaş
 
-I'm a **Mechatronics Engineering graduate** and **Electronics Engineering student** at **Sabancı University**, working across robotics, control, embedded systems, and simulation.
+I hold a double B.Sc. in **Mechatronics** and **Electronics Engineering** from **Sabancı University**, working across robotics, control, embedded systems, and simulation.
 
-I graduated **1st in Mechatronics Engineering in 2025** and I'm completing my second degree in **Electronics Engineering, expected 2026**. I like building robotic systems that connect simulation, sensing, control, and hardware into reproducible prototypes.
+I graduated **1st in Mechatronics Engineering (2025)** and completed my second degree in **Electronics Engineering (2026)**. I like building robotic systems that connect simulation, sensing, control, and hardware into reproducible prototypes.
 
 Current interests: **mobile robotics**, **teleoperation**, **learning-based control**, **embedded robotic systems**, and **robot perception**.
 
@@ -21,11 +21,11 @@ Current interests: **mobile robotics**, **teleoperation**, **learning-based cont
 
 ### Experience Snapshot
 
-- Part-time robotics engineer at **AS Robotics / COMAU Turkey**, working on EVKA Wireless, embedded-to-ROS workflows, positioning tools, and capacitive sensing PCBs.
+- Part-time robotics engineer at **AS Robotics / COMAU Turkey** (Oct 2025 – Jul 2026); led EVKA Wireless technical development — embedded-to-ROS workflows, positioning tools, and capacitive sensing PCBs.
 - Research intern at **PRISMA Lab**, University of Naples Federico II, working on posture-capable suspension concepts for compact lunar rovers.
 - Research intern at **TUM MIRMI**, working on compliant mechanisms and flexure-based sensing prototypes.
 - Robotics engineering intern at **TÜBİTAK BİLGEM**, working on ROS-based multi-robot exploration and map merging.
-- Teaching assistant at **Sabancı University** for mechanisms, robotics, and motion control courses.
+- Teaching assistant at **Sabancı University** (2024–2026) for mechanisms, robotics, and motion control courses.
 
 ---
 

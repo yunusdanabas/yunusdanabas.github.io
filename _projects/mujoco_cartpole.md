@@ -2,11 +2,11 @@
 layout: page
 title: "DiffSwing: Neural Cart-Pole Control with JAX & MuJoCo"
 collection: projects
-importance: 5
+importance: 6
 description: A hybrid control system that combines neural network energy shaping with classical LQR stabilization for cart-pole swing-up. Trained end-to-end in differentiable JAX simulation with real-time MuJoCo deployment achieving 98% success rate and 1.9s swing-up time.
 permalink: /projects/mujoco_cartpole/
 date: 2025-01-01
-category: Research Projects
+category: Course Projects
 tags: [control, reinforcement-learning, robotics, neural-networks, jax]
 img: /assets/img/MuJoCo_CartPole.png
 ---
@@ -31,7 +31,7 @@ img: /assets/img/MuJoCo_CartPole.png
 
 ## 1. Overview
 
-**DiffSwing** is a hybrid control system that solves the classic cart-pole swing-up problem by combining:
+**DiffSwing** is a solo project for **ME58006 (graduate course, Sabancı University)**: a hybrid control system that solves the classic cart-pole swing-up problem by combining:
 
 - **Neural energy shaping** for robust swing-up from arbitrary initial conditions
 - **Classical LQR control** for precise stabilization around the upright position

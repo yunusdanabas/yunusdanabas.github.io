@@ -13,7 +13,7 @@ img: /assets/img/403project/403_project.jpeg
 
 ## 1. Overview & Motivation
 
-This project—completed for **ME403 — Introduction to Robotics (Spring 2024, Sabancı University)**—developed a **model-based real-time controller** for a **planar 2-DOF, 5-link manipulator**.  
+This solo course project—completed for **ME403 — Introduction to Robotics (Spring 2024, Sabancı University)**—developed a **model-based real-time controller** for a **planar 2-DOF, 5-link manipulator**.  
 Key goals:
 
 - Achieve **sub-millimetre end-effector accuracy** on dynamic paths

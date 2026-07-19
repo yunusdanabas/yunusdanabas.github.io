@@ -24,7 +24,7 @@ img: /assets/img/fpga_airhockey/fpga_board.jpeg
 ## 1. Overview & Motivation
 
 **FPGA-AirHockey** brings the classic arcade game to digital hardware: a 5 × 5 LED “rink,” dual seven-segment scoreboards, and responsive two-button controls—all **written in pure Verilog** and deployed on a **Digilent Nexys A7**.  
-Originally built for **CS303 – Logic & Digital System Design** (Sabancı University, _Fall 2023-24_), the goal was to master:
+Originally built **solo** for **CS303 – Logic & Digital System Design** (Sabancı University, _Fall 2023-24_), the goal was to master:
 
 - **Finite-state machine (FSM) design** for interactive gameplay
 - **Hardware debouncing & clock division** for clean timing

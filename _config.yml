@@ -123,6 +123,7 @@ include: ["_pages", "_scripts"]
 exclude:
   - bin/
   - CONTRIBUTING.md
+  - COPY_REVIEW.md
   - CUSTOMIZE.md
   - Dockerfile
   - docker-compose.yml
@@ -140,7 +141,9 @@ exclude:
   - purgecss.config.js
   - README.md
   - readme_preview/
+  - requirements.txt
   - vendor
+  - YunusEmreDanabas_CV/
 keep_files:
   - CNAME
   - .nojekyll

@@ -254,4 +254,4 @@ target sits at the optical centre — without ever computing where the target is
 - Licensed under **Apache-2.0**. Third-party robot descriptions and SDKs are credited in the
   repository's `NOTICE` file.
 
-> _Maintained alongside my teaching assistantship for **ME403 — Introduction to Robotics**, Sabancı University._
+> _Built alongside my teaching assistantship (2024–2026) for **ME403 — Introduction to Robotics**, Sabancı University._
