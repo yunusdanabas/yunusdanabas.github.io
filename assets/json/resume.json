@@ -1,13 +1,11 @@
 {
-  "transcript_pdf": "YunusEmreDanabas_Transcript.pdf",
   "basics": {
     "name": "Yunus Emre Danabaş",
-    "label": "B.Sc. Mechatronics (2025) · B.Sc. Electronics (Expected 2026)",
+    "label": "Robotics & Control Engineer · B.Sc. Mechatronics (2025) · B.Sc. Electronics (2026)",
     "image": "",
     "email": "yunusdanabas@sabanciuniv.edu",
-    "phone": "+90 5059546704",
     "url": "https://yunusemredanabas.com",
-    "summary": "Final-year undergrad at Sabancı, combining Mechatronics (2025) and Electronics (expected 2026) with hands-on robotics, control, and embedded systems—focus on robust, end-to-end solutions.",
+    "summary": "Robotics and control engineer with a double B.Sc. from Sabancı University — Mechatronics (2025, graduated 1st in department) and Electronics (2026). Hands-on across modeling, control, embedded sensing, and ROS-based software, with a focus on robust, end-to-end systems.",
     "location": {
       "address": "Istanbul, Turkey",
       "postalCode": "",
@@ -42,8 +40,7 @@
         "Graduated June 2025; Ranked 1st in Department",
         "Combined specialization in robotics, control, and embedded systems across both majors"
       ],
-      "courses": ["Kinematics and Dynamics of Machines", "Introduction to Robotics", "Autonomous Mobile Robotics", "Deep Learning for Robot Control"],
-      "transcript": "/assets/pdf/YunusEmreDanabas_Transcript.pdf"
+      "courses": ["Kinematics and Dynamics of Machines", "Introduction to Robotics", "Autonomous Mobile Robotics", "Deep Learning for Robot Control"]
     },
     {
       "institution": "Sabancı University",
@@ -53,7 +50,7 @@
       "studyType": "Bachelor",
       "startDate": "2023",
       "endDate": "2026",
-      "highlights": ["Double Major, expected June 2026", "Focus on embedded systems and electronics for robotics applications"],
+      "highlights": ["Double Major, graduated June 2026", "Focus on embedded systems and electronics for robotics applications"],
       "courses": [],
       "score": "3.77/4.00"
     }
@@ -65,10 +62,10 @@
       "url": "https://www.asmetal.com.tr/en/products/robotics-and-automation/",
       "location": "Istanbul, Turkey",
       "startDate": "2025-10",
-      "endDate": "present",
+      "endDate": "2026-07",
       "highlights": [
-        "Leading the technical development of EVKA Wireless / EVKA 2.0, a TÜBİTAK-backed wireless tele-imitation system for industrial robot programming with COMAU robots.",
-        "Architecting the embedded-to-ROS pipeline using ESP32-based sensing, dual-IMU/UWB positioning concepts, micro-ROS over WiFi, ROS 2 visualization, and PDL2-oriented robot path generation.",
+        "Led the technical development of EVKA Wireless / EVKA 2.0, a TÜBİTAK-backed wireless tele-imitation system for industrial robot programming with COMAU robots.",
+        "Architected the embedded-to-ROS pipeline using ESP32-based sensing, dual-IMU/UWB positioning concepts, micro-ROS over WiFi, ROS 2 visualization, and PDL2-oriented robot path generation.",
         "Developed EVKA Position as a separate encoder-based 3D positioning platform, converting rotary and draw-wire encoder data into Cartesian coordinates with calibration, filtering, dashboard, and TCP/WebSocket/serial interfaces.",
         "Designed and fabricated capacitive grip/touch sensor PCBs using KiCad and LPKF, including AT42QT1011-based capacitive sensing hardware for industrial gripper applications.",
         "Built C++/Python integration and testing tools while gaining hands-on experience with COMAU robot operation, PDL2 programming, and controller-level workflows."
@@ -170,7 +167,7 @@
       "url": "https://sabanciuniv.edu/",
       "location": "Istanbul, Turkey",
       "startDate": "2024-09",
-      "endDate": "present",
+      "endDate": "2026-06",
       "instructors": [
         {
           "name": "Prof. Volkan Patoğlu",
