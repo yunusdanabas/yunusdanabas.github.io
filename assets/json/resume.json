@@ -5,7 +5,7 @@
     "image": "",
     "email": "yunusdanabas@sabanciuniv.edu",
     "url": "https://yunusemredanabas.com",
-    "summary": "Robotics and control engineer with a double B.Sc. from Sabancı University — Mechatronics (2025, graduated 1st in department) and Electronics (2026). Hands-on across modeling, control, embedded sensing, and ROS-based software, with a focus on robust, end-to-end systems.",
+    "summary": "Robotics and control engineer with a double B.Sc. from Sabancı University — Mechatronics (2025, graduated 1st in department) and Electronics (2026, graduated 2nd in department). Hands-on across modeling, control, embedded sensing, and ROS-based software, with a focus on robust, end-to-end systems.",
     "location": {
       "address": "Istanbul, Turkey",
       "postalCode": "",
@@ -50,7 +50,7 @@
       "studyType": "Bachelor",
       "startDate": "2023",
       "endDate": "2026",
-      "highlights": ["Double Major, graduated June 2026", "Focus on embedded systems and electronics for robotics applications"],
+      "highlights": ["Graduated June 2026; Ranked 2nd in Department", "Focus on embedded systems and electronics for robotics applications"],
       "courses": [],
       "score": "3.77/4.00"
     }
@@ -321,8 +321,8 @@
       "url": ""
     },
     {
-      "title": "Ranked 7th in the Electronics Engineering Department (as of 2025)",
-      "date": "2025",
+      "title": "Graduated 2nd in the Electronics Engineering Department",
+      "date": "2026",
       "awarder": "Sabancı University",
       "url": ""
     }

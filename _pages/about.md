@@ -13,7 +13,7 @@ profile:
 social: true
 ---
 
-I hold a double degree in Mechatronics and Electronics Engineering from Sabancı University: I graduated **1st in Mechatronics (2025)** and completed my second B.Sc. in **Electronics (2026)**. My work sits at the intersection of robotics, control, and embedded systems, with an emphasis on building systems that are reproducible, testable, and robust enough to leave the lab.
+I hold a double degree in Mechatronics and Electronics Engineering from Sabancı University: I graduated **1st in Mechatronics (2025)** and **2nd in Electronics (2026)**. My work sits at the intersection of robotics, control, and embedded systems, with an emphasis on building systems that are reproducible, testable, and robust enough to leave the lab.
 
 My research experience includes work with [**PRISMA Lab**](https://prisma.dieti.unina.it/) (University of Naples Federico II), the [**Munich Institute of Robotics and Machine Intelligence (TUM MIRMI)**](https://www.mirmi.tum.de/), and Sabancı University's [**Human–Machine Interaction Laboratory**](https://hmi.sabanciuniv.edu/) with [**Prof. Volkan Patoğlu**](https://scholar.google.com/citations?user=McT4RRAAAAAJ). Across these settings, I've focused on simulation-driven development, sensing, and control — moving from requirements to working prototypes.
 

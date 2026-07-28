@@ -2,7 +2,7 @@
 
 I hold a double B.Sc. in **Mechatronics** and **Electronics Engineering** from **Sabancı University**, working across robotics, control, embedded systems, and simulation.
 
-I graduated **1st in Mechatronics Engineering (2025)** and completed my second degree in **Electronics Engineering (2026)**. I like building robotic systems that connect simulation, sensing, control, and hardware into reproducible prototypes.
+I graduated **1st in Mechatronics Engineering (2025)** and **2nd in Electronics Engineering (2026)**. I like building robotic systems that connect simulation, sensing, control, and hardware into reproducible prototypes.
 
 Current interests: **mobile robotics**, **teleoperation**, **learning-based control**, **embedded robotic systems**, and **robot perception**.
 
