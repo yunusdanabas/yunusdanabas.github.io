@@ -82,7 +82,7 @@ At the other end of the spectrum are fully actuated systems that provide the hig
 <div class="text-center" style="max-width: 65%; margin: 0 auto 1.5rem auto;">
 {% include figure.liquid
   path="assets/img/prisma_lunar_rover_internship/DesignDrawingDimension_TianxiangLan.jpg"
-  title="A design drawing of a four-wheeled rover with per-corner active suspension, providing full posture control but with high mechanical complexity."
+  title="A design drawing of a four-wheeled rover with per-corner active suspension, providing full posture control but with high mechanical complexity. From Lan et al."
   class="img-fluid rounded z-depth-1"
 %}
 </div>
@@ -94,7 +94,7 @@ The optimal solution for this project lies between the two extremes. A **per-sid
 <div class="text-center" style="max-width: 65%; margin: 0 auto 1.5rem auto;">
 {% include figure.liquid
   path="assets/img/prisma_lunar_rover_internship/SimplifiedPracticalModel_HJiang.jpg"
-  title="A simplified practical model of a per-side actuated suspension. This concept uses a minimal number of actuators to achieve roll and height adjustments, representing a balanced approach to posture control."
+  title="A simplified practical model of a per-side actuated suspension. This concept uses a minimal number of actuators to achieve roll and height adjustments, representing a balanced approach to posture control. From Jiang et al. (2019)."
   class="img-fluid rounded z-depth-1"
 %}
 </div>
@@ -145,7 +145,7 @@ The core of the system is the actuator that drives the mid-hinge bogie. The prim
 <div class="text-center" style="max-width: 65%; margin: 0 auto 1.5rem auto;">
 {% include figure.liquid
   path="assets/img/prisma_lunar_rover_internship/AdjustableSideFrame_HJiang.jpg"
-  title="Diagram of the per-side actuated mechanism, showing the linear actuator integrated into the side frame to control the bogie linkage."
+  title="Diagram of the per-side actuated mechanism, showing the linear actuator integrated into the side frame to control the bogie linkage. From Jiang et al. (2019)."
   class="img-fluid rounded z-depth-1"
 %}
 </div>
@@ -183,7 +183,7 @@ To simplify operations, the suspension will be commanded using three discrete po
 <div class="text-center" style="max-width: 65%; margin: 0 auto 1.5rem auto;">
 {% include figure.liquid
   path="assets/img/prisma_lunar_rover_internship/MobileRobotReconfigurations_A_LowGroundClearance_B_HighGroundClearance_C_LeveledConfiguration_HJiang.png"
-  title="The three primary operational postures enabled by the per-side actuated suspension: (a) Contact-Low for science, (b) High Traverse for obstacle clearance, and (c) Level Traverse for roll-stabilized driving on side-slopes."
+  title="The three primary operational postures enabled by the per-side actuated suspension: (a) Contact-Low for science, (b) High Traverse for obstacle clearance, and (c) Level Traverse for roll-stabilized driving on side-slopes. From Jiang et al. (2019)."
   class="img-fluid rounded z-depth-1"
 %}
 </div>
@@ -254,7 +254,7 @@ The V&V plan confirms that the system meets its requirements through a series of
 <div class="text-center" style="max-width: 65%; margin: 0 auto 1.5rem auto;">
 {% include figure.liquid
   path="assets/img/prisma_lunar_rover_internship/DescriptionOfGyroStabilizedQuadrupedalDriving_EricGratton.jpg"
-  title="Conceptual illustration of a rover using differential actuation to stabilize its body on uneven terrain. The Roll Leveling Test is designed to quantitatively validate this exact capability in a controlled ramp scenario."
+  title="Conceptual illustration of a rover using differential actuation to stabilize its body on uneven terrain. The Roll Leveling Test is designed to quantitatively validate this exact capability in a controlled ramp scenario. From Gratton et al."
   class="img-fluid rounded z-depth-1"
 %}
 </div>

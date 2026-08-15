@@ -3,7 +3,7 @@ layout: page
 title: "Planar Elbow Manipulator — Design & Control"
 collection: projects
 importance: 4
-description: "A 2-DoF planar elbow manipulator that uniquely met every mechanical requirement in ME408, integrating robust CAD, power electronics, and dual-loop control for precise trajectory tracking."
+description: "A 2-DoF planar elbow manipulator for ME408, integrating CAD, power electronics, and dual-loop control for trajectory tracking."
 permalink: /projects/elbow_manipulator/
 date: 2024-12-01
 category: Course Projects
@@ -13,7 +13,7 @@ img: /assets/img/me408_elbow/me408_design_closedForm.jpeg
 
 ## 1. Overview & Motivation
 
-This solo ME408 project (Sabancı University) produced the **only design in a class of 20+** that satisfied all structural, weight, and accuracy specs.  
+This solo ME408 project (Sabancı University) designed a 2-DoF planar elbow manipulator to meet the course structural, weight, and accuracy specs.  
 The goals were:
 
 - **Light-yet-strong mechanics** — optimized with FEA
