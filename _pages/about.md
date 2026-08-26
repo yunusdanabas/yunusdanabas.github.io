@@ -3,7 +3,7 @@ layout: about
 title: about
 permalink: /
 subtitle: |
-  Mechatronics / Electronics Engineering Double Major · <a href="https://www.sabanciuniv.edu/">Sabancı University</a>
+  Ph.D. Student, Electrical Engineering · <a href="https://www.utdallas.edu/">The University of Texas at Dallas</a>
 profile:
   align: right
   image: prof_pic.jpg
@@ -13,7 +13,7 @@ profile:
 social: true
 ---
 
-I hold a double degree in Mechatronics and Electronics Engineering from Sabancı University: I graduated **1st in Mechatronics (2025)** and **2nd in Electronics (2026)**. My work sits at the intersection of robotics, control, and embedded systems, with an emphasis on building systems that are reproducible, testable, and robust enough to leave the lab.
+I am a Ph.D. student in Electrical Engineering at [**The University of Texas at Dallas**](https://www.utdallas.edu/), where I work as a Research Assistant under the supervision of **Prof. Aykut Cihan Satıcı**. My research area is control systems, with broader interests in robotics, optimization, dynamical systems, and autonomous robotic systems. I hold a double degree in Mechatronics and Electronics Engineering from Sabancı University: I graduated **1st in Mechatronics (2025)** and **2nd in Electronics (2026)**. My work sits at the intersection of robotics, control, and embedded systems, with an emphasis on building systems that are reproducible, testable, and robust enough to leave the lab.
 
 My research experience includes work with [**PRISMA Lab**](https://prisma.dieti.unina.it/) (University of Naples Federico II), the [**Munich Institute of Robotics and Machine Intelligence (TUM MIRMI)**](https://www.mirmi.tum.de/), and Sabancı University's [**Human–Machine Interaction Laboratory**](https://www.sabanciuniv.edu/en/human-machine-interaction-lab) with [**Prof. Volkan Patoğlu**](https://scholar.google.com/citations?user=McT4RRAAAAAJ). Across these settings, I've focused on simulation-driven development, sensing, and control — moving from requirements to working prototypes.
 

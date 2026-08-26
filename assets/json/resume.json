@@ -1,17 +1,17 @@
 {
   "basics": {
     "name": "Yunus Emre Danabaş",
-    "label": "Robotics & Control Engineer · B.Sc. Mechatronics (2025) · B.Sc. Electronics (2026)",
+    "label": "PhD Student, Electrical Engineering (UT Dallas) · B.Sc. Mechatronics (2025) · B.Sc. Electronics (2026)",
     "image": "",
     "email": "yunusdanabas@sabanciuniv.edu",
     "url": "https://yunusemredanabas.com",
-    "summary": "Robotics and control engineer with a double B.Sc. from Sabancı University — Mechatronics (2025, graduated 1st in department) and Electronics (2026, graduated 2nd in department). Hands-on across modeling, control, embedded sensing, and ROS-based software, with a focus on robust, end-to-end systems.",
+    "summary": "Ph.D. student in Electrical Engineering at The University of Texas at Dallas, researching control systems as a Research Assistant under Prof. Aykut Cihan Satıcı. Background: a double B.Sc. from Sabancı University — Mechatronics (2025, graduated 1st in department) and Electronics (2026, graduated 2nd in department). Hands-on across modeling, control, embedded sensing, and ROS-based software, with a focus on robust, end-to-end systems.",
     "location": {
-      "address": "Istanbul, Turkey",
+      "address": "Richardson, TX, USA",
       "postalCode": "",
-      "city": "Istanbul",
-      "countryCode": "TR",
-      "region": ""
+      "city": "Richardson",
+      "countryCode": "US",
+      "region": "TX"
     },
     "profiles": [
       {
@@ -27,6 +27,19 @@
     ]
   },
   "education": [
+    {
+      "institution": "The University of Texas at Dallas",
+      "location": "Richardson, TX, USA",
+      "url": "https://www.utdallas.edu/",
+      "area": "Electrical Engineering",
+      "studyType": "Ph.D.",
+      "startDate": "2026-08",
+      "highlights": [
+        "Research Area: Control Systems and Robotics; Advisor: Prof. Aykut Cihan Satıcı",
+        "Research Assistant (0.5 FTE) — fully funded via Research Assistantship (stipend + tuition scholarship)"
+      ],
+      "courses": []
+    },
     {
       "institution": "Sabancı University",
       "location": "Istanbul, Turkey",
