@@ -28,10 +28,10 @@ This project maintains two complementary software paths for the dual-arm **Baxte
 
 <div class="table-responsive" markdown="1">
 
-| Stack | Core environment | Main purpose | Current boundary |
-|---|---|---|---|
-| **ROS 2 Jazzy** | Ubuntu 24.04, Gazebo Harmonic, `ros2_control`, MoveIt 2 | Modern simulation, planning, and controller integration | Simulation is validated; real-hardware motion is unsupported |
-| **ROS Noetic** | Ubuntu 20.04, Gazebo Classic, MoveIt, Python 3 | Legacy SDK compatibility, operational tools, simulation, and existing Baxter systems | Noetic is end-of-life; Docker is the recommended reproducible path |
+| Stack           | Core environment                                        | Main purpose                                                                         | Current boundary                                                   |
+| --------------- | ------------------------------------------------------- | ------------------------------------------------------------------------------------ | ------------------------------------------------------------------ |
+| **ROS 2 Jazzy** | Ubuntu 24.04, Gazebo Harmonic, `ros2_control`, MoveIt 2 | Modern simulation, planning, and controller integration                              | Simulation is validated; real-hardware motion is unsupported       |
+| **ROS Noetic**  | Ubuntu 20.04, Gazebo Classic, MoveIt, Python 3          | Legacy SDK compatibility, operational tools, simulation, and existing Baxter systems | Noetic is end-of-life; Docker is the recommended reproducible path |
 
 </div>
 
